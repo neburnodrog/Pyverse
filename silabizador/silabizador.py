@@ -1,20 +1,5 @@
 import string
-from poems.help_funcs import (last_word_finder,
-                              block_separator,
-                              consonant_rhyme_finder,
-                              assonant_rhyme_finder,
-                              type_verse,
-                              counter)
-
-vowels = "aeiouáéíóúAEIOUÁÉÍÓÚ"
-vowels_h = vowels + "h"
-consonants = ("".join((letter for letter in string.ascii_letters if letter not in vowels)) + "ñÑ")
-debiles = "UIui"
-debiles_tonicas = "ÚÍúí"
-fuertes = "AEOaeo"
-fuertes_tildadas = "ÁÉÓáéó"
-vowels_tildadas = "áéíóúÁÉÍÓÚ"
-punct = "¡!\"#$%&'()*+,./:;<=>¿?@[\\]^_—{|}~-«”»"
+from .helper_funcs import *
 
 
 class Syllabifier:
@@ -44,8 +29,9 @@ class Syllabifier:
                 if len(block) == 1:
                     try:
                         if syllabified_sentence.strip()[-1] in vowels:
-                            if (syllabified_sentence.strip()[-1] in debiles
-                                    and block in debiles
+                            if (
+                                    syllabified_sentence.strip()[-1] in weak_vowels
+                                    and block in weak_vowels
                                     and sentence[i + 1] not in "ns"
                             ):
                                 syllabified_sentence += "-" + block
@@ -65,7 +51,7 @@ class Syllabifier:
                         if (
                                 block[0] in "hH"
                                 and syllabified_sentence.strip()[-1] in vowels
-                                and (not sentence[i + 1] in fuertes or sentence[i + 1] in debiles_tonicas)
+                                and (not sentence[i + 1] in strong_vowels or sentence[i + 1] in weak_accented_vowels)
                         ):
                             syllabified_sentence += block
                             block = ""
@@ -107,7 +93,8 @@ class Syllabifier:
 
         return self.second_scan(syllabified_sentence.strip(".,!?¡¿:;"))
 
-    def second_scan(self, sentence):
+    @staticmethod
+    def second_scan(sentence):
         separated_sentence = ""
 
         while sentence:
@@ -135,14 +122,6 @@ class Syllabifier:
 def main():
     sentence = input("Enter word/sentence to syllabify: ")
     syllabifier = Syllabifier(sentence)
-    print("[+] Sentence:", syllabifier.sentence)
-    print("[+] Syllabified sentence:", syllabifier.syllabified_sentence)
-    print("[+] Syllables:", syllabifier.syllables)
-    print("[+] Last word:", syllabifier.last_word)
-    print("[+] Aguda, llana o esdrújula?:", syllabifier.agullaes)
-    print("[+] Bloque consonante a rimar:", syllabifier.consonant_rhyme)
-    print("[+] Bloque asonante a rimar:", syllabifier.assonant_rhyme)
-    print("[+] beg: {}, int: {}, end: {}".format(syllabifier.beg, syllabifier.int, syllabifier.end))
 
 
 if __name__ == "__main__":

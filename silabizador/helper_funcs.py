@@ -2,21 +2,34 @@ from typing import Optional, List
 import string
 import re
 
+__all__ = ["last_word_finder",
+           "block_separator",
+           "consonant_rhyme_finder",
+           "assonant_rhyme_finder",
+           "type_verse",
+           "counter",
+           "punctuation",
+           "uppercase",
+           "vowels",
+           "vowels_with_h",
+           "consonants",
+           "weak_vowels",
+           "weak_accented_vowels",
+           "strong_vowels",
+           "accented_vowels",]
+
 
 # VARIABLES
 punctuation = string.punctuation + r'¡¿—«”»'
 uppercase = string.ascii_uppercase + "ÑÁÉÍÓÚ"
 vowels = "aeiou" + "áéíóú" + "AEIOU" + "ÁÉÍÓÚ" + "üÜ"
-vowels_h = vowels + "hH"
-consonants = (
-        "".join((letter for letter in string.ascii_letters if letter not in vowels)) + "ñÑ"
-)
-
-debiles = "UIui"
-debiles_tonicas = "ÚÍúí"
-fuertes = "AEOaeo"
-fuertes_tildadas = "ÁÉÓáéó"
-vowels_tildadas = "áéíóúÁÉÍÓÚ"
+vowels_with_h = vowels + "hH"
+translation_table = str.maketrans({letter: "" for letter in vowels})
+consonants = string.ascii_letters.translate(translation_table) + "ñÑ"
+weak_vowels = "UIui"
+weak_accented_vowels = "ÚÍúí"
+strong_vowels = "AEOaeo"
+accented_vowels = "áéíóúÁÉÍÓÚ"
 
 
 def counter(sentence):
@@ -42,7 +55,7 @@ def block_separator(block: str) -> str:
 
             elif letter in vowels:
                 try:
-                    if block[i + 1] not in vowels_h:
+                    if block[i + 1] not in vowels_with_h:
                         separated_block += letter
                         i += 1
 
@@ -79,8 +92,8 @@ def vowel_separator(vowel_block: str) -> str:
     if "h" in vowel_block:
         vocal_uno = vowel_block[0]
         vocal_dos = vowel_block[2]
-        if vocal_dos in fuertes or vowel_block[1] in debiles_tonicas:
-            if vocal_uno in fuertes or vocal_uno in debiles_tonicas:
+        if vocal_dos in strong_vowels or vowel_block[1] in weak_accented_vowels:
+            if vocal_uno in strong_vowels or vocal_uno in weak_accented_vowels:
                 return vocal_uno + "-" + "h" + vocal_dos
             else:
                 return vowel_block
@@ -88,8 +101,8 @@ def vowel_separator(vowel_block: str) -> str:
             return vowel_block
 
     else:
-        if vowel_block[1] in fuertes or vowel_block[1] in debiles_tonicas:
-            if vowel_block[0] in fuertes or vowel_block[0] in debiles_tonicas:
+        if vowel_block[1] in strong_vowels or vowel_block[1] in weak_accented_vowels:
+            if vowel_block[0] in strong_vowels or vowel_block[0] in weak_accented_vowels:
                 return vowel_block[0] + "-" + vowel_block[1]
             return vowel_block
         return vowel_block
@@ -105,7 +118,7 @@ def agu_lla_esdr(word: str) -> int:
         return 1
 
     for i, letter in enumerate(word):
-        if letter in vowels_tildadas:
+        if letter in accented_vowels:
             remaining = word.count("-", i)
             if remaining == 3:
                 if word.endswith("-men-te"):
@@ -164,7 +177,7 @@ def consonant_rhyme_finder(last_word, agullaes):
                 break
 
         if (len(block_clean) > 1
-                and block_clean[0] in debiles
+                and block_clean[0] in weak_vowels
                 and block_clean[1] in vowels):
             block_clean = block_clean[1:]
 
@@ -222,30 +235,7 @@ def last_word_finder(sentence: str) -> str:
     return decapitalize(sentence)
 
 
-def int_to_str(number: str) -> str:  # TODO
-    """transform a digit-string into its written version. 1 -> uno, 25 -> veinticinco"""
-    pass
-
-
 def decapitalize(word: str, strict: Optional[bool] = True):
     if strict:
         return word.lower()
     return word[0].lower() + word[1:]
-
-
-def delete_captures_within_matches(verse: str, rgx_patterns: List) -> str:
-    for pattern in rgx_patterns:
-        match = re.search(pattern, verse)
-        if match:
-            string_match = match.group(0)
-            to_replace = match.group(1)
-            replacement = re.sub(to_replace, "", string_match)
-            verse = verse.replace(string_match, replacement)
-
-    return verse
-
-
-def sequence_without_spaces(str_sequence: str) -> str:
-    list_sequence_sorted = sorted(list(str_sequence))
-    str_trimmed = "".join(list_sequence_sorted).strip()
-    return str_trimmed
