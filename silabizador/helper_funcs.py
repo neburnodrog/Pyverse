@@ -6,6 +6,8 @@ __all__ = ["last_word_finder",
            "consonant_rhyme_finder",
            "assonant_rhyme_finder",
            "type_verse",
+           "agu_lla_esdr",
+           "vowel_separator",
            "counter",
            "punctuation",
            "uppercase",
@@ -31,11 +33,8 @@ strong_vowels = "AEOaeo"
 accented_vowels = "áéíóúÁÉÍÓÚ"
 
 
-def counter(sentence: str) -> Tuple[int, int]:
-    sil_count = sentence.count("-")
-    last_word = last_word_finder(sentence)
-    type_word = agu_lla_esdr(last_word)
-    return sil_count + type_word, type_word
+def counter(sentence: str, last_word_type: int) -> Tuple[int]:
+    return sentence.count("-") + last_word_type
 
 
 def block_separator(block: str) -> str:
@@ -91,11 +90,11 @@ def vowel_separator(vowel_block: str) -> str:
     """
 
     if "h" in vowel_block:
-        vocal_uno = vowel_block[0]
-        vocal_dos = vowel_block[2]
-        if vocal_dos in strong_vowels or vowel_block[1] in weak_accented_vowels:
-            if vocal_uno in strong_vowels or vocal_uno in weak_accented_vowels:
-                return vocal_uno + "-" + "h" + vocal_dos
+        vowel_one = vowel_block[0]
+        vowel_two = vowel_block[2]
+        if vowel_two in strong_vowels or vowel_block[1] in weak_accented_vowels:
+            if vowel_one in strong_vowels or vowel_one in weak_accented_vowels:
+                return vowel_one + "-" + "h" + vowel_two
             else:
                 return vowel_block
         else:
@@ -220,27 +219,15 @@ def type_verse(sentence):
 
 
 def last_word_finder(sentence: str) -> str:
-    sentence = sentence.strip(punctuation + " ")
+    """ sentece is already punctuation stripped
+        It should return only the last word in lowercase"""
 
     if sentence.count(" ") != 0:
-        last_word = sentence[sentence.rfind(" "):]
-
-        if last_word == "y":
-            last_word = sentence
-            while last_word.count(" ") > 1:
-                last_word = last_word[last_word.find(" "):].strip()
-
-            if all([letter.isdigit() for letter in last_word]):
-                int_to_str(last_word)
-
-            return decapitalize(last_word)
-
+        last_word = sentence[sentence.rfind(" "):].strip(punctuation + " ")
         return decapitalize(last_word)
 
-    return decapitalize(sentence)
+    return decapitalize(sentence).strip(punctuation + " ")
 
 
-def decapitalize(word: str, strict: Optional[bool] = True):
-    if strict:
-        return word.lower()
+def decapitalize(word: str) -> str:
     return word[0].lower() + word[1:]

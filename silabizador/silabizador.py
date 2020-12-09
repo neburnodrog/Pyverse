@@ -1,16 +1,30 @@
 import string
-from .helper_funcs import *
+from helper_funcs import *
 
 
 class Syllabifier:
     def __init__(self, sentence):
         self.sentence = sentence
         self.stripped_sentence = sentence.strip(punctuation)
-        self.last_word = last_word_finder(sentence)
+        self.last_word = last_word_finder(self.stripped_sentence)
         self.syllabified_sentence = self.syllabify(self.stripped_sentence)
-        self.number_of_syllables, self.agullaes = counter(self.syllabified_sentence)
+        self.agu_lla_esdr = agu_lla_esdr(self.last_word)
+        self.number_of_syllables = counter(self.syllabified_sentence, self.agu_lla_esdr)
         self.consonant_rhyme, self.assonant_rhyme = self.rhymer(self.syllabified_sentence)
         self.beginning_verse, self.intermediate_verse, self.ending_verse = type_verse(sentence)
+
+    def __str__(self):
+        return f"""{self.sentence}:
+        
+    \t stripped sentence                     : {self.stripped_sentence}
+    \t last word                             : {self.last_word}
+    \t syllabified sentence                  : {self.syllabified_sentence}
+    \t aguda (1), llana (0) o esdrujula (-1) : {self.agu_lla_esdr}
+    \t numero de silabas                     : {self.number_of_syllables}
+    \t rima consonantemente con palabras en  : {self.consonant_rhyme}
+    \t rima asonantemente con palabras en    : {self.assonant_rhyme}
+    \t comienzo? {self.beginning_verse}, intermedio? {self.intermediate_verse}, final? {self.ending_verse}
+                """
 
     def syllabify(self, sentence):
         block = ""
@@ -114,7 +128,7 @@ class Syllabifier:
 
     def rhymer(self, verso):
         last_word = last_word_finder(verso)
-        consonant_rhyme = consonant_rhyme_finder(last_word, self.agullaes)
+        consonant_rhyme = consonant_rhyme_finder(last_word, self.agu_lla_esdr)
         assonant_rhyme = assonant_rhyme_finder(consonant_rhyme)
         consonant_rhyme = consonant_rhyme.replace("ll", "i").replace("y", "i")
         return consonant_rhyme, assonant_rhyme
@@ -123,6 +137,7 @@ class Syllabifier:
 def main():
     sentence = input("Enter word/sentence to syllabify: ")
     syllabifier = Syllabifier(sentence)
+    print(syllabifier)
 
 
 if __name__ == "__main__":
