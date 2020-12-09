@@ -66,7 +66,7 @@ class Syllabifier:
                         if (
                                 block[0] in "hH"
                                 and syllabified_sentence.strip()[-1] in vowels
-                                and (not sentence[i + 1] in strong_vowels or sentence[i + 1] in weak_accented_vowels)
+                                and not sentence[i + 1] in strong_vowels + weak_accented_vowels
                         ):
                             syllabified_sentence += block
                             block = ""
