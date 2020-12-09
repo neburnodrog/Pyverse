@@ -4,12 +4,13 @@ from .helper_funcs import *
 
 class Syllabifier:
     def __init__(self, sentence):
-        self.sentence = sentence.strip(".,¿?¡!«'—»();:\"-* ")
+        self.sentence = sentence
+        self.stripped_sentence = sentence.strip(punctuation)
         self.last_word = last_word_finder(sentence)
-        self.syllabified_sentence = self.syllabify(self.sentence)
-        self.syllables, self.agullaes = counter(self.syllabified_sentence)
+        self.syllabified_sentence = self.syllabify(self.stripped_sentence)
+        self.number_of_syllables, self.agullaes = counter(self.syllabified_sentence)
         self.consonant_rhyme, self.assonant_rhyme = self.rhymer(self.syllabified_sentence)
-        self.beg, self.int, self.end = type_verse(sentence)
+        self.beginning_verse, self.intermediate_verse, self.ending_verse = type_verse(sentence)
 
     def syllabify(self, sentence):
         block = ""

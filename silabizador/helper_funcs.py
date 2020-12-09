@@ -1,6 +1,5 @@
-from typing import Optional, List
+from typing import Optional, List, Tuple
 import string
-import re
 
 __all__ = ["last_word_finder",
            "block_separator",
@@ -32,7 +31,7 @@ strong_vowels = "AEOaeo"
 accented_vowels = "áéíóúÁÉÍÓÚ"
 
 
-def counter(sentence):
+def counter(sentence: str) -> Tuple[int, int]:
     sil_count = sentence.count("-")
     last_word = last_word_finder(sentence)
     type_word = agu_lla_esdr(last_word)
@@ -87,7 +86,9 @@ def block_separator(block: str) -> str:
 
 
 def vowel_separator(vowel_block: str) -> str:
-    """Grupos de 2 o de 3 letras (VV / VHV / VVV)"""
+    """     Groups of 2 or 3 letters (VV / VHV / VVV)
+            Vowel: V, Letter H: H
+    """
 
     if "h" in vowel_block:
         vocal_uno = vowel_block[0]
@@ -109,7 +110,11 @@ def vowel_separator(vowel_block: str) -> str:
 
 
 def agu_lla_esdr(word: str) -> int:
-    """Returns -1 if esdrújula; 0 if llana; 1 if aguda"""
+    """     Returns -1 if the word is proparoxytone; 0 if paroxytone; 1 if oxytone
+            oxytone: word with stress/accent on the last syllable.
+            paroxytone: word with stress/accent on the penultimate syllable.
+            proparoxytone: word with stress/accent on the antepenultimate syllable.
+    """
 
     if not word.startswith("-"):
         word = "-" + word
@@ -122,16 +127,16 @@ def agu_lla_esdr(word: str) -> int:
             remaining = word.count("-", i)
             if remaining == 3:
                 if word.endswith("-men-te"):
-                    return 0
-                return -2
+                    #  This case is the very seldom superproparoxytone words like
+                    return -2
 
             if remaining == 2:
-                # Esdrújula
+                #  proparoxytone
                 return -1
             elif remaining == 1:
-                # Llana
+                #  paroxytone
                 return 0
-            # Aguda
+            #  oxytone
             return 1
 
     if (word[-1] in vowels + "y"
