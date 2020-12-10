@@ -3,10 +3,11 @@ from silabizador.silabizador import (
 )
 
 
+#  TESTING Word-Class
 class TestVowelBlockSeparator:
     def test_vowel_block_separator(self):
         """ ins-tru-men-to -> CCC(rl)V -> CC-C(rl)V """
-        assert(Word.vowel_block_separator("nstru") == "ns-tru")
+        assert (Word.vowel_block_separator("nstru") == "ns-tru")
 
     def test_vowel_block_separator2(self):
         """ des-tro-zar -> CC(rl)V -> C-C(rl)V """
@@ -18,7 +19,7 @@ class TestVowelBlockSeparator:
 
     def test_vowel_block_separator4(self):
         """ gangs-ter -> CCCCV -> CCC-CV """
-        assert(Word.vowel_block_separator("ngste") == "ngs-te")
+        assert (Word.vowel_block_separator("ngste") == "ngs-te")
 
     def test_vowel_block_separator5(self):
         """ ist-mo -> CCCV -> CC-CV """
@@ -44,7 +45,7 @@ class TestVowelBlockSeparator:
 class TestDiphthongsFinder:
     def test_diphthongs_finder1(self):
         """ weak/strong -> especias """
-        assert(Word.diphthong_finder("i-a") == "ia")
+        assert (Word.diphthong_finder("i-a") == "ia")
 
     def test_diphthongs_finder2(self):
         """ weak_special/strong -> agüero """
@@ -64,35 +65,35 @@ class TestDiphthongsFinder:
 
     def test_diphthongs_finder6(self):
         """ strong/weak -> aire """
-        assert(Word.diphthong_finder("a-i") == "ai")
+        assert (Word.diphthong_finder("a-i") == "ai")
 
     def test_diphthongs_finder7(self):
         """ strong_accented/weak -> náutico """
-        assert(Word.diphthong_finder("á-u") == "áu")
+        assert (Word.diphthong_finder("á-u") == "áu")
 
     def test_diphthongs_finder8(self):
         """ same -> leer, chiita, zoológico """
-        assert(Word.diphthong_finder("e-e") == "e-e")
-        assert(Word.diphthong_finder("i-i") == "i-i")
-        assert(Word.diphthong_finder("A-ha") == "A-ha")
-        assert(Word.diphthong_finder("o-ho") == "o-ho")
+        assert (Word.diphthong_finder("e-e") == "e-e")
+        assert (Word.diphthong_finder("i-i") == "i-i")
+        assert (Word.diphthong_finder("A-ha") == "A-ha")
+        assert (Word.diphthong_finder("o-ho") == "o-ho")
 
     def test_diphthongs_finder9(self):
         """ strong/strong -> fea """
-        assert(Word.diphthong_finder("e-a") == "e-a")
-        assert(Word.diphthong_finder("e-o") == "e-o")
-        assert(Word.diphthong_finder("e-a") == "e-a")
-        assert(Word.diphthong_finder("o-ó") == "o-ó")
+        assert (Word.diphthong_finder("e-a") == "e-a")
+        assert (Word.diphthong_finder("e-o") == "e-o")
+        assert (Word.diphthong_finder("e-a") == "e-a")
+        assert (Word.diphthong_finder("o-ó") == "o-ó")
 
     def test_diphthongs_finder10(self):
         """ strong/weak_accented -> país """
-        assert(Word.diphthong_finder("a-í") == "a-í")
-        assert(Word.diphthong_finder("a-ú") == "a-ú")
+        assert (Word.diphthong_finder("a-í") == "a-í")
+        assert (Word.diphthong_finder("a-ú") == "a-ú")
 
     def test_diphthongs_finder11(self):
         """ weak_accented/strong -> sonríe """
-        assert(Word.diphthong_finder("í-e") == "í-e")
-        assert(Word.diphthong_finder("ú-a") == "ú-a")
+        assert (Word.diphthong_finder("í-e") == "í-e")
+        assert (Word.diphthong_finder("ú-a") == "ú-a")
 
 
 class TestPreSyllabify:
@@ -116,11 +117,38 @@ class TestPreSyllabify:
 
 
 class TestFurtherScans:
-    pass
+    def test_further_scans_1(self):
+        word = Word("ahínco")
+        assert (word.pre_syllabified_word == "-a-hín-co")
+        assert (word.further_scans("-a-hín-co") == "-a-hín-co")
+
+    def test_further_scans_2(self):
+        word = Word("molestias")
+        assert (word.pre_syllabified_word == "-mo-les-ti-as")
+        assert (word.further_scans(word.pre_syllabified_word) == "-mo-les-tias")
 
 
 class TestWord:
     def test_init1(self):
         """ Normal word """
         word = Word("¡  .,+'onomatopeya...!")
-        assert (word.word_text == "onomatopeya")
+        assert (word.syllabified_word == "-o-no-ma-to-pe-ya")
+
+    def test_init2(self):
+        """ Normal word """
+        word = Word("¡  .,+'hierático...!")
+        assert (word.syllabified_word == "-hie-rá-ti-co")
+
+    def test_init3(self):
+        """ Normal word """
+        word = Word("¡  .,+'melopea...!")
+        assert (word.syllabified_word == "-me-lo-pe-a")
+
+    def test_init4(self):
+        """ Normal word """
+        word = Word("¡  .,+'alcohol...!")
+        assert (word.syllabified_word == "-al-co-hol")
+
+
+# TESTING Sentence-Class
+# TODO
