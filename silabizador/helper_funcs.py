@@ -2,12 +2,10 @@ from typing import Optional, List, Tuple
 import string
 
 __all__ = ["last_word_finder",
-           "block_separator",
            "consonant_rhyme_finder",
            "assonant_rhyme_finder",
            "type_verse",
            "agu_lla_esdr",
-           "vowel_separator",
            "counter",
            "punctuation",
            "uppercase",
@@ -37,75 +35,6 @@ def counter(sentence: str, last_word_type: int) -> Tuple[int]:
     return sentence.count("-") + last_word_type
 
 
-def block_separator(block: str) -> str:
-    separated_block = ""
-
-    block = block.strip("-")
-
-    i = 0
-    while True:
-        try:
-            letter = block[i]
-
-            if letter not in vowels:
-                separated_block += letter
-                i += 1
-
-            elif letter in vowels:
-                try:
-                    if block[i + 1] not in vowels_with_h:
-                        separated_block += letter
-                        i += 1
-
-                    elif block[i + 1] == "h":
-                        try:
-                            if block[i + 2] in vowels:
-                                vowel_block = vowel_separator(block[i:i + 3])
-                                separated_block += vowel_block
-                                i += 3
-                            else:
-                                separated_block += block[i:i + 3]
-                                i += 3
-                        except IndexError:
-                            separated_block += letter
-                            i += 1
-
-                    else:
-                        vowel_block = vowel_separator(block[i:i + 2])
-                        separated_block += vowel_block
-                        i += 2
-                except IndexError:
-                    separated_block += letter
-                    i += 1
-
-        except IndexError:
-            break
-
-    return "-" + separated_block
-
-
-def vowel_separator(vowel_block: str) -> str:
-    """     Groups of 2 or 3 letters (VV / VHV / VVV)
-            Vowel: V, Letter H: H
-    """
-
-    if "h" in vowel_block:
-        vowel_one = vowel_block[0]
-        vowel_two = vowel_block[2]
-        if vowel_two in strong_vowels or vowel_block[1] in weak_accented_vowels:
-            if vowel_one in strong_vowels or vowel_one in weak_accented_vowels:
-                return vowel_one + "-" + "h" + vowel_two
-            else:
-                return vowel_block
-        else:
-            return vowel_block
-
-    else:
-        if vowel_block[1] in strong_vowels or vowel_block[1] in weak_accented_vowels:
-            if vowel_block[0] in strong_vowels or vowel_block[0] in weak_accented_vowels:
-                return vowel_block[0] + "-" + vowel_block[1]
-            return vowel_block
-        return vowel_block
 
 
 def agu_lla_esdr(word: str) -> int:
