@@ -1,22 +1,24 @@
 from typing import Optional, List, Tuple
 import string
 
-__all__ = ["last_word_finder",
-           "consonant_rhyme_finder",
-           "assonant_rhyme_finder",
-           "type_verse",
-           "agu_lla_esdr",
-           "counter",
-           "punctuation",
-           "uppercase",
-           "vowels",
-           "vowels_with_h",
-           "consonants",
-           "weak_vowels",
-           "weak_accented_vowels",
-           "strong_vowels",
-           "accented_vowels",]
-
+__all__ = [
+    "last_word_finder",
+    "consonant_rhyme_finder",
+    "assonant_rhyme_finder",
+    "type_verse",
+    "agu_lla_esdr",
+    "counter",
+    "punctuation",
+    "uppercase",
+    "vowels",
+    "vowels_with_h",
+    "consonants",
+    "weak_vowels",
+    "weak_accented_vowels",
+    "strong_vowels",
+    "accented_vowels",
+    "g_and_q",
+]
 
 # VARIABLES
 punctuation = string.punctuation + r'¡¿—«”»'
@@ -25,16 +27,15 @@ vowels = "aeiou" + "áéíóú" + "AEIOU" + "ÁÉÍÓÚ" + "üÜ"
 vowels_with_h = vowels + "hH"
 translation_table = str.maketrans({letter: "" for letter in vowels})
 consonants = string.ascii_letters.translate(translation_table) + "ñÑ"
-weak_vowels = "UIui"
+weak_vowels = "UIuiü"
 weak_accented_vowels = "ÚÍúí"
-strong_vowels = "AEOaeo"
+strong_vowels = "AEOaeoÁÉÓáéó"
 accented_vowels = "áéíóúÁÉÍÓÚ"
+g_and_q = "gGqQ"
 
 
 def counter(sentence: str, last_word_type: int) -> Tuple[int]:
     return sentence.count("-") + last_word_type
-
-
 
 
 def agu_lla_esdr(word: str) -> int:

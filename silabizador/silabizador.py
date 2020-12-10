@@ -1,5 +1,5 @@
-import string
-from typing import List
+import re
+from typing import List, Union
 from .helper_funcs import *
 
 
@@ -75,20 +75,17 @@ class Sentence:
 class Word:
     def __init__(self, word: str) -> None:
         self.word_text = word.strip(punctuation + " ")
-        self.word_badly_syllabified = self.syllabify(self.word_text)
-        self.word_syllabified = self.second_scan(self.word_badly_syllabified)
+        self.pre_syllabified_word = self.pre_syllabify(self.word_text)
+        self.syllabified_word = self.further_scans(self.pre_syllabified_word)
 
-    def syllabify(self, word: str) -> str:
+    def pre_syllabify(self, word: str) -> str:
         block = ""
         syllabified_word = ""
 
         for i, letter in enumerate(word):
             block += letter
-            if letter == " " or letter in string.punctuation:
-                syllabified_word += block
-                block = ""
 
-            elif letter in vowels:
+            if letter in vowels:
                 syllabified_word += self.vowel_block_separator(block)
                 block = ""
 
@@ -105,69 +102,68 @@ class Word:
             2. Cons/Vow,
             3. Cons/Cons/Vow, 4. Cons/(L|R|H)/Vow,
             5. Cons/Cons/Cons/Vow, 6. Cons/Cons/(L|R|H)/Vow
-            7. Cons/Cons/Cons/Cons/Vow, 8. Cons/Cons/Cons/(L|R|H)/Vow"""
+            7. Cons/Cons/Cons/Cons/Vow, 8. Cons/Cons/Cons/(L|R|H)/Vow """
 
         block_length = len(block)
 
         if block_length < 3:
             return "-" + block  # Cases 1 and 2
 
-        if block_length >= 3:
-            if block[-2] in "rlhRLH":
+        if block_length == 3:
+            if block[1] in "rl":
+
+                if block[0] in "sSmM":
+                    return block[0] + "-" + block[1:]
+                else:
+                    return "-" + block
+
+            elif block[1] in "h" and block[0] in "Cc":
+                return "-" + block
+
+            else:
+                return block[0] + "-" + block[1:]
+
+        if block_length > 3:
+            if block[-2] in "rl":
                 return block[:-3] + "-" + block[-3:]  # Cases 4, 6 and 8
             else:
                 return block[:-2] + "-" + block[-2:]  # Cases 3, 5 and 7
 
-    def second_scan(self, word: str) -> str:
-        """Re-cut the word in syllables to account for special cases (see Hiatus & Diphthongs, etc)"""
-        syllabified_word = word.split("-")[1:]
-        diphthonged_word = []
-        new_syllabified_word = []
+    def further_scans(self, pre_syllabified_word: str) -> str:
+        """ Find all vowel groupings in the pre_syllabified_word
+            and pass them to diphthong_finder to see if any diphthongs slipped through. """
 
-        for syllable in diphthonged_word:
-            new_syllable = self.diphthongs_maker(syllable)
-            new_syllabified_word.append(new_syllable)
+        vowel_groupings = re.findall(f"[{vowels}]-h?[{vowels}]", pre_syllabified_word)
 
-        return "".join(new_syllabified_word)
+        for hiatus in vowel_groupings:
+            diphthong = self.diphthong_finder(hiatus)
+            if diphthong:
+                pre_syllabified_word = pre_syllabified_word.replace(hiatus, diphthong)
 
-    def diphthongs_maker(self, syllable: str) -> str:
-        """Account for diphthongs"""
-        if len(syllable) == 1:
-            return syllable
-        #  Possible to have blocks of more than 3 letters?
-        #  Look for a big input syllabify all words and regex if there some long ones
-
-        new_syllable = ""
-
-        for i, letter in enumerate(syllable):
-            if letter not in vowels:
-                new_syllable += letter
-
-        return "-" + new_syllable
+        return pre_syllabified_word
 
     @staticmethod
-    def vowel_separator(vowel_block: str) -> str:
-        """     Groups of 2 or 3 letters (VV / VHV / VVV)
-                Vowel: V, Letter H: H
-        """
+    def diphthong_finder(vowel_block: str) -> Union[str, None]:
+        """ Vowels are already separated. Now we have to check if they are diphthongs instead of hiatus.
+            Possible inputs:
+                -Must be a string consisting of two vowels and one hyphen in between them (Aitch is possible).
+                -Possibilities -> weak-strong | strong-weak | strong-strong | weak-weak.
+                -Strong = 'aeoáéó'
+                -Weak = 'iuü'
+                -Weak accented = 'íú' """
+        clean_block = vowel_block.replace("-", "").replace("h", "")
+        first_vowel, second_vowel = tuple(clean_block)
 
-        if "h" in vowel_block:
-            vowel_one = vowel_block[0]
-            vowel_two = vowel_block[2]
-            if vowel_two in strong_vowels or vowel_block[1] in weak_accented_vowels:
-                if vowel_one in strong_vowels or vowel_one in weak_accented_vowels:
-                    return vowel_one + "-" + "h" + vowel_two
-                else:
-                    return vowel_block
-            else:
-                return vowel_block
+        if (    # they fulfill one of the conditions for beeing an hiatus:
+                (first_vowel.lower() == second_vowel.lower())
+                or (first_vowel in strong_vowels and second_vowel in strong_vowels)
+                or (first_vowel in weak_accented_vowels and second_vowel in strong_vowels)
+                or (first_vowel in strong_vowels and second_vowel in weak_accented_vowels)
+        ):
+            return vowel_block
 
         else:
-            if vowel_block[1] in strong_vowels or vowel_block[1] in weak_accented_vowels:
-                if vowel_block[0] in strong_vowels or vowel_block[0] in weak_accented_vowels:
-                    return vowel_block[0] + "-" + vowel_block[1]
-                return vowel_block
-            return vowel_block
+            return vowel_block.replace("-", "")
 
 
 def main():
