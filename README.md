@@ -1,9 +1,8 @@
 # spanish-syllabification-algorithm
+## this is a sylabification algorithm for the Spanish language in the Python language.
+It separates every syllable in words and sentences. It counts the syllables as it's done in the spanish language poetry tradition.
+
 # algoritmo silabificador en español
-
-this is a spanish sylabification algorithm written in the Python language.
-It does syllabify sentences and words. It counts the syllables as it's done in the spanish language poetry tradition.
-
 Un algoritmo silabificador para versos en español.
 Separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
 Tiene en cuenta sinalefas y finales de verso:
