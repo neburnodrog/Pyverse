@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-coverage = "==5.3"
 
 [requires]
 python_version = "3.9"
