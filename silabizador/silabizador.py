@@ -1,5 +1,5 @@
 import re
-from typing import List, Union
+from typing import List, Union, Dict
 from .helper_funcs import *
 
 
@@ -37,13 +37,24 @@ class Syllabifier:
 
 class Sentence:
     def __init__(self, sentence):
-        self.sentence_text = sentence.strip(punctuation + " ")
-        self.words = [Word(word_string) for word_string in sentence.split()]
-        self.words_text = [word_instance.word_text for word_instance in self.words]
-        self.syllabified_sentence = self.sentence_syllabifier(self.words_text)
+        self.sentence_punctuation = self.indexing_punctuation(sentence)  # list of indexes of any punctuation in sentence
+        self.words = [Word(word_string.strip(punctuation + " ")) for word_string in sentence.strip(punctuation + " ").split()]
+        self.syllabified_sentence = self.sentence_syllabifier()
 
-    def sentence_syllabifier(self, words: List) -> str:
-        sentence = "".join(words)  # Care about punctuation
+    @staticmethod
+    def indexing_punctuation(sentence: str) -> Dict[int, str]:
+        matches = re.findall(f"[{punctuation}]", sentence)
+        sentence_punctuation = {}
+        index = -1
+        for match in matches:
+            index = sentence.index(match, index + 1)
+            sentence_punctuation[index] = match
+
+        return sentence_punctuation
+
+    def sentence_syllabifier(self) -> str:
+        sentence_punctuation = self.sentence_punctuation
+        syllabified_words_text = [word_instance.syllabified_word for word_instance in self.words]
 
         '''if syllabified_sentence.strip()[-1] in vowels:
             if (
@@ -70,7 +81,7 @@ class Sentence:
         else:
             syllabified_sentence += "-" + block
             block = ""'''
-
+        return
 
 class Word:
     def __init__(self, word: str) -> None:
