@@ -2,3 +2,4 @@ venv/
 **.coverage
 __pycache__/
 .coveragerc
+.benchmarks
