@@ -1,6 +1,8 @@
 from silabizador.silabizador import (
-    Word
+    Word,
+    Sentence,
 )
+from silabizador.vars import *
 
 
 #  TESTING Word-Class
@@ -119,36 +121,57 @@ class TestPreSyllabify:
 class TestFurtherScans:
     def test_further_scans_1(self):
         word = Word("ahínco")
-        assert (word.pre_syllabified_word == "-a-hín-co")
+        assert (word._pre_syllabified_word == "-a-hín-co")
         assert (word.further_scans("-a-hín-co") == "-a-hín-co")
 
     def test_further_scans_2(self):
         word = Word("molestias")
-        assert (word.pre_syllabified_word == "-mo-les-ti-as")
-        assert (word.further_scans(word.pre_syllabified_word) == "-mo-les-tias")
+        assert (word._pre_syllabified_word == "-mo-les-ti-as")
+        assert (word.further_scans(word._pre_syllabified_word) == "-mo-les-tias")
 
 
 class TestWord:
     def test_init1(self):
         """ Normal word """
-        word = Word("¡  .,+'onomatopeya...!")
+        word = Word("¡.,+'onomatopeya...!")
         assert (word.syllabified_word == "-o-no-ma-to-pe-ya")
 
     def test_init2(self):
         """ Normal word """
-        word = Word("¡  .,+'hierático...!")
+        word = Word("¡.,+'hierático...!")
         assert (word.syllabified_word == "-hie-rá-ti-co")
 
     def test_init3(self):
         """ Normal word """
-        word = Word("¡  .,+'melopea...!")
+        word = Word("¡.,+'melopea...!")
         assert (word.syllabified_word == "-me-lo-pe-a")
 
     def test_init4(self):
         """ Normal word """
-        word = Word("¡  .,+'alcohol...!")
+        word = Word("¡.,+'alcohol...!")
         assert (word.syllabified_word == "-al-co-hol")
 
 
 # TESTING Sentence-Class
-# TODO
+class TestSentence:
+    sentence = Sentence("Las musas se despiertan.")
+    sentence2 = Sentence("Los ahíncos del aire albo, alzaban el vuelo.")
+
+    def test_sentence1(self):
+        assert (self.sentence.syllabified_words_punctuation == ["-Las", "-mu-sas", "-se", "-des-pier-tan."])
+
+    def test_sentence2(self):
+        assert (self.sentence.syllabified_sentence == "-Las -mu-sas -se -des-pier-tan.")
+
+    def test_sentence3(self):
+        assert (self.sentence2.syllabified_words_punctuation == ["-Los", "-a-hín-cos", "-del", "-ai-re", "-al-bo,", "-al-za-ban", "-el", "-vue-lo."])
+
+    def test_sentence4(self):
+        assert (self.sentence2.syllabified_sentence == "-Los -a-hín-cos -del -ai-re -al-bo, -al-za-ban -el -vue-lo.")
+
+'''    def test_counter1(self):
+        assert(self.counter("-La -muer-te es-ta-ba -mur-mu-ran-do-me -bien", 1) == 12)
+
+    def test_counter2(self):
+        assert(counter("asdf---her--g        e-e-r2-3-4-f--g-", 13) == 26)
+'''
