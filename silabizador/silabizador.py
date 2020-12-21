@@ -1,25 +1,30 @@
 import re
-from typing import List, Union, Tuple, Dict, Optional
+from typing import List, Union, Tuple, Dict
 from silabizador.vars import *
 
 
 class Silabizador:
     def __init__(self, verse: str):
-        self.verse = verse
-        self.sentence: Sentence = Sentence(verse)
-        self.words: List[Word] = self.sentence.word_objects
-        self.number_of_syllables = self.counter()
+        self.original_verse = verse
+        self.sentence: Sentence = Sentence(self.original_verse)
+        self.word_list: List[Word] = self.sentence.word_objects
+        self.count = self.counter()
         self.consonant_rhyme, self.assonant_rhyme = self.rhymer()
         self.type_of_verse = self.type_verse(verse)
 
+    def __repr__(self):
+        sentence = self.sentence.syllabified_sentence
+        if len(sentence) > 50:
+            sentence = sentence[:50] + " [...]"
+
+        return "<Silabizador: '{}', Syllables: {}>".format(
+            sentence,
+            self.count,
+        )
+
     def counter(self) -> int:
         last_word_type = self.sentence.last_word.accentuation
-
-        if last_word_type is None:
-            last_word_syllables = self.sentence.last_word.number_of_syllables
-            return self.sentence.word_objects[-2].accentuation - last_word_syllables
-        else:
-            return self.sentence.syllabified_sentence.count("-") + last_word_type
+        return self.sentence.syllabified_sentence.count("-") + last_word_type
 
     def rhymer(self) -> Tuple[str, str]:
         last_word = self.sentence.last_word
@@ -123,6 +128,7 @@ class Sentence:
         self.sentence_text = sentence
         self.word_objects = [Word(word) for word in self.sentence_text.split()]
         self.last_word = self.word_objects[-1]
+        self.sinalefas = []
         self.syllabified_sentence = self.sentence_syllabifier()
 
     def __repr__(self):
@@ -137,15 +143,17 @@ class Sentence:
     def sentence_syllabifier(self) -> str:
         words: List[Word] = self.word_objects
         syllabified_sentence = []
+        last_letter = "placeholder"
         last_word = None
-        last_letter = ""
 
         for i, word in enumerate(words):
             if last_letter in unaccented_vowels:
-                if self.strip_hyphen(word, last_word, last_letter):
+                if self.strip_hyphen(word):
                     syllabified_sentence.append(
                         word.syllabified_with_punctuation.lstrip("-")
                     )
+
+                    self.append_sinalefa(last_word.word_text, word.word_text)
 
                 else:
                     syllabified_sentence.append(word.syllabified_with_punctuation)
@@ -158,12 +166,9 @@ class Sentence:
 
         return " ".join(syllabified_sentence)
 
-    def strip_hyphen(self, word, last_word, last_letter: str) -> bool:
-        word_text = word.syllabified_with_punctuation.lstrip("-")
-
-        if word_text[0] in "hH":
-            # Aitch doesn't count for this
-            word_text = word_text.lstrip("hH")
+    @staticmethod
+    def strip_hyphen(word) -> bool:
+        word_text = word.syllabified_with_punctuation.lstrip("-hH")
 
         if word_text.rstrip(punctuation) == "y":
             # 'y' count as vowel in this situation
@@ -173,32 +178,39 @@ class Sentence:
             # No sinalefa here
             return False
 
-        if word_text[0].translate(trans_accented_vowels) == last_letter:
-            """  if it's the same letter (either accented or unaccented)
-                 return False if the second one is stressed else True:
-                 'el arma ártica' -> False -> '-el -ar-ma -ár-ti-ca'
+        if word_text[0] in accented_vowels:
+            """
+            'el arma ártica' -> False -> '-el -ar-ma -ár-ti-ca'
+            'el blanco áspid' -> False -> '-el -blan-co -ás-pid'
+            """
+            return False
+
+        if word_text[0] in unaccented_vowels:
+            """  if it an unaccented vowel
+                 return False if word has 2 syllable and is paroxytone:
                  'el arma antigua' -> True -> '-el -ar-ma an-ti-gua'
-                 'el arma antes' -> '-el -ar-ma -an-tes'
-                 'el arma azul' -> '-el -ar-ma -a-zul'          """
-
-            if word_text[0] in accented_vowels:
-                return False
-
+                 'el arma antes' -> False -> '-el -ar-ma -an-tes'
+                 'el arma azul' -> True -> '-el -ar-ma -a-zul'          """
             if word.number_of_syllables == 2 and word.accentuation == 0:
                 # Paroxytone, 2 syllables -> "alto"
                 return False
 
-            else:
-                return True
-
-        else:
             return True
+
+        return True
+
+    def append_sinalefa(self, first_word: str, second_word: str):
+        regex = first_word + " " + second_word
+        match = re.search(regex, self.sentence_text)
+        self.sinalefas.append({match.group(): match.regs[0]})
 
 
 class Word:
     def __init__(self, word: str) -> None:
-        self.word_text = word  # this variable holds each words with punctuation attached.
-        self.syllabified_word = self.further_scans(self.pre_syllabified_word)
+        self.word_text = word  # this variable holds the word with the punctuation still attached to it.
+        self._pre_syllabified_word = self.pre_syllabify()
+        self.syllabified_word = self.further_scans(self._pre_syllabified_word)
+        self.syllabified_with_punctuation = self.add_punctuation()
         self.number_of_syllables = self.syllable_counter()
         self.accentuation = self.accentuation_finder(self.syllabified_word)
 
@@ -206,15 +218,14 @@ class Word:
         return f"<Word: '{self.syllabified_word}'>"
 
     @property
-    def stripped_word(self):
-        return self.word_text.strip(punctuation + " ")
+    def stripped_word(self) -> str:
+        _stripped_word = self.word_text.strip(punctuation + " ")
+        return _stripped_word
 
-    @property
-    def syllabified_with_punctuation(self):
+    def add_punctuation(self) -> str:
         return self.word_text.replace(self.stripped_word, self.syllabified_word)
 
-    @property
-    def pre_syllabified_word(self):
+    def pre_syllabify(self) -> str:
         word = self.stripped_word
 
         if len(word) == 1:
@@ -252,16 +263,24 @@ class Word:
 
         if block_length == 3:
             if block[1] in "rl":
-
-                if block[0] in "sSmM":
+                if block[1] == "l" and block[0] == "r":
+                    # rlo -> r-lo -> -Car-los (Ex: Ar-lan-za, far-lo-pa)
                     return block[0] + "-" + block[1:]
+
+                if block[0] in "sSmMnN":
+                    # nri -> n-ri -> In-ri (Ex: Israel, islote)
+                    return block[0] + "-" + block[1:]
+
                 else:
+                    # bri -> -bri -> hí-bri-do (Ex: a-cri-tud, a-cli-ma-tar-se)
                     return "-" + block
 
             elif block[1] in "h" and block[0] in "Cc":
+                # Letter 'ch' -> -cho-ri-zo (Ex: cha-mi-zo)
                 return "-" + block
 
             else:
+                # xqu -> x-qu -> ex-qui-si-to
                 return block[0] + "-" + block[1:]
 
         if block_length > 3:
@@ -300,7 +319,7 @@ class Word:
         clean_block = vowel_block.replace("-", "").replace("h", "")
         first_vowel, second_vowel = tuple(clean_block)
 
-        if (    # they fulfill one of the conditions for beeing an hiatus:
+        if (  # they fulfill one of the conditions for beeing an hiatus:
                 (first_vowel.lower() == second_vowel.lower())
                 or (first_vowel in strong_vowels and second_vowel in strong_vowels)
                 or (first_vowel in weak_accented_vowels and second_vowel in strong_vowels)
@@ -319,7 +338,7 @@ class Word:
         """
 
         if word.replace("-", "") in atonic_words:
-            return None
+            return 0
 
         if word.count("-") == 1:
             return 1
@@ -331,7 +350,7 @@ class Word:
                 if word.endswith("-men-te"):
                     return 0
                 else:
-                    #  This case is the very seldom superproparoxytone words
+                    #  This case is the very seldom superproparoxytone word_list
                     return -2
 
             if remaining == 2:
