@@ -130,32 +130,66 @@ class TestFurtherScans:
         assert (word.further_scans(word._pre_syllabified_word) == "-mo-les-tias")
 
 
+class TestAccentuationFinder:
+    def test_accentuation_finder1(self):
+        assert (Word.accentuation_finder("-al-bo") == 0)
+
+    def test_accentuation_finder2(self):
+        assert (Word.accentuation_finder("-com-pro-me-ti-do") == 0)
+
+    def test_accentuation_finder3(self):
+        assert (Word.accentuation_finder("-lla-no") == 0)
+
+    def test_accentuation_finder4(self):
+        assert (Word.accentuation_finder("-lá-piz") == 0)
+
+    def test_accentuation_finder5(self):
+        assert (Word.accentuation_finder("-pa-ran") == 0)
+
+    def test_accentuation_finder6(self):
+        assert (Word.accentuation_finder("-ca-sas") == 0)
+
+
 class TestWord:
     def test_init1(self):
-        """ Normal word """
         word = Word("¡.,+'onomatopeya...!")
         assert (word.syllabified_word == "-o-no-ma-to-pe-ya")
 
     def test_init2(self):
-        """ Normal word """
         word = Word("¡.,+'hierático...!")
         assert (word.syllabified_word == "-hie-rá-ti-co")
 
     def test_init3(self):
-        """ Normal word """
         word = Word("¡.,+'melopea...!")
         assert (word.syllabified_word == "-me-lo-pe-a")
 
     def test_init4(self):
-        """ Normal word """
         word = Word("¡.,+'alcohol...!")
         assert (word.syllabified_word == "-al-co-hol")
+
+    def test_init5(self):
+        word = Word("y")
+        assert (word.syllabified_word == "-y")
 
 
 # TESTING Sentence-Class
 class TestSentence:
     sentence = Sentence("Las musas se despiertan.")
     sentence2 = Sentence("Los ahíncos del aire albo, alzaban el vuelo.")
+    sentence3 = Sentence("El arma azul")
+    sentence4 = Sentence("El augusta ánima canta y baila antes de cada alimaña en el camino")
+
+    def test_strip_hyphen(self):
+        assert (self.sentence3.syllabified_words_punctuation == ["-El", "-ar-ma", "-a-zul"])
+        assert (self.sentence3.strip_hyphen("-a-zul", 2) == True)
+
+    def test_strip_hyphen2(self):
+        result = [
+            "-El", "-au-gus-ta", "-á-ni-ma", "-can-ta",
+            "-y", "-bai-la", "-an-tes", "-de", "-ca-da",
+            "-a-li-ma-ña", "-en", "-el", "-ca-mi-no"
+        ]
+        assert (self.sentence4.syllabified_words_punctuation == result)
 
     def test_sentence1(self):
         assert (self.sentence.syllabified_words_punctuation == ["-Las", "-mu-sas", "-se", "-des-pier-tan."])
@@ -164,10 +198,12 @@ class TestSentence:
         assert (self.sentence.syllabified_sentence == "-Las -mu-sas -se -des-pier-tan.")
 
     def test_sentence3(self):
-        assert (self.sentence2.syllabified_words_punctuation == ["-Los", "-a-hín-cos", "-del", "-ai-re", "-al-bo,", "-al-za-ban", "-el", "-vue-lo."])
+        assert (self.sentence2.syllabified_words_punctuation == ["-Los", "-a-hín-cos", "-del", "-ai-re", "-al-bo,",
+                                                                 "-al-za-ban", "-el", "-vue-lo."])
 
     def test_sentence4(self):
         assert (self.sentence2.syllabified_sentence == "-Los -a-hín-cos -del -ai-re -al-bo, -al-za-ban -el -vue-lo.")
+
 
 '''    def test_counter1(self):
         assert(self.counter("-La -muer-te es-ta-ba -mur-mu-ran-do-me -bien", 1) == 12)

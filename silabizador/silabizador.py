@@ -120,15 +120,17 @@ class Silabizador:
 
 
 class Sentence:
-    def __init__(self, sentence: str):
+    def __init__(self, sentence: str) -> None:
         self.sentence_text = sentence
-        self.string_words = self.sentence_text.split()
-        self.word_objects = [Word(word) for word in self.string_words]
-        self.last_word = self.word_objects[-1]
+        self.word_objects: List[Word] = [Word(word) for word in self.sentence_text.split()]
+        self.last_word: Word = self.word_objects[-1]
         self.syllabified_words_punctuation = self.join_words_with_punctuation()
         self.syllabified_sentence = self.sentence_syllabifier(self.syllabified_words_punctuation)
 
-    def join_words_with_punctuation(self):
+    def __repr__(self):
+        return f"<Sentence: {self.syllabified_sentence}>"
+
+    def join_words_with_punctuation(self) -> List:
         sentence = [word.word_text.replace(word.stripped_word, word.syllabified_word) for word in self.word_objects]
         return sentence
 
@@ -153,7 +155,9 @@ class Sentence:
 
         return " ".join(syllabified_sentence)
 
-    def strip_hyphen(self, word_text, index):
+    def strip_hyphen(self, word_text: str, index: int) -> bool:
+        word_text = word_text.lstrip("-")
+
         if word_text[0] in "hH":
             word_text = word_text.lstrip("hH")
 
@@ -166,7 +170,7 @@ class Sentence:
         if word_text[0] in accented_vowels:
             return False
 
-        word = self.word_objects[index]
+        word: Word = self.word_objects[index]
         if word.number_of_syllables == 2 and word.accentuation == 0:
             # Paroxytone, 2 syllables -> "alto"
             return False
@@ -182,9 +186,15 @@ class Word:
         self._pre_syllabified_word = self.pre_syllabify(self.stripped_word)
         self.syllabified_word = self.further_scans(self._pre_syllabified_word)
         self.number_of_syllables = self.syllable_counter()
-        self.accentuation = self.accentuation_finder(self.stripped_word)
+        self.accentuation = self.accentuation_finder(self.syllabified_word)
+
+    def __repr__(self):
+        return f"<Word: {self.syllabified_word}>"
 
     def pre_syllabify(self, word: str) -> str:
+        if len(word) == 1:
+            return "-" + word
+
         block = ""
         syllabified_word = ""
 
@@ -239,12 +249,17 @@ class Word:
         """ Find all vowel groupings in the pre_syllabified_word
             and pass them to diphthong_finder to see if any diphthongs slipped through. """
 
-        vowel_groupings = re.findall(f"[{vowels}]-h?[{vowels}]", pre_syllabified_word)
-
+        vowel_groupings = re.findall(f"[{vowels}]-h?[{vowels}]+", pre_syllabified_word)
         for hiatus in vowel_groupings:
             diphthong = self.diphthong_finder(hiatus)
             if diphthong:
                 pre_syllabified_word = pre_syllabified_word.replace(hiatus, diphthong)
+
+        if vowel_groupings := re.findall(f"[{vowels}]-h?[{vowels}]+", pre_syllabified_word):
+            for hiatus in vowel_groupings:
+                diphthong = self.diphthong_finder(hiatus)
+                if diphthong:
+                    pre_syllabified_word = pre_syllabified_word.replace(hiatus, diphthong)
 
         return pre_syllabified_word
 
@@ -278,8 +293,11 @@ class Word:
                 proparoxytone: word with stress/accent on the antepenultimate syllable.
         """
 
-        if word.count("-") == 1:
+        if word in atonic_words:
             return None
+
+        if word.count("-") == 1:
+            return 1
 
         accent = re.search(f"[{accented_vowels}]", word)
         if accent:
@@ -302,7 +320,7 @@ class Word:
             #  oxytone
             return 1
 
-        if word[-1] in "ns":
+        if word[-1] in "ns" + unaccented_vowels:
             return 0
 
         return 1
