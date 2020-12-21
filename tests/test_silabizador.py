@@ -1,6 +1,7 @@
 from silabizador.silabizador import (
     Word,
     Sentence,
+    Silabizador,
 )
 from silabizador.vars import *
 
@@ -102,32 +103,32 @@ class TestPreSyllabify:
     def test_pre_syllabify1(self):
         """Hiatus with 'h' inbetween vowels"""
         word = Word("ahínco")
-        assert (word.pre_syllabify(word.word_text) == "-a-hín-co")
+        assert (word.pre_syllabified_word == "-a-hín-co")
 
     def test_pre_syllabify2(self):
         """Diphthongs still omited """
         word = Word("áureo")
-        assert (word.pre_syllabify(word.word_text) == "-á-u-re-o")
+        assert (word.pre_syllabified_word == "-á-u-re-o")
 
     def test_pre_syllabify3(self):
         word = Word("muerte")
-        assert (word.pre_syllabify(word.word_text) == "-mu-er-te")
+        assert (word.pre_syllabified_word == "-mu-er-te")
 
     def test_pre_syllabify4(self):
         word = Word("melopea")
-        assert (word.pre_syllabify(word.word_text) == "-me-lo-pe-a")
+        assert (word.pre_syllabified_word == "-me-lo-pe-a")
 
 
 class TestFurtherScans:
     def test_further_scans_1(self):
         word = Word("ahínco")
-        assert (word._pre_syllabified_word == "-a-hín-co")
+        assert (word.pre_syllabified_word == "-a-hín-co")
         assert (word.further_scans("-a-hín-co") == "-a-hín-co")
 
     def test_further_scans_2(self):
         word = Word("molestias")
-        assert (word._pre_syllabified_word == "-mo-les-ti-as")
-        assert (word.further_scans(word._pre_syllabified_word) == "-mo-les-tias")
+        assert (word.pre_syllabified_word == "-mo-les-ti-as")
+        assert (word.further_scans(word.pre_syllabified_word) == "-mo-les-tias")
 
 
 class TestAccentuationFinder:
@@ -148,6 +149,24 @@ class TestAccentuationFinder:
 
     def test_accentuation_finder6(self):
         assert (Word.accentuation_finder("-ca-sas") == 0)
+
+    def test_accentuation_finder7(self):
+        assert (Word.accentuation_finder("-don-de") == None)
+
+    def test_accentuation_finder8(self):
+        assert (Word.accentuation_finder("-es-tu-pen-dí-si-ma-men-te") == 0)
+
+    def test_accentuation_finder9(self):
+        assert (Word.accentuation_finder("-pro-pón-ga-me-lo") == -2)
+
+    def test_accentuation_finder10(self):
+        assert (Word.accentuation_finder("es-drú-ju-la") == -1)
+
+    def test_accentuation_finder11(self):
+        assert (Word.accentuation_finder("-ta-piz") == 1)
+
+    def test_accentuation_finder12(self):
+        assert (Word.accentuation_finder("-ma-ná") == 1)
 
 
 class TestWord:
@@ -171,25 +190,56 @@ class TestWord:
         word = Word("y")
         assert (word.syllabified_word == "-y")
 
+    def test_repr(self):
+        word = Word("hierático.")
+        assert (word.__repr__() == "<Word: '-hie-rá-ti-co'>")
+
 
 # TESTING Sentence-Class
+class TestStripHyphen:
+    """Only a word after a word that ends in vowel become input to this method"""
+
+    def test_strip_hyphen(self):
+        sentence = Sentence("El arma azul")
+        assert (sentence.syllabified_words_punctuation == ["-El", "-ar-ma", "-a-zul"])
+        assert (sentence.strip_hyphen(sentence.word_objects[2], "a") == True)
+
+    def test_strip_hyphen2(self):
+        sentence = Sentence("El alma aire")
+        assert (sentence.syllabified_words_punctuation == ["-El", "-al-ma", "-ai-re"])
+        assert (sentence.strip_hyphen(sentence.word_objects[2], "a") == False)
+
+    def test_strip_hyphen3(self):
+        sentence = Sentence("Que la muerte y")
+        assert (sentence.syllabified_words_punctuation == ["-Que", "-la", "-muer-te", "-y"])
+        assert (sentence.strip_hyphen(sentence.word_objects[3], "e") == True)
+        assert (sentence.syllabified_sentence == "-Que -la -muer-te y")
+
+    def test_strip_hyphen4(self):
+        sentence = Sentence("La hiena hiede")
+        assert (sentence.syllabified_words_punctuation == ["-La", "-hie-na", "-hie-de"])
+        assert (sentence.strip_hyphen(sentence.word_objects[2], "a") == False)
+        assert (sentence.syllabified_sentence == "-La -hie-na -hie-de")
+
+    def test_strip_hyphen5(self):
+        sentence = Sentence("Que haya Ariadnas nada cambia.")
+        assert(sentence.syllabified_words_punctuation == ["-Que", "-ha-ya", "-A-riad-nas", "-na-da", "-cam-bia."])
+        assert (sentence.strip_hyphen(sentence.word_objects[2], "a") == True)
+        assert (sentence.syllabified_sentence == "-Que -ha-ya A-riad-nas -na-da -cam-bia.")
+
+
 class TestSentence:
     sentence = Sentence("Las musas se despiertan.")
     sentence2 = Sentence("Los ahíncos del aire albo, alzaban el vuelo.")
-    sentence3 = Sentence("El arma azul")
-    sentence4 = Sentence("El augusta ánima canta y baila antes de cada alimaña en el camino")
+    sentence3 = Sentence("El augusta ánima canta y baila antes de cada alimaña en el camino")
 
-    def test_strip_hyphen(self):
-        assert (self.sentence3.syllabified_words_punctuation == ["-El", "-ar-ma", "-a-zul"])
-        assert (self.sentence3.strip_hyphen("-a-zul", 2) == True)
-
-    def test_strip_hyphen2(self):
+    def test_words_punctuation(self):
         result = [
             "-El", "-au-gus-ta", "-á-ni-ma", "-can-ta",
             "-y", "-bai-la", "-an-tes", "-de", "-ca-da",
             "-a-li-ma-ña", "-en", "-el", "-ca-mi-no"
         ]
-        assert (self.sentence4.syllabified_words_punctuation == result)
+        assert (self.sentence3.syllabified_words_punctuation == result)
 
     def test_sentence1(self):
         assert (self.sentence.syllabified_words_punctuation == ["-Las", "-mu-sas", "-se", "-des-pier-tan."])
@@ -205,9 +255,17 @@ class TestSentence:
         assert (self.sentence2.syllabified_sentence == "-Los -a-hín-cos -del -ai-re -al-bo, -al-za-ban -el -vue-lo.")
 
 
-'''    def test_counter1(self):
-        assert(self.counter("-La -muer-te es-ta-ba -mur-mu-ran-do-me -bien", 1) == 12)
+# TESTING Class-Silabizador
+    verse = Silabizador("Que haya Ariadnas nada cambia.")
+    verse2 = Silabizador("El augusta ánima canta y baila antes de cada alimaña en el camino")
+    verse3 = Silabizador("La muerte estaba murmurándome bien.")
+
+    def test_counter1(self):
+        assert(self.verse.counter() == 8)
 
     def test_counter2(self):
-        assert(counter("asdf---her--g        e-e-r2-3-4-f--g-", 13) == 26)
-'''
+        assert(self.verse2.counter() == 23)
+
+    def test_counter3(self):
+        assert(self.verse3.counter() == 12)
+

@@ -1,21 +1,25 @@
 import re
-from typing import List, Union, Tuple, Dict
+from typing import List, Union, Tuple, Dict, Optional
 from silabizador.vars import *
 
 
 class Silabizador:
     def __init__(self, verse: str):
-        self.sentence = Sentence(verse)
-        self.number_of_syllables: int = self.counter()
+        self.verse = verse
+        self.sentence: Sentence = Sentence(verse)
+        self.words: List[Word] = self.sentence.word_objects
+        self.number_of_syllables = self.counter()
         self.consonant_rhyme, self.assonant_rhyme = self.rhymer()
         self.type_of_verse = self.type_verse(verse)
 
     def counter(self) -> int:
         last_word_type = self.sentence.last_word.accentuation
-        if last_word_type:
-            return self.sentence.syllabified_sentence.count("-") + last_word_type
+
+        if last_word_type is None:
+            last_word_syllables = self.sentence.last_word.number_of_syllables
+            return self.sentence.word_objects[-2].accentuation - last_word_syllables
         else:
-            return self.sentence.word_objects[-2].accentuation - 1
+            return self.sentence.syllabified_sentence.count("-") + last_word_type
 
     def rhymer(self) -> Tuple[str, str]:
         last_word = self.sentence.last_word
@@ -89,12 +93,7 @@ class Silabizador:
     @staticmethod
     def assonant_rhyme_finder(consonant_rhyme):
         assonant_rhyme = "".join([letter for letter in consonant_rhyme if (letter in vowels or letter == "-")])
-
-        replacements = [("á", "a"), ("é", "e"), ("í", "i"), ("ó", "o"), ("ú", "u")]
-        for replacement in replacements:
-            assonant_rhyme = assonant_rhyme.replace(replacement[0], replacement[1])
-
-        return assonant_rhyme
+        return assonant_rhyme.translate(trans_accented_vowels)
 
     @staticmethod
     def type_verse(sentence: str) -> Dict[str, bool]:
@@ -122,58 +121,75 @@ class Silabizador:
 class Sentence:
     def __init__(self, sentence: str) -> None:
         self.sentence_text = sentence
-        self.word_objects: List[Word] = [Word(word) for word in self.sentence_text.split()]
-        self.last_word: Word = self.word_objects[-1]
-        self.syllabified_words_punctuation = self.join_words_with_punctuation()
-        self.syllabified_sentence = self.sentence_syllabifier(self.syllabified_words_punctuation)
+        self.word_objects = [Word(word) for word in self.sentence_text.split()]
+        self.last_word = self.word_objects[-1]
+        self.syllabified_sentence = self.sentence_syllabifier()
 
     def __repr__(self):
         return f"<Sentence: {self.syllabified_sentence}>"
 
-    def join_words_with_punctuation(self) -> List:
-        sentence = [word.word_text.replace(word.stripped_word, word.syllabified_word) for word in self.word_objects]
+    @property
+    def syllabified_words_punctuation(self) -> List[str]:
+        """For tests"""
+        sentence = [word.syllabified_with_punctuation for word in self.word_objects]
         return sentence
 
-    def sentence_syllabifier(self, words: List) -> str:
+    def sentence_syllabifier(self) -> str:
+        words: List[Word] = self.word_objects
         syllabified_sentence = []
-        last_word_endswith_unaccented_vowel = None
+        last_word = None
+        last_letter = ""
+
         for i, word in enumerate(words):
-            if last_word_endswith_unaccented_vowel:
-                if self.strip_hyphen(word, i):
-                    syllabified_sentence.append(word.lstrip("-"))
+            if last_letter in unaccented_vowels:
+                if self.strip_hyphen(word, last_word, last_letter):
+                    syllabified_sentence.append(
+                        word.syllabified_with_punctuation.lstrip("-")
+                    )
 
                 else:
-                    syllabified_sentence.append(word)
+                    syllabified_sentence.append(word.syllabified_with_punctuation)
 
             else:
-                syllabified_sentence.append(word)
+                syllabified_sentence.append(word.syllabified_with_punctuation)
 
-            if word[-1] in unaccented_vowels:
-                last_word_endswith_unaccented_vowel = True
-            else:
-                last_word_endswith_unaccented_vowel = False
+            last_letter = word.syllabified_with_punctuation[-1]
+            last_word = word
 
         return " ".join(syllabified_sentence)
 
-    def strip_hyphen(self, word_text: str, index: int) -> bool:
-        word_text = word_text.lstrip("-")
+    def strip_hyphen(self, word, last_word, last_letter: str) -> bool:
+        word_text = word.syllabified_with_punctuation.lstrip("-")
 
         if word_text[0] in "hH":
+            # Aitch doesn't count for this
             word_text = word_text.lstrip("hH")
 
-        if word_text == "y":
+        if word_text.rstrip(punctuation) == "y":
+            # 'y' count as vowel in this situation
             return True
 
         if word_text[0] in consonants:
+            # No sinalefa here
             return False
 
-        if word_text[0] in accented_vowels:
-            return False
+        if word_text[0].translate(trans_accented_vowels) == last_letter:
+            """  if it's the same letter (either accented or unaccented)
+                 return False if the second one is stressed else True:
+                 'el arma ártica' -> False -> '-el -ar-ma -ár-ti-ca'
+                 'el arma antigua' -> True -> '-el -ar-ma an-ti-gua'
+                 'el arma antes' -> '-el -ar-ma -an-tes'
+                 'el arma azul' -> '-el -ar-ma -a-zul'          """
 
-        word: Word = self.word_objects[index]
-        if word.number_of_syllables == 2 and word.accentuation == 0:
-            # Paroxytone, 2 syllables -> "alto"
-            return False
+            if word_text[0] in accented_vowels:
+                return False
+
+            if word.number_of_syllables == 2 and word.accentuation == 0:
+                # Paroxytone, 2 syllables -> "alto"
+                return False
+
+            else:
+                return True
 
         else:
             return True
@@ -182,33 +198,42 @@ class Sentence:
 class Word:
     def __init__(self, word: str) -> None:
         self.word_text = word  # this variable holds each words with punctuation attached.
-        self.stripped_word = word.strip(punctuation + " ")
-        self._pre_syllabified_word = self.pre_syllabify(self.stripped_word)
-        self.syllabified_word = self.further_scans(self._pre_syllabified_word)
+        self.syllabified_word = self.further_scans(self.pre_syllabified_word)
         self.number_of_syllables = self.syllable_counter()
         self.accentuation = self.accentuation_finder(self.syllabified_word)
 
     def __repr__(self):
-        return f"<Word: {self.syllabified_word}>"
+        return f"<Word: '{self.syllabified_word}'>"
 
-    def pre_syllabify(self, word: str) -> str:
+    @property
+    def stripped_word(self):
+        return self.word_text.strip(punctuation + " ")
+
+    @property
+    def syllabified_with_punctuation(self):
+        return self.word_text.replace(self.stripped_word, self.syllabified_word)
+
+    @property
+    def pre_syllabified_word(self):
+        word = self.stripped_word
+
         if len(word) == 1:
             return "-" + word
 
         block = ""
-        syllabified_word = ""
+        _pre_syllabified_word = ""
 
         for i, letter in enumerate(word):
             block += letter
 
             if letter in vowels:
-                syllabified_word += self.vowel_block_separator(block)
+                _pre_syllabified_word += self.vowel_block_separator(block)
                 block = ""
 
             elif i == len(word) - 1:
-                syllabified_word += letter
+                _pre_syllabified_word += letter
 
-        return syllabified_word
+        return _pre_syllabified_word
 
     @staticmethod
     def vowel_block_separator(block: str) -> str:
@@ -293,7 +318,7 @@ class Word:
                 proparoxytone: word with stress/accent on the antepenultimate syllable.
         """
 
-        if word in atonic_words:
+        if word.replace("-", "") in atonic_words:
             return None
 
         if word.count("-") == 1:
@@ -302,7 +327,7 @@ class Word:
         accent = re.search(f"[{accented_vowels}]", word)
         if accent:
             remaining = word[accent.end():].count("-")
-            if remaining == 3:
+            if remaining > 2:
                 if word.endswith("-men-te"):
                     return 0
                 else:
@@ -313,7 +338,7 @@ class Word:
                 #  proparoxytone
                 return -1
 
-            elif remaining == 1:
+            if remaining == 1:
                 #  paroxytone
                 return 0
 
