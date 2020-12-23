@@ -11,7 +11,8 @@ __all__ = [
     "strong_vowels",
     "accented_vowels",
     "unaccented_vowels",
-    "atonic_words",
+    "atonic_monosyllabic",
+    "monosyllabic_words",
     "trans_accented_vowels",
 ]
 
@@ -41,12 +42,17 @@ trans_accented_vowels = str.maketrans({k: v for k, v in zip(accented_vowels, una
 personal_pronouns_indirect = ['me', 'te', 'se', 'lo', 'los', 'la', 'las', 'le', 'les', 'nos', 'os']
 articles = ['el', 'la', 'lo', 'los', 'las']
 possessivs = ["mi", "tu", "su"]
-relatives = ['que', 'quien', 'donde', 'como', 'cuando', 'cuanto']
+relatives = ['que', 'quien', 'como']
 conjunctions = [
-    'y', 'e', 'ni', 'o', 'u',
-    'aunque', 'mas', 'sino',
-    'ya', 'sea', 'ora', 'pues', 'porque',
-    'si', 'mientras', 'apenas',
+    'y', 'e', 'ni', 'o', 'u', 'mas', 'ya', 'pues', 'si'
 ]
 
-atonic_words = personal_pronouns_indirect + articles + possessivs + relatives + conjunctions
+non_monosyllabic_atonic_words = [
+    'donde', 'como', 'cuando', 'cuanto',
+    'aunque', 'sino', 'sea', 'ora',
+    'porque', 'mientras', 'apenas'
+]
+
+atonic_monosyllabic = personal_pronouns_indirect + articles + possessivs + relatives + conjunctions
+
+monosyllabic_words = atonic_monosyllabic + non_monosyllabic_atonic_words

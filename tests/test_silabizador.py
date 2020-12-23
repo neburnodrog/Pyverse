@@ -142,12 +142,12 @@ class TestFurtherScans:
     def test_further_scans_1(self):
         word = Word("ahínco")
         assert (word._pre_syllabified_word == "-a-hín-co")
-        assert (word.further_scans("-a-hín-co") == "-a-hín-co")
+        assert (word.syllabify_word("-a-hín-co") == "-a-hín-co")
 
     def test_further_scans_2(self):
         word = Word("molestias")
         assert (word._pre_syllabified_word == "-mo-les-ti-as")
-        assert (word.further_scans(word._pre_syllabified_word) == "-mo-les-tias")
+        assert (word.syllabify_word(word._pre_syllabified_word) == "-mo-les-tias")
 
 
 class TestAccentuationFinder:
@@ -191,23 +191,23 @@ class TestAccentuationFinder:
 class TestWord:
     def test_init1(self):
         word = Word("¡.,+'onomatopeya...!")
-        assert (word.syllabified_word == "-o-no-ma-to-pe-ya")
+        assert (word.word_syllabified == "-o-no-ma-to-pe-ya")
 
     def test_init2(self):
         word = Word("¡.,+'hierático...!")
-        assert (word.syllabified_word == "-hie-rá-ti-co")
+        assert (word.word_syllabified == "-hie-rá-ti-co")
 
     def test_init3(self):
         word = Word("¡.,+'melopea...!")
-        assert (word.syllabified_word == "-me-lo-pe-a")
+        assert (word.word_syllabified == "-me-lo-pe-a")
 
     def test_init4(self):
         word = Word("¡.,+'alcohol...!")
-        assert (word.syllabified_word == "-al-co-hol")
+        assert (word.word_syllabified == "-al-co-hol")
 
     def test_init5(self):
         word = Word("y")
-        assert (word.syllabified_word == "-y")
+        assert (word.word_syllabified == "-y")
 
     def test_repr(self):
         word = Word("hierático.")
