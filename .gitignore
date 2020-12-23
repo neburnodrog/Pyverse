@@ -4,3 +4,6 @@ __pycache__/
 .coveragerc
 .benchmarks
 htmlcov/
+.vscode/
+.pytest_cache/
+.idea/
