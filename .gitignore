@@ -2,7 +2,7 @@ venv/
 **.coverage
 __pycache__/
 .coveragerc
-.benchmarks
+.benchmarks/
 htmlcov/
 .vscode/
 .pytest_cache/

@@ -1,4 +1,4 @@
-from silabizador.silabizador import (
+from silabizador.main import (
     Word,
     Sentence,
     Silabizador,
@@ -122,70 +122,74 @@ class TestPreSyllabify:
     def test_pre_syllabify1(self):
         """Hiatus with 'h' inbetween vowels"""
         word = Word("ahínco")
-        assert (word._pre_syllabified_word == "-a-hín-co")
+        assert (word.pre_syllabify() == "-a-hín-co")
 
     def test_pre_syllabify2(self):
         """Diphthongs still omited """
         word = Word("áureo")
-        assert (word._pre_syllabified_word == "-á-u-re-o")
+        assert (word.pre_syllabify() == "-á-u-re-o")
 
     def test_pre_syllabify3(self):
         word = Word("muerte")
-        assert (word._pre_syllabified_word == "-mu-er-te")
+        assert (word.pre_syllabify() == "-mu-er-te")
 
     def test_pre_syllabify4(self):
         word = Word("melopea")
-        assert (word._pre_syllabified_word == "-me-lo-pe-a")
+        assert (word.pre_syllabify() == "-me-lo-pe-a")
 
 
 class TestFurtherScans:
     def test_further_scans_1(self):
         word = Word("ahínco")
-        assert (word._pre_syllabified_word == "-a-hín-co")
-        assert (word.syllabify_word("-a-hín-co") == "-a-hín-co")
+        assert (word.syllabify_word() == "-a-hín-co")
 
     def test_further_scans_2(self):
         word = Word("molestias")
-        assert (word._pre_syllabified_word == "-mo-les-ti-as")
-        assert (word.syllabify_word(word._pre_syllabified_word) == "-mo-les-tias")
+        assert (word.syllabify_word() == "-mo-les-tias")
 
 
 class TestAccentuationFinder:
     def test_accentuation_finder1(self):
-        assert (Word.accentuation_finder("-al-bo") == 0)
+        assert (Word.accentuation_finder("-al-bo") == 2)
 
     def test_accentuation_finder2(self):
-        assert (Word.accentuation_finder("-com-pro-me-ti-do") == 0)
+        assert (Word.accentuation_finder("-com-pro-me-ti-do") == 2)
 
     def test_accentuation_finder3(self):
-        assert (Word.accentuation_finder("-lla-no") == 0)
+        assert (Word.accentuation_finder("-lla-no") == 2)
 
     def test_accentuation_finder4(self):
-        assert (Word.accentuation_finder("-lá-piz") == 0)
+        assert (Word.accentuation_finder("-lá-piz") == 2)
 
     def test_accentuation_finder5(self):
-        assert (Word.accentuation_finder("-pa-ran") == 0)
+        assert (Word.accentuation_finder("-pa-ran") == 2)
 
     def test_accentuation_finder6(self):
-        assert (Word.accentuation_finder("-ca-sas") == 0)
+        assert (Word.accentuation_finder("-ca-sas") == 2)
 
     def test_accentuation_finder7(self):
-        assert (Word.accentuation_finder("-don-de") == 0)
+        assert (Word.accentuation_finder("-don-de") == 2)
 
     def test_accentuation_finder8(self):
-        assert (Word.accentuation_finder("-es-tu-pen-dí-si-ma-men-te") == 0)
+        assert (Word.accentuation_finder("-es-tu-pen-dí-si-ma-men-te") == 2)
 
     def test_accentuation_finder9(self):
-        assert (Word.accentuation_finder("-pro-pón-ga-me-lo") == -2)
+        assert (Word.accentuation_finder("-pro-pón-ga-me-lo") == 4)
 
     def test_accentuation_finder10(self):
-        assert (Word.accentuation_finder("es-drú-ju-la") == -1)
+        assert (Word.accentuation_finder("es-drú-ju-la") == 3)
 
     def test_accentuation_finder11(self):
         assert (Word.accentuation_finder("-ta-piz") == 1)
 
     def test_accentuation_finder12(self):
         assert (Word.accentuation_finder("-ma-ná") == 1)
+
+
+class TestFindStressedVowel:
+    def test_find_stressed_vowel1(self):
+        word = Word("huida")
+        assert(word.consonant_rhyme == "ida")
 
 
 class TestWord:
@@ -280,15 +284,22 @@ class TestSentence:
         sentence = Sentence(text)
         assert (sentence.syllabified_sentence == resultado)
 
+    def test_repr(self):
+        assert(self.sentence3.__repr__() == "<Sentence: El augusta ánima canta y baila antes de cada alimaña [...]>")
+
+    def test_repr2(self):
+        sentence = Sentence("El gozne de la puerta aliena la tuerca del frigorífico")
+        assert(sentence.__repr__() == "<Sentence: El gozne de la puerta aliena la tuerca del frigorífico>")
+
 
 # TESTING Class-Silabizador
 class TestSilabizador:
     verse = Silabizador("Que haya Ariadnas nada cambia.")
-    verse2 = Silabizador("El augusta ánima canta y baila antes de cada alimaña en el camino")
-    verse3 = Silabizador("La muerte estaba murmurándome bien.")
-    verse4 = Silabizador("Las cornisas de la brisa se inventaron el asco de Carlos.")
+    verse2 = Silabizador("el augusta ánima canta y baila antes de cada alimaña en el camino")
+    verse3 = Silabizador("la muerte estaba murmurándome bien.")
+    verse4 = Silabizador("Las cornisas de la brisa se inventaron el asco de Carlos")
     verse5 = Silabizador("Estamos en el mundo y")
-    verse6 = Silabizador("Las manzanas y los arbustos porque")
+    verse6 = Silabizador("Las manzanas y los arbustos porque...")
 
     def test_counter1(self):
         assert(self.verse.counter() == 9)
@@ -306,16 +317,60 @@ class TestSilabizador:
         assert(self.verse.__repr__() == "<Silabizador: '-Que -ha-ya A-riad-nas -na-da -cam-bia.', Syllables: 9>")
 
     def test_repr2(self):
-        assert(self.verse4.__repr__() == "<Silabizador: '-Las -cor-ni-sas -de -la -bri-sa -se in-ven-ta-ron [...]', Syllables: 18>")
+        assert (
+            self.verse4.__repr__() == "<Silabizador: '-Las -cor-ni-sas -de -la -bri-sa -se in-ven-ta-ron [...]', "
+                                      "Syllables: 18>"
+        )
+
+    def test_repr3(self):
+        assert(self.verse3.__repr__() == "<Silabizador: '-la -muer-te es-ta-ba -mur-mu-rán-do-me -bien.', "
+                                         "Syllables: 12>")
+
+    def test_repr4(self):
+        verse = Silabizador("Los mentecatos comían manzanas todos juntos")
+        assert(verse.__repr__() == "<Silabizador: '-Los -men-te-ca-tos -co-mí-an -man-za-nas -to-dos -jun-tos', Syllables: 15>")
+
+    def test_verse_type(self):
+        assert (self.verse.type_verse() == {"is_beg": True, "is_int": False, "is_end": True})
+
+    def test_verse_type2(self):
+        assert (self.verse2.type_verse() == {"is_beg": False, "is_int": True, "is_end": False})
+
+    def test_verse_type3(self):
+        assert (self.verse3.type_verse() == {"is_beg": False, "is_int": False, "is_end": True})
+
+    def test_verse_type4(self):
+        assert (self.verse4.type_verse() == {"is_beg": True, "is_int": False, "is_end": False})
+
+    def test_verse_type5(self):
+        assert (self.verse6.type_verse() == {"is_beg": True, "is_int": False, "is_end": False})
+
+    def test_verse_consonant_rhyme_finder1(self):
+        # 'cambia'
+        assert(self.verse.verse_consonant_rhyme_finder() == "ambia")
+
+    def test_verse_consonant_rhyme_finder2(self):
+        # 'camino'
+        assert (self.verse2.verse_consonant_rhyme_finder() == "ino")
+
+    def test_verse_consonant_rhyme_finder3(self):
+        # 'bien'
+        assert (self.verse3.verse_consonant_rhyme_finder() == "en")
+
+    def test_verse_consonant_rhyme_finder4(self):
+        # 'mundo y'
+        assert (self.verse5.verse_consonant_rhyme_finder() == "i")
+
+    def test_verse_consonant_rhyme_finder5(self):
+        # 'porque'
+        assert (self.verse6.verse_consonant_rhyme_finder() == "orque")
+
+    def test_verse_consonant_rhyme_finder6(self):
+        verse = Silabizador("Eran los monjes esdrújulos con")
+        assert (verse.verse_consonant_rhyme_finder() == "on")
+
+    def test_verse_consonant_rhyme_finder7(self):
+        verse = Silabizador("El ánima atraviesa mi")
+        assert (verse.verse_consonant_rhyme_finder() == "i")
 
 
-class TestRhymer:
-    pass
-
-
-class TestConsonantRhyme:
-    pass
-
-
-class TestAssonantRhyme:
-    pass

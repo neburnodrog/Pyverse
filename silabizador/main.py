@@ -16,8 +16,13 @@ class Silabizador:
 
     def __repr__(self):
         sentence = self.sentence.syllabified_sentence
+
         if len(sentence) > 50:
-            sentence = sentence[:50] + " [...]"
+            try:
+                cut_index = sentence.index(" ", 50)
+                sentence = sentence[:cut_index] + " [...]"
+            except ValueError:
+                pass
 
         return "<Silabizador: '{}', Syllables: {}>".format(
             sentence,
@@ -31,11 +36,16 @@ class Silabizador:
             if it is proparoxytone we sustract 1 syllable from the counting.
             and so on...
         """
-        accent = self.last_word.accentuation
-        if accent is None:
-            accent = 0
 
-        syllable_addition = 2 - accent
+        verse_final_accent = self.last_word.accentuation
+
+        if (
+                self.last_word.word_text in atonic_monosyllabic
+                and self.word_list[-2].word_untrimmed + " " + self.last_word.word_untrimmed in self.sentence.sinalefas
+        ):
+            verse_final_accent = 2
+
+        syllable_addition = 2 - verse_final_accent
 
         return self.sentence.syllabified_sentence.count("-") + syllable_addition
 
@@ -66,24 +76,8 @@ class Silabizador:
         if cons_rhy := self.last_word.consonant_rhyme:
             return cons_rhy
 
-        else:
-            word_text = self.last_word.word_text
-
-            if word_text == "y":
-                word_text = "i"
-
-            next_to_last_word = self.word_list[-2]
-
-            if next_to_last_word.accentuation < 3:
-                return next_to_last_word.consonant_rhyme + word_text
-
-            else:
-                syllabified = next_to_last_word.word_syllabified
-                last_syll = syllabified[syllabified.rfind("-") + 1:]
-                return last_syll
-
     def verse_assonant_rhyme_finder(self):
-        pass
+        return "".join([letter for letter in self.consonant_rhyme if letter in vowels])
 
 
 class Sentence:
@@ -95,7 +89,15 @@ class Sentence:
         self.syllabified_sentence = self.sentence_syllabifier()
 
     def __repr__(self):
-        return f"<Sentence: {self.syllabified_sentence}>"
+        sentence = self.sentence_text
+        if len(sentence) > 50:
+            try:
+                cut_index = sentence.index(" ", 50)
+                sentence = sentence[:cut_index] + " [...]"
+            except ValueError:
+                pass
+
+        return f"<Sentence: {sentence}>"
 
     @property
     def syllabified_words_punctuation(self) -> List[str]:
@@ -158,14 +160,10 @@ class Sentence:
                 # Paroxytone, 2 syllables -> "alto"
                 return False
 
-            return True
-
         return True
 
     def append_sinalefa(self, first_word: str, second_word: str):
-        regex = first_word + " " + second_word
-        match = re.search(regex, self.sentence_text)
-        self.sinalefas.append({match.group(): match.regs[0]})
+        self.sinalefas.append(first_word + " " + second_word)
 
 
 class Word:
@@ -193,21 +191,21 @@ class Word:
     def syllabify_word(self) -> str:
         """ Find all vowel groupings in the pre_syllabified_word
             and pass them to diphthong_finder to see if any diphthongs slipped through. """
-        pre_syllabified_word = self.pre_syllabify()
+        syllabified_word = self.pre_syllabify()
 
-        vowel_groupings = re.findall(f"[{vowels}]-h?[{vowels}]+", pre_syllabified_word)
+        vowel_groupings = re.findall(f"[{vowels}]-h?[{vowels}]+", syllabified_word)
         for hiatus in vowel_groupings:
             diphthong = self.diphthong_finder(hiatus)
             if diphthong:
-                pre_syllabified_word = pre_syllabified_word.replace(hiatus, diphthong)
+                syllabified_word = syllabified_word.replace(hiatus, diphthong)
 
-        if vowel_groupings := re.findall(f"[{vowels}]-h?[{vowels}]+", pre_syllabified_word):
+        if vowel_groupings := re.findall(f"[{vowels}]-h?[{vowels}]+", syllabified_word):
             for hiatus in vowel_groupings:
                 diphthong = self.diphthong_finder(hiatus)
                 if diphthong:
-                    pre_syllabified_word = pre_syllabified_word.replace(hiatus, diphthong)
+                    syllabified_word = syllabified_word.replace(hiatus, diphthong)
 
-        return pre_syllabified_word
+        return syllabified_word
 
     def pre_syllabify(self) -> str:
         """Basic logic of the syllabifier"""
@@ -300,8 +298,7 @@ class Word:
 
     @staticmethod
     def accentuation_finder(word: str) -> Union[None, int]:
-        """     atonic monosyllables: without stressed syllable -> return None
-                oxytone: word stressed on the ultima -> 1
+        """     oxytone: word stressed on the ultima -> 1
                 paroxytone: word with stressed on the penult -> return 2
                 proparoxytone: word with stressed on the antepenult -> 3
                 and so on...
@@ -309,9 +306,6 @@ class Word:
                 See: https://en.wikipedia.org/wiki/Oxytone
                 See: https://en.wikipedia.org/wiki/Ultima_(linguistics)
         """
-
-        if word.replace("-", "") in monosyllabic_words:
-            return None
 
         if word.count("-") == 1:
             return 1
@@ -348,11 +342,9 @@ class Word:
     def consonant_rhyme_finder(self) -> Optional[str]:
         """ If the word is atonic, then it has no rhyme -> None
             return the word from its last stressed vowel.
-            Also remove any posible accents as they don't provide any extra info.
+            Also remove any posible accents as they don't provide any extra info and would just duplicate
+            entries in the DB for the same rhyme.
             Ex: '-al-ga-ra-bí-a' -> 'ia' """
-
-        if self.accentuation is None:
-            return None
 
         stressed_syll, rest_of_sylls = self.rhyme_block_getter()
         from_last_stressed_vowel = self.last_stressed_vowel_finder(stressed_syll, rest_of_sylls)
@@ -363,7 +355,7 @@ class Word:
     def rhyme_block_getter(self) -> Tuple[str, str]:
         """ Gets the ending of self.word_text from the beginning of the last stressed syllable. """
 
-        rhyme_block = self.word_text
+        rhyme_block = self.word_syllabified
         hyphens_left_in_block = self.accentuation
 
         while rhyme_block.count("-") > hyphens_left_in_block:
@@ -375,14 +367,15 @@ class Word:
     def rhyme_block_chopper(rhyme_block: str) -> Tuple[str, str]:
         """ Returns a tuple -> (last_stressed_syllable, rest_of_the_syllables)
             where all of them are stripped of the hyphens.
-            If word is oxytone -> one syllable -> (stressed_one, None)
+            If word is oxytone -> one syllable -> (stressed_one, "")
             if paroxytone -> two syllables -> (stressed_one, rest) """
 
         rhyme_block = rhyme_block.lstrip("-")
 
-        if cut_index := rhyme_block.find("-") >= 0:
+        cut_index = rhyme_block.find("-")
+        if cut_index > 0:
             stressed_syllable = rhyme_block[:cut_index]
-            rest_of_the_syllables = rhyme_block[cut_index:].replace("-", "")
+            rest_of_the_syllables = rhyme_block[cut_index + 1:].replace("-", "")
 
         else:
             stressed_syllable = rhyme_block
@@ -421,11 +414,14 @@ class Word:
         return vowel_group[-1]  # only diphthons with weak vowels left -> stress on the second one
 
     def assonant_rhyme_finder(self) -> Optional[str]:
-        if not self.consonant_rhyme:
-            return None
+        consonant_rhyme = self.consonant_rhyme
+
+        if match := re.search(f"[gq]u[éeíi]", consonant_rhyme):
+            sub = match.group().replace("u", "")
+            consonant_rhyme = consonant_rhyme.replace(match.group(), sub)
 
         assonant_rhyme = []
-        for letter in self.consonant_rhyme:
+        for letter in consonant_rhyme:
             if letter in vowels:
                 assonant_rhyme.append(letter)
 
