@@ -9,7 +9,7 @@
 ---
 
 # silabizador: algoritmo silabeador de la lengua española.
-#### Un algoritmo silabeador para versos en español.
+#### Un algoritmo silabeador para versos escrito en Python.
 
 #### [silabizar](https://dle.rae.es/silabizar)
 ```
@@ -23,11 +23,22 @@ Del lat. mediev. syllabizare.
 
 
 ### Descripcion
-- El silabizador separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
-Es decir: tiene en cuenta sinalefas y finales de verso. Según la acentuación de la última palabra del verso se dan varios casos:
+El silabizador separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
+Es decir: tiene en cuenta sinalefas y finales de verso. 
 
-  1. Si la última palabra tiene una acetuación [aguda]() u *oxítona*, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.
-  2. Si es llana o paroxítona se deja como está: ni se le resta ni se le suman sílabas al verso.
-  3. Si la última palabra del verso es esdrújula o proparoxítona se le resta una sílaba al verso.
-  4. Si es superproparoxítona o sobresdrújula se le restan dos sílabas al verso.
+- Según la acentuación fonética de la última palabra del verso se dan varios casos:
+
+  1. Si la última palabra tiene una acetuación **aguda** u **oxítona**, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.
+  2. Si es **llana** o **paroxítona** se deja como está: ni se le resta ni se le suman sílabas al verso.
+  3. Si la última palabra del verso es **esdrújula** o *proparoxítona* se le resta una sílaba al verso.
+  4. Si es **superproparoxítona** o **sobresdrújula** se le restan dos sílabas al verso.
+  
+- [Sinalefas](https://es.wikipedia.org/wiki/Sinalefa)
+
+  - La sinalefa es un fenómeno prosódico mediante el cual se juntan en una sola sílaba fonética la última sílaba de una palabra y la primera de la siguiente en caso de ser las dos vocales.
+  
+    ```
+    el arma_antigua
+    el viento_azul
+    ```
 
