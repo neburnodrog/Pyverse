@@ -26,7 +26,7 @@ Del lat. mediev. syllabizare.
 El silabizador separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
 Es decir: tiene en cuenta sinalefas y finales de verso. 
 
-- Según la acentuación fonética de la última palabra del verso se dan varios casos:
+- Según la [acentuación fonética](https://es.wikipedia.org/wiki/Acentuaci%C3%B3n_del_idioma_espa%C3%B1ol#Reglas_generales_de_acentuaci%C3%B3n) de la última palabra del verso se dan varios casos:
 
   1. Si la última palabra tiene una acetuación **aguda** u **oxítona**, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.
   2. Si es **llana** o **paroxítona** se deja como está: ni se le resta ni se le suman sílabas al verso.
@@ -38,7 +38,15 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
   - La sinalefa es un fenómeno prosódico mediante el cual se juntan en una sola sílaba fonética la última sílaba de una palabra y la primera de la siguiente en caso de ser las dos vocales.
   
     ```
-    el arma_antigua
-    el viento_azul
+    -el -ar-ma_an-ti-gua
+    -el -vien-to_a-zul
     ```
+  - No se produce sinalefa si la segunda palabra empieza con vocal acentuada:
+  
+    ```
+    -el -ar-la -á-ri-da
+    -el -vien-to -ár-ti-co
+    ```
+- Rimas
 
+  - El silabizador proporciona las rimas [asonante](https://es.wikipedia.org/wiki/Rima_asonante) y [consonantes](https://es.wikipedia.org/wiki/Rima_consonante) tanto de palabras como de versos
