@@ -1,13 +1,14 @@
 [![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
 
-# silabizador: syllabification algorithm for the Spanish language
-## this is a sylabification algorithm for the Spanish language in the Python language.
-It separates every syllable in words and sentences. It counts the syllables as it's done in the spanish language poetry tradition.
+# silabizador
+#### A syllabification algorithm for the Spanish language written in Python
+
+- It separates every syllable in words and sentences. It counts the syllables as it's done in the spanish language poetry tradition.
 
 
 
 # silabizador: algoritmo silabeador de la lengua española.
-Un algoritmo silabeador para versos en español.
+#### Un algoritmo silabeador para versos en español.
 ---
 #### silabizar
 ```
