@@ -1,0 +1,7 @@
+Name                        Stmts   Miss  Cover
+-----------------------------------------------
+silabizador/main.py           239      0   100%
+silabizador/vars.py            23      0   100%
+tests/test_silabizador.py     228      0   100%
+-----------------------------------------------
+TOTAL                         490      0   100%

@@ -7,3 +7,5 @@ htmlcov/
 .vscode/
 .pytest_cache/
 .idea/
+.envrc
+coverage.txt
