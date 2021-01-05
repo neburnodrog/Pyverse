@@ -8,6 +8,7 @@ coverage = "*"
 pytest = "*"
 pytest-benchmark = "*"
 flake8 = "*"
+twine = "*"
 
 [packages]
 

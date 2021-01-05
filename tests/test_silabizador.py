@@ -1,4 +1,4 @@
-from silabizador.main import (
+from silabizador.silabizar import (
     Word,
     Sentence,
     Silabizador,
