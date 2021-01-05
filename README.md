@@ -5,6 +5,16 @@
 
 - It separates every syllable in words and sentences. It counts the syllables as it's done in the spanish language poetry tradition.
 
+### Description
+silabizador syllabifies words and verses taking into account [synalephas](https://en.wikipedia.org/wiki/Synalepha) and the [accentuation](https://en.wikipedia.org/wiki/Metre_(poetry)#Spanish) of the final word in the verse. 
+
+- The [prosodic](https://en.wikipedia.org/wiki/Prosody_(linguistics)) metre of a verse in Spanish poetry differs from the rules of syllabification specified by the RAE (Royal Spanish Academy of the Language) counting of ortographic syllables. Según la [acentuación fonética](https://es.wikipedia.org/wiki/Acentuaci%C3%B3n_del_idioma_espa%C3%B1ol#Reglas_generales_de_acentuaci%C3%B3n) de la última palabra del verso se dan varios casos:
+
+  1. Si la última palabra tiene una acetuación **aguda** u **oxítona**, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.
+  2. Si es **llana** o **paroxítona** se deja como está: ni se le resta ni se le suman sílabas al verso.
+  3. Si la última palabra del verso es **esdrújula** o *proparoxítona* se le resta una sílaba al verso.
+  4. Si es **superproparoxítona** o **sobresdrújula** se le restan dos sílabas al verso.
+  
 
 ---
 
