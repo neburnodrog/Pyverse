@@ -6,23 +6,24 @@
 - It separates every syllable in words and sentences. It counts the syllables as it's done in the spanish language poetry tradition.
 
 
+---
 
 # silabizador: algoritmo silabeador de la lengua española.
 #### Un algoritmo silabeador para versos en español.
----
-#### silabizar
+
+#### [silabizar](https://dle.rae.es/silabizar)
 ```
 Del lat. mediev. syllabizare.
 1. desus. silabear.
 ```
-#### silabear
+#### [silabear](https://dle.rae.es/silabear)
 ```
 1. Ir pronunciando separadamente cada sílaba.
 ```
----
 
 
-Separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
+### Descripcion
+- El silabizador separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
 Es decir: tiene en cuenta sinalefas y finales de verso. Según la acentuación de la última palabra del verso se dan varios casos:
 
 
