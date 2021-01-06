@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "57d565a77a8af91fdf9a1e40178b1fe8f622c7705d51aff6f741bcdfd6bbb5c4"
+            "sha256": "140e782292d755e573670236f8858210d028d802b318745c2ee2a0c01d7e71b5"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -251,12 +251,6 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.10.0"
         },
-        "py-cpuinfo": {
-            "hashes": [
-                "sha256:9aa2e49675114959697d25cf57fec41c29b55887bff3bc4809b44ac6f5730097"
-            ],
-            "version": "==7.0.0"
-        },
         "pycparser": {
             "hashes": [
                 "sha256:2d475327684562c3a96cc71adf7dc8c4f0565175cf86b6d7a404ff4c771f15f0",
@@ -288,14 +282,6 @@
             ],
             "index": "pypi",
             "version": "==6.2.1"
-        },
-        "pytest-benchmark": {
-            "hashes": [
-                "sha256:01f79d38d506f5a3a0a9ada22ded714537bbdfc8147a881a35c1655db07289d9",
-                "sha256:ad4314d093a3089701b24c80a05121994c7765ce373478c8f4ba8d23c9ba9528"
-            ],
-            "index": "pypi",
-            "version": "==3.2.3"
         },
         "readme-renderer": {
             "hashes": [
