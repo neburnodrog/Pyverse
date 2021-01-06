@@ -1,7 +1,7 @@
-from silabizador.silabizar import (
+from pyverso.silabeador import (
     Word,
     Sentence,
-    Silabizador,
+    Pyverso,
 )
 
 
@@ -341,14 +341,14 @@ class TestSentence:
 
 # TESTING Class-Silabizador
 class TestSilabizador:
-    verse = Silabizador("Que haya Ariadnas nada cambia.")
-    verse2 = Silabizador(
+    verse = Pyverso("Que haya Ariadnas nada cambia.")
+    verse2 = Pyverso(
         "el augusta ánima canta y baila antes de cada alimaña en el camino"
     )
-    verse3 = Silabizador("la muerte estaba murmurándome bien.")
-    verse4 = Silabizador("Las cornisas de la brisa se inventaron el asco de Carlos")
-    verse5 = Silabizador("Estamos en el mundo y")
-    verse6 = Silabizador("Las manzanas y los arbustos porque...")
+    verse3 = Pyverso("la muerte estaba murmurándome bien.")
+    verse4 = Pyverso("Las cornisas de la brisa se inventaron el asco de Carlos")
+    verse5 = Pyverso("Estamos en el mundo y")
+    verse6 = Pyverso("Las manzanas y los arbustos porque...")
 
     def test_counter1(self):
         assert self.verse.counter() == 9
@@ -365,28 +365,28 @@ class TestSilabizador:
     def test_repr(self):
         assert (
             self.verse.__repr__()
-            == "<Silabizador: '-Que -ha-ya A-riad-nas -na-da -cam-bia.', Syllables: 9>"
+            == "<Verse: '-Que -ha-ya A-riad-nas -na-da -cam-bia.', Syllables: 9>"
         )
 
     def test_repr2(self):
         assert (
             self.verse4.__repr__()
-            == "<Silabizador: '-Las -cor-ni-sas -de -la -bri-sa -se in-ven-ta-ron [...]', "
+            == "<Verse: '-Las -cor-ni-sas -de -la -bri-sa -se in-ven-ta-ron [...]', "
             "Syllables: 18>"
         )
 
     def test_repr3(self):
         assert (
             self.verse3.__repr__()
-            == "<Silabizador: '-la -muer-te es-ta-ba -mur-mu-rán-do-me -bien.', "
+            == "<Verse: '-la -muer-te es-ta-ba -mur-mu-rán-do-me -bien.', "
             "Syllables: 12>"
         )
 
     def test_repr4(self):
-        verse = Silabizador("Los mentecatos comían manzanas todos juntos")
+        verse = Pyverso("Los mentecatos comían manzanas todos juntos")
         assert (
             verse.__repr__()
-            == "<Silabizador: '-Los -men-te-ca-tos -co-mí-an -man-za-nas -to-dos -jun-tos', Syllables: 15>"
+            == "<Verse: '-Los -men-te-ca-tos -co-mí-an -man-za-nas -to-dos -jun-tos', Syllables: 15>"
         )
 
     def test_verse_type(self):
@@ -445,11 +445,11 @@ class TestSilabizador:
         assert self.verse6.verse_consonant_rhyme_finder() == "orque"
 
     def test_verse_consonant_rhyme_finder6(self):
-        verse = Silabizador("Eran los monjes esdrújulos con")
+        verse = Pyverso("Eran los monjes esdrújulos con")
         assert verse.verse_consonant_rhyme_finder() == "on"
 
     def test_verse_consonant_rhyme_finder7(self):
-        verse = Silabizador("El ánima atraviesa mi")
+        verse = Pyverso("El ánima atraviesa mi")
         assert verse.verse_consonant_rhyme_finder() == "i"
 
 
@@ -457,5 +457,5 @@ class TestOther:
     verse = "Las mñnas son de miedo"
 
     def test_1(self):
-        sil = Silabizador(self.verse)
+        sil = Pyverso(self.verse)
         assert sil.get_syllables() == "-Las -Mñn-as -son -de -mie-do"

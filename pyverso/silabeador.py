@@ -1,6 +1,6 @@
 import re
 from typing import List, Union, Optional, Dict, Tuple
-from silabizador.vars import *
+from pyverso.vars import *
 
 
 class Silabizador:
@@ -433,3 +433,13 @@ class Word:
                 assonant_rhyme.append(letter)
 
         return "".join(assonant_rhyme)
+
+
+def main():
+    text = input()
+    sil = Silabizador(text)
+    print(sil)
+
+
+if __name__ == "__main__":
+    main()
