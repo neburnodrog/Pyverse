@@ -20,10 +20,10 @@ setup(
         "Programming Language :: Python :: 3.8",
     ],
     packages=["silabizador"],
-    install_requires=[],
+    install_requires=["Click"],
     entry_points={
         "console_scripts": [
-            "silabizador=silabizador.__main__:main",
+            "silabizador=silabizador.__main__:silabify",
         ]
     },
 )

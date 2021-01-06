@@ -33,7 +33,9 @@ class TestVowelBlockSeparator:
 
     def test_vowel_block_separator3_4(self):
         """ an-le-ga-do -> (sn)(rl)V -> C-CV """
-        assert (Word.vowel_block_separator("nle") == "n-le") # TODO -> encontrar ejemplo
+        assert (
+            Word.vowel_block_separator("nle") == "n-le"
+        )
 
     def test_vowel_block_separator3_5(self):
         """ car-los  -> (r)(l)V -> C-CV """
@@ -225,29 +227,29 @@ class TestStripHyphen:
     def test_strip_hyphen(self):
         sentence = Sentence("El arma azul")
         assert (sentence.syllabified_words_punctuation == ["-El", "-ar-ma", "-a-zul"])
-        assert (sentence.strip_hyphen(sentence.word_objects[2]) == True)
+        assert (sentence.strip_hyphen(sentence.word_objects[2]) == 1)
 
     def test_strip_hyphen2(self):
         sentence = Sentence("El alma aire")
         assert (sentence.syllabified_words_punctuation == ["-El", "-al-ma", "-ai-re"])
-        assert (sentence.strip_hyphen(sentence.word_objects[2]) == False)
+        assert (sentence.strip_hyphen(sentence.word_objects[2]) == 0)
 
     def test_strip_hyphen3(self):
         sentence = Sentence("Que la muerte y")
         assert (sentence.syllabified_words_punctuation == ["-Que", "-la", "-muer-te", "-y"])
-        assert (sentence.strip_hyphen(sentence.word_objects[3]) == True)
+        assert (sentence.strip_hyphen(sentence.word_objects[3]) == 1)
         assert (sentence.syllabified_sentence == "-Que -la -muer-te y")
 
     def test_strip_hyphen4(self):
         sentence = Sentence("La hiena hiede")
         assert (sentence.syllabified_words_punctuation == ["-La", "-hie-na", "-hie-de"])
-        assert (sentence.strip_hyphen(sentence.word_objects[2]) == False)
+        assert (sentence.strip_hyphen(sentence.word_objects[2]) == 0)
         assert (sentence.syllabified_sentence == "-La -hie-na -hie-de")
 
     def test_strip_hyphen5(self):
         sentence = Sentence("Que haya Ariadnas nada cambia.")
         assert(sentence.syllabified_words_punctuation == ["-Que", "-ha-ya", "-A-riad-nas", "-na-da", "-cam-bia."])
-        assert (sentence.strip_hyphen(sentence.word_objects[2]) == True)
+        assert (sentence.strip_hyphen(sentence.word_objects[2]) == 1)
         assert (sentence.syllabified_sentence == "-Que -ha-ya A-riad-nas -na-da -cam-bia.")
 
 
@@ -373,4 +375,13 @@ class TestSilabizador:
         verse = Silabizador("El ánima atraviesa mi")
         assert (verse.verse_consonant_rhyme_finder() == "i")
 
+    def test_get_syllables(self):
+        assert(self.verse.get_syllables() == "-Que -ha-ya A-riad-nas -na-da -cam-bia.")
 
+
+class TestOther:
+    verse = "Las mñnas son de miedo"
+
+    def test_1(self):
+        sil = Silabizador(self.verse)
+        assert(sil.get_syllables() == "-Las -Mñn-as -son -de -mie-do")

@@ -7,10 +7,10 @@ verify_ssl = true
 coverage = "*"
 pytest = "*"
 pytest-benchmark = "*"
-flake8 = "*"
 twine = "*"
 
 [packages]
+click = "*"
 
 [requires]
 python_version = "3.8"
