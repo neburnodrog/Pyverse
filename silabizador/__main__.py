@@ -27,15 +27,15 @@ from .silabizar import Silabizador
 
 
 @click.command()
-@click.option("-t", prompt="Enter text to syllabify", help="Text to syllabify")
-def silabify(t):
+@click.argument("text")
+def silabify(text):
     """silabizador as a command line tool returns 3 things:
 
     \t1. The syllabified verse or word specified in the TEXT argument.\n
     \t2. The count of the syllables.\n
     \t3. The assonant and consonant rhymes."""
 
-    silabiz = Silabizador(t)
+    silabiz = Silabizador(text)
     click.echo(
         f"""
         Syllabified Text | {silabiz.get_syllables()}

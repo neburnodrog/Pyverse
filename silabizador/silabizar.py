@@ -9,6 +9,8 @@ class Silabizador:
         self.sentence: Sentence = Sentence(self.original_verse)
         self.word_list: List[Word] = self.sentence.word_objects
         self.last_word: Word = self.word_list[-1]
+        self.syllables = self.sentence.syllabified_sentence
+        self.synalephas = self.sentence.synalephas
         self.count = self.counter()
         self.consonant_rhyme = self.verse_consonant_rhyme_finder()
         self.assonant_rhyme = self.verse_assonant_rhyme_finder()
@@ -78,12 +80,6 @@ class Silabizador:
 
     def verse_assonant_rhyme_finder(self) -> str:
         return "".join([letter for letter in self.consonant_rhyme if letter in vowels])
-
-    def get_syllables(self) -> str:
-        return self.sentence.syllabified_sentence
-
-    def get_synalephas(self) -> List[str]:
-        return self.sentence.synalephas
 
 
 class Sentence:
