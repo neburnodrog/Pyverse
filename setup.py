@@ -5,7 +5,7 @@ from setuptools import setup
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 setup(
-    name="silabizador",
+    name="pyverso",
     version="1.0.0",
     description="find syllables and rhymes of words/verses in spanish",
     long_description=README,
@@ -19,11 +19,11 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["silabizador"],
+    packages=["pyverso"],
     install_requires=["Click"],
     entry_points={
         "console_scripts": [
-            "silabizador=silabizador.__main__:silabify",
+            "pyverso=pyverso.__main__:silabify",
         ]
     },
 )

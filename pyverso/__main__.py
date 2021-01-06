@@ -1,9 +1,9 @@
 """
-silabizador - Spanish syllabification algorythm
+pyverso - Spanish syllabification algorythm
 
 Usage:
 ------
-silabizador as a command line tool returns 3 things:
+pyverso as a command line tool returns 3 things:
 
 - The syllabified verse or word specified in the TEXT argument.
 - The count of the syllables.
@@ -18,24 +18,24 @@ More information is available at:
 
 Version:
 --------
-- silabizador v1.0.0
+- pyverso v1.0.0
 """
 
 import sys
 import click
-from .silabizar import Silabizador
+from .silabeador import Pyverso
 
 
 @click.command()
 @click.argument("text")
 def silabify(text):
-    """silabizador as a command line tool returns 3 things:
+    """pyverso as a command line tool returns 3 things:
 
     \t1. The syllabified verse or word specified in the TEXT argument.\n
     \t2. The count of the syllables.\n
     \t3. The assonant and consonant rhymes."""
 
-    silabiz = Silabizador(text)
+    silabiz = Pyverso(text)
     click.echo(
         f"""
         Syllabified Text | {silabiz.get_syllables()}

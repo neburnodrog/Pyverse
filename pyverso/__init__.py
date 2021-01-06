@@ -1,1 +1,1 @@
-from .silabizar import Silabizador
+from .silabeador import Pyverso

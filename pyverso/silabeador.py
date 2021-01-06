@@ -3,7 +3,7 @@ from typing import List, Union, Optional, Dict, Tuple
 from pyverso.vars import *
 
 
-class Silabizador:
+class Pyverso:
     def __init__(self, verse: str):
         self.original_verse = verse
         self.sentence: Sentence = Sentence(self.original_verse)
@@ -26,7 +26,7 @@ class Silabizador:
             except ValueError:
                 pass
 
-        return "<Silabizador: '{}', Syllables: {}>".format(
+        return "<Verse: '{}', Syllables: {}>".format(
             sentence,
             self.count,
         )
@@ -437,7 +437,7 @@ class Word:
 
 def main():
     text = input()
-    sil = Silabizador(text)
+    sil = Pyverso(text)
     print(sil)
 
 

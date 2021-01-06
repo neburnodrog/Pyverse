@@ -37,3 +37,6 @@ coverage.xml
 .coveragerc
 .benchmarks/
 htmlcov/
+
+#Mypy
+.mypy_cache/
