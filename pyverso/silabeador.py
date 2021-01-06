@@ -1,12 +1,21 @@
 import re
 from typing import List, Union, Optional, Dict, Tuple
 from pyverso.vars import *
+from nlt import numlet as nl
 
 
 class Pyverso:
     def __init__(self, verse: str):
         self.original_verse = verse
-        self.sentence: Sentence = Sentence(self.original_verse)
+
+        if not isinstance(verse, str):
+            raise ValueError("Pyverse can only handle strings.")
+        if re.search(r"\d", verse):
+            self.verse_text = self.numbers_to_words(verse)
+        else:
+            self.verse_text = self.original_verse
+
+        self.sentence: Sentence = Sentence(self.verse_text)
         self.word_list: List[Word] = self.sentence.word_objects
         self.last_word: Word = self.word_list[-1]
         self.syllables = self.sentence.syllabified_sentence
@@ -80,6 +89,25 @@ class Pyverso:
 
     def verse_assonant_rhyme_finder(self) -> str:
         return "".join([letter for letter in self.consonant_rhyme if letter in vowels])
+
+    @staticmethod
+    def numbers_to_words(verse: str) -> str:
+        words = verse.split()
+        new_words = []
+        for word in words:
+            word_stripped = word.strip(punctuation)
+            if word_stripped.isalpha():
+                new_words.append(word)
+
+            elif word_stripped.isdigit():
+                number_to_letters = nl.Numero(word).a_letras.lower()
+                new_word = word.replace(word_stripped, number_to_letters)
+                new_words.append(new_word)
+
+            else:
+                raise ValueError("Invalid mixture of letters and digits")
+
+        return "".join(new_words)
 
 
 class Sentence:
@@ -229,7 +257,10 @@ class Word:
                 block = ""
 
             elif i == len(word) - 1:
-                _pre_syllabified_word += letter
+                if block == letter:
+                    _pre_syllabified_word += letter
+                else:
+                    _pre_syllabified_word += block
 
         return _pre_syllabified_word
 
@@ -315,7 +346,7 @@ class Word:
 
         accent = re.search(f"[{accented_vowels}]", word)
         if accent:
-            remaining = word[accent.end() :].count("-")
+            remaining = word[accent.end():].count("-")
             if remaining > 2:
                 if word.endswith("-men-te"):
                     return 2
@@ -366,7 +397,7 @@ class Word:
         hyphens_left_in_block = self.accentuation
 
         while rhyme_block.count("-") > hyphens_left_in_block:
-            rhyme_block = rhyme_block[rhyme_block.find("-", 1) :]
+            rhyme_block = rhyme_block[rhyme_block.find("-", 1):]
 
         return self.rhyme_block_chopper(rhyme_block)
 
@@ -382,7 +413,7 @@ class Word:
         cut_index = rhyme_block.find("-")
         if cut_index > 0:
             stressed_syllable = rhyme_block[:cut_index]
-            rest_of_the_syllables = rhyme_block[cut_index + 1 :].replace("-", "")
+            rest_of_the_syllables = rhyme_block[cut_index + 1:].replace("-", "")
 
         else:
             stressed_syllable = rhyme_block
@@ -397,12 +428,12 @@ class Word:
 
         if match := re.search(f"[{accented_vowels}]", syllable):
             last_stressed_vowel: str = match.group()
-            rest_of_syll: str = syllable[match.end() :]  # Can be empty string
+            rest_of_syll: str = syllable[match.end():]  # Can be empty string
             return last_stressed_vowel + rest_of_syll
 
         if match := re.search(f"[{vowels}]+", syllable):
             last_stressed_vowel = self.find_stressed_vowel(match.group())
-            rest_of_syll = syllable[match.end() :]
+            rest_of_syll = syllable[match.end():]
             return last_stressed_vowel + rest_of_syll
 
         return syllable
@@ -417,7 +448,7 @@ class Word:
 
         if strong_vowel := re.search(f"[{strong_vowels}]", vowel_group):
             #  This regex excludes triphthongs and diphthongs with strong vowels
-            return strong_vowel.group() + vowel_group[strong_vowel.end() :]
+            return strong_vowel.group() + vowel_group[strong_vowel.end():]
 
         return vowel_group[
             -1

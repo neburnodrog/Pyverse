@@ -2,6 +2,7 @@ import string
 
 __all__ = [
     "punctuation",
+    "letters",
     "uppercase",
     "vowels",
     "vowels_with_h",
@@ -20,7 +21,10 @@ __all__ = [
 punctuation = string.punctuation + r'¡¿—«”»'
 
 # Letters
-uppercase = string.ascii_uppercase + "ÑÁÉÍÓÚ"
+spanish_uppercase = "ÑÁÉÍÓÚÜ"
+spanish_lowercase = "ñáéíóúü"
+letters = string.ascii_letters + spanish_lowercase + spanish_uppercase
+uppercase = string.ascii_uppercase + spanish_uppercase
 
 # Vowels
 vowels = "aeiou" + "áéíóú" + "AEIOU" + "ÁÉÍÓÚ" + "üÜ"
