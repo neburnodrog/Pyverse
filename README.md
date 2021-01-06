@@ -1,6 +1,6 @@
 [![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
 
-# **Pyverso**
+# Pyverso
 #### A automatic syllabification algorithm for Spanish verses written in Python
 
 From Python and Verso, Pyverso. Verso stands for verse in Spanish.
@@ -42,7 +42,7 @@ or as a python package
 ```
 ---
 
-# **Pyverso**
+# Pyverso en Español
 #### Un algoritmo silabeador de versos en español escrito en Python.
 ```
 [silabear](https://dle.rae.es/silabear)
