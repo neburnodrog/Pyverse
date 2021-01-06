@@ -1,9 +1,11 @@
 [![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
 
-# **pyverso**
+# **Pyverso**
 #### A automatic syllabification algorithm for Spanish verses written in Python
 
-- It separates every syllable in words and verses. It counts the syllables of veres as it's done in the spanish language poetry tradition.
+From Python and Verso, Pyverso. Verso stands for verse in Spanish.
+
+- It separates every syllable of words and verses. It counts the syllables of veres as it's done in the spanish language poetry tradition.
 
 ### Description
   **silabizador** syllabifies words and verses taking into account [synalephas](https://en.wikipedia.org/wiki/Synalepha) and the [accentuation](https://en.wikipedia.org/wiki/Metre_(poetry)#Spanish) of the final word in the verse. 
@@ -20,7 +22,7 @@
 pip install pyverso
 ```
 ### Use
-You can either use it un the command line:
+You can either use Pyverso in the command line:
 ```
 pyverso "un velero bergantín;"
 
@@ -36,12 +38,11 @@ or as a python package
 >>> print(verse.get_syllables())
 '-un -ve-le-ro -ber-gan-tín;'
 >>> print(verse.count)
-7
+8
 ```
-
 ---
 
-# **pyverso**
+# **Pyverso**
 #### Un algoritmo silabeador de versos en español escrito en Python.
 ```
 [silabear](https://dle.rae.es/silabear)
@@ -54,13 +55,7 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
 
 - Según la [acentuación fonética](https://es.wikipedia.org/wiki/Acentuaci%C3%B3n_del_idioma_espa%C3%B1ol#Reglas_generales_de_acentuaci%C3%B3n) de la última palabra del verso se dan varios casos:
 
-  1. Si la última palabra tiene una acetuación **aguda** u **oxítona**, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.
-  ```
-  from pyverso import Pyverso
-  verso = Pyverso("un velero bergantín")
-  verso.get_syllables
-  ```
-  
+  1. Si la última palabra tiene una acetuación **aguda** u **oxítona**, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.  
   2. Si es **llana** o **paroxítona** se deja como está: ni se le resta ni se le suman sílabas al verso.
   3. Si la última palabra del verso es **esdrújula** o *proparoxítona* se le resta una sílaba al verso.
   4. Si es **superproparoxítona** o **sobresdrújula** se le restan dos sílabas al verso.
@@ -84,4 +79,26 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
   - El silabizador proporciona las rimas [asonante](https://es.wikipedia.org/wiki/Rima_asonante) y [consonantes](https://es.wikipedia.org/wiki/Rima_consonante) tanto de palabras como de versos
 
 ### Instalación
-(placeholder)
+```
+pip install Pyverso
+```
+
+### Uso
+puedes usar Pyverso desde el terminal:
+```
+pyverso "un velero bergantín;"
+
+        Syllabified Text | -un -ve-le-ro -ber-ga-tín;
+        Count            | 8
+        Consonant Rhyme  | atin
+        Assonant Rhyme   | ai
+```
+o como una librería de Python
+```
+>>> from pyverse import Pyverse
+>>> verse = Pyverse("un velero bergantín;")
+>>> print(verse.get_syllables())
+'-un -ve-le-ro -ber-gan-tín;'
+>>> print(verse.count)
+8
+```
