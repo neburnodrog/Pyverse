@@ -3,7 +3,8 @@
 # Pyverso
 #### A automatic syllabification algorithm for Spanish verses written in Python
 
-From Python and Verso, Pyverso. Verso stands for verse in Spanish.
+Pyverso comes from Python & Verso.
+Verso beeing verse in Spanish.
 
 - It separates every syllable of words and verses. It counts the syllables of veres as it's done in the spanish language poetry tradition.
 
