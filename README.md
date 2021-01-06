@@ -6,7 +6,7 @@
 Pyverso comes from Python & Verso.
 Verso beeing verse in Spanish.
 
-- It separates every syllable of words and verses. It counts the syllables of veres as it's done in the spanish language poetry tradition.
+- It separates every syllable of words and verses. It counts the syllables of verses as it's done in the spanish language poetry tradition.
 
 ### Description
   **silabizador** syllabifies words and verses taking into account [synalephas](https://en.wikipedia.org/wiki/Synalepha) and the [accentuation](https://en.wikipedia.org/wiki/Metre_(poetry)#Spanish) of the final word in the verse. 
