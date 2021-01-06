@@ -3,7 +3,6 @@ import string
 __all__ = [
     "punctuation",
     "letters",
-    "uppercase",
     "vowels",
     "vowels_with_h",
     "consonants",
@@ -24,7 +23,6 @@ punctuation = string.punctuation + r'¡¿—«”»'
 spanish_uppercase = "ÑÁÉÍÓÚÜ"
 spanish_lowercase = "ñáéíóúü"
 letters = string.ascii_letters + spanish_lowercase + spanish_uppercase
-uppercase = string.ascii_uppercase + spanish_uppercase
 
 # Vowels
 vowels = "aeiou" + "áéíóú" + "AEIOU" + "ÁÉÍÓÚ" + "üÜ"
@@ -40,10 +38,14 @@ trans_vowels_into_nothing = str.maketrans({letter: "" for letter in vowels})
 consonants = string.ascii_letters.translate(trans_vowels_into_nothing) + "ñÑ"
 
 # Translation Table for accented vowels
-trans_accented_vowels = str.maketrans({k: v for k, v in zip(accented_vowels, unaccented_vowels)})
+trans_accented_vowels = str.maketrans(
+    {k: v for k, v in zip(accented_vowels, unaccented_vowels)}
+)
 
 # Atonic monosyllables -> If the vowels are accented they are tonic -> "tú" vs "tu"
-personal_pronouns_indirect = ['me', 'te', 'se', 'lo', 'los', 'la', 'las', 'le', 'les', 'nos', 'os']
+personal_pronouns_indirect = [
+    'me', 'te', 'se', 'lo', 'los', 'la', 'las', 'le', 'les', 'nos', 'os'
+]
 articles = ['el', 'la', 'lo', 'los', 'las']
 possessivs = ["mi", "tu", "su"]
 relatives = ['que', 'quien']
@@ -58,6 +60,11 @@ non_monosyllabic_atonic_words = [
     'porque', 'mientras', 'apenas'
 ]
 
-atonic_monosyllabic = personal_pronouns_indirect + articles + possessivs + relatives + conjunctions + prepositions
+atonic_monosyllabic = (personal_pronouns_indirect
+                       + articles
+                       + possessivs
+                       + relatives
+                       + conjunctions
+                       + prepositions)
 
 atonic_words = atonic_monosyllabic + non_monosyllabic_atonic_words

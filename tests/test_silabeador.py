@@ -386,7 +386,9 @@ class TestSilabizador:
         verse = Pyverso("Los mentecatos comían manzanas todos juntos")
         assert (
             verse.__repr__()
-            == "<Verse: '-Los -men-te-ca-tos -co-mí-an -man-za-nas -to-dos -jun-tos', Syllables: 15>"
+            == "<Verse: "
+               "'-Los -men-te-ca-tos -co-mí-an -man-za-nas -to-dos -jun-tos', "
+               "Syllables: 15>"
         )
 
     def test_verse_type(self):

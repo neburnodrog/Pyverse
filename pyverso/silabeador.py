@@ -1,5 +1,5 @@
 import re
-from typing import List, Union, Optional, Dict, Tuple
+from typing import List, Union, Dict, Tuple
 from pyverso.vars import *
 from nlt import numlet as nl
 
@@ -309,13 +309,15 @@ class Word:
 
     @staticmethod
     def diphthong_finder(vowel_block: str) -> Union[str, None]:
-        """Vowels are already separated. Now we have to check if they are diphthongs instead of hiatus.
+        """Vowels are already separated.
+        Now we have to check if they are diphthongs instead of hiatus.
         Possible inputs:
-            -Must be a string consisting of two vowels and one hyphen in between them (Aitch is possible).
-            -Possibilities -> weak-strong | strong-weak | strong-strong | weak-weak.
-            -Strong = 'aeoáéó'
-            -Weak = 'iuü'
-            -Weak accented = 'íú'"""
+
+        -Must be a string consisting of two vowels and one hyphen in between them ('h' possible).
+        -Possibilities -> weak-strong | strong-weak | strong-strong | weak-weak.
+        -Strong = 'aeoáéó'
+        -Weak = 'iuü'
+        -Weak accented = 'íú'"""
         clean_block = vowel_block.replace("-", "").replace("h", "")
         first_vowel, second_vowel = tuple(clean_block)
 
