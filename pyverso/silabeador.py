@@ -110,7 +110,7 @@ class Sentence:
     def sentence_syllabifier(self) -> str:
         words: List[Word] = self.word_objects
         syllabified_sentence = []
-        last_letter = ""
+        last_letter = "z"
         last_word = words[-1]
 
         for i, word in enumerate(words):
@@ -168,7 +168,7 @@ class Sentence:
 
 class Word:
     def __init__(self, word: str) -> None:
-        self.word_untrimmed = word  # this variable holds the word with the punctuation still attached to it.
+        self.word_untrimmed = word
         self.word_text = self.stripped_word.lower()
         self.word_syllabified = self.syllabify_word()
         self.syllabified_w_punct = self.add_punctuation()
@@ -204,6 +204,9 @@ class Word:
                 diphthong = self.diphthong_finder(hiatus)
                 if diphthong:
                     syllabified_word = syllabified_word.replace(hiatus, diphthong)
+
+        if not syllabified_word.startswith("-"):
+            syllabified_word = "-" + syllabified_word
 
         return syllabified_word
 
@@ -402,7 +405,7 @@ class Word:
             rest_of_syll = syllable[match.end() :]
             return last_stressed_vowel + rest_of_syll
 
-        assert False
+        return syllable
 
     @staticmethod
     def find_stressed_vowel(vowel_group: str) -> str:
@@ -433,13 +436,3 @@ class Word:
                 assonant_rhyme.append(letter)
 
         return "".join(assonant_rhyme)
-
-
-def main():
-    text = input()
-    sil = Pyverso(text)
-    print(sil)
-
-
-if __name__ == "__main__":
-    main()

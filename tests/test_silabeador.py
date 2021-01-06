@@ -458,4 +458,4 @@ class TestOther:
 
     def test_1(self):
         sil = Pyverso(self.verse)
-        assert sil.get_syllables() == "-Las -Mñn-as -son -de -mie-do"
+        assert sil.syllables == "-Las -mñ-nas -son -de -mie-do"
