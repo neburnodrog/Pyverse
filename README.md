@@ -1,9 +1,9 @@
 [![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
 
-# **silabizador**
-#### A syllabification algorithm for the Spanish language written in Python
+# **pyverso**
+#### A automatic syllabification algorithm for Spanish verses written in Python
 
-- It separates every syllable in words and sentences. It counts the syllables as it's done in the spanish language poetry tradition.
+- It separates every syllable in words and verses. It counts the syllables of veres as it's done in the spanish language poetry tradition.
 
 ### Description
   **silabizador** syllabifies words and verses taking into account [synalephas](https://en.wikipedia.org/wiki/Synalepha) and the [accentuation](https://en.wikipedia.org/wiki/Metre_(poetry)#Spanish) of the final word in the verse. 
@@ -16,31 +16,51 @@
     4. If it's **superproparoxytone** we substract two.  
 
 ### Instalation
-(placeholder)
+```
+pip install pyverso
+```
+### Use
+You can either use it un the command line:
+```
+pyverso "un velero bergantín;"
+
+        Syllabified Text | -un -ve-le-ro -ber-ga-tín;
+        Count            | 8
+        Consonant Rhyme  | atin
+        Assonant Rhyme   | ai
+```
+or as a python package
+```
+>>> from pyverse import Pyverse
+>>> verse = Pyverse("un velero bergantín;")
+>>> print(verse.get_syllables())
+'-un -ve-le-ro -ber-gan-tín;'
+>>> print(verse.count)
+7
+```
 
 ---
 
-# **silabizador**
-#### Un algoritmo silabeador para versos en español escrito en Python.
-
-#### [silabizar](https://dle.rae.es/silabizar)
+# **pyverso**
+#### Un algoritmo silabeador de versos en español escrito en Python.
 ```
-Del lat. mediev. syllabizare.
-1. desus. silabear.
-```
-#### [silabear](https://dle.rae.es/silabear)
-```
+[silabear](https://dle.rae.es/silabear)
 1. Ir pronunciando separadamente cada sílaba.
 ```
 
-
 ### Descripcion
-El silabizador separa palabras y frases en sílabas. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
+Pyverso silabea palabras y versos en Español. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
 Es decir: tiene en cuenta sinalefas y finales de verso. 
 
 - Según la [acentuación fonética](https://es.wikipedia.org/wiki/Acentuaci%C3%B3n_del_idioma_espa%C3%B1ol#Reglas_generales_de_acentuaci%C3%B3n) de la última palabra del verso se dan varios casos:
 
   1. Si la última palabra tiene una acetuación **aguda** u **oxítona**, la perceptión prosódica del verso impone que se le sume una sílaba al número de sílabas ortográficas del verso.
+  ```
+  from pyverso import Pyverso
+  verso = Pyverso("un velero bergantín")
+  verso.get_syllables
+  ```
+  
   2. Si es **llana** o **paroxítona** se deja como está: ni se le resta ni se le suman sílabas al verso.
   3. Si la última palabra del verso es **esdrújula** o *proparoxítona* se le resta una sílaba al verso.
   4. Si es **superproparoxítona** o **sobresdrújula** se le restan dos sílabas al verso.
