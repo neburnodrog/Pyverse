@@ -11,7 +11,7 @@ __all__ = [
     "strong_vowels",
     "accented_vowels",
     "unaccented_vowels",
-    "atonic_monosyllabic",
+    "atonic_monosyll",
     "atonic_words",
     "trans_accented_vowels",
 ]
@@ -43,28 +43,25 @@ trans_accented_vowels = str.maketrans(
 )
 
 # Atonic monosyllables -> If the vowels are accented they are tonic -> "tú" vs "tu"
-personal_pronouns_indirect = [
+pron_ind = [
     'me', 'te', 'se', 'lo', 'los', 'la', 'las', 'le', 'les', 'nos', 'os'
 ]
-articles = ['el', 'la', 'lo', 'los', 'las']
-possessivs = ["mi", "tu", "su"]
-relatives = ['que', 'quien']
-conjunctions = [
+art = ['el', 'la', 'lo', 'los', 'las']
+poss = ["mi", "tu", "su"]
+rel = ['que', 'quien']
+conj = [
     'y', 'e', 'ni', 'o', 'u', 'mas', 'ya', 'pues', 'si'
 ]
-prepositions = ["a", "con", "de", "en", "por"]
+prep = ["a", "con", "de", "en", "por"]
 
-non_monosyllabic_atonic_words = [
+non_monosyll_atonic = [
     'donde', 'como', 'cuando', 'cuanto',
     'aunque', 'sino', 'sea', 'ora',
     'porque', 'mientras', 'apenas'
 ]
 
-atonic_monosyllabic = (personal_pronouns_indirect
-                       + articles
-                       + possessivs
-                       + relatives
-                       + conjunctions
-                       + prepositions)
+atonic_monosyll = (
+    pron_ind + art + poss + rel + conj + prep
+)
 
-atonic_words = atonic_monosyllabic + non_monosyllabic_atonic_words
+atonic_words = atonic_monosyll + non_monosyll_atonic

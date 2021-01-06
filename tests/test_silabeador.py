@@ -1,3 +1,5 @@
+import pytest
+
 from pyverso.silabeador import (
     Word,
     Sentence,
@@ -364,31 +366,33 @@ class TestSilabizador:
 
     def test_repr(self):
         assert (
-            self.verse.__repr__()
-            == "<Verse: '-Que -ha-ya A-riad-nas -na-da -cam-bia.', Syllables: 9>"
+            self.verse.__repr__() == "<Verse: "
+                                     "'-Que -ha-ya A-riad-nas -na-da -cam-bia.', "
+                                     "Syllables: 9>"
         )
 
     def test_repr2(self):
         assert (
-            self.verse4.__repr__()
-            == "<Verse: '-Las -cor-ni-sas -de -la -bri-sa -se in-ven-ta-ron [...]', "
-            "Syllables: 18>"
+            self.verse4.__repr__() == "<Verse: "
+                                      "'-Las -cor-ni-sas -de -la -bri-sa "
+                                      "-se in-ven-ta-ron [...]', "
+                                      "Syllables: 18>"
         )
 
     def test_repr3(self):
         assert (
-            self.verse3.__repr__()
-            == "<Verse: '-la -muer-te es-ta-ba -mur-mu-rán-do-me -bien.', "
-            "Syllables: 12>"
+            self.verse3.__repr__() == "<Verse: "
+                                      "'-la -muer-te es-ta-ba -mur-mu-rán-do-me -bien.', "
+                                      "Syllables: 12>"
         )
 
     def test_repr4(self):
         verse = Pyverso("Los mentecatos comían manzanas todos juntos")
         assert (
-            verse.__repr__()
-            == "<Verse: "
-               "'-Los -men-te-ca-tos -co-mí-an -man-za-nas -to-dos -jun-tos', "
-               "Syllables: 15>"
+            verse.__repr__() == "<Verse: "
+                                "'-Los -men-te-ca-tos -co-mí-an "
+                                "-man-za-nas -to-dos -jun-tos', "
+                                "Syllables: 15>"
         )
 
     def test_verse_type(self):
@@ -456,8 +460,26 @@ class TestSilabizador:
 
 
 class TestOther:
-    verse = "Las mñnas son de miedo"
-
     def test_1(self):
-        sil = Pyverso(self.verse)
+        sil = Pyverso("Las mñnas son de miedo")
         assert sil.syllables == "-Las -mñ-nas -son -de -mie-do"
+
+    def test_2(self):
+        sil = Pyverso("asdf")
+        assert(sil.syllables == "-asdf")
+
+    def test_3(self):
+        sil = Pyverso("1234")
+        assert(sil.syllables == '-mil -dos-cien-tos -trein-ta y -cua-tro')
+
+    def test_4(self):
+        sil = Pyverso("mil 1000")
+        assert(sil.syllables == "-mil -mil")
+
+    def test_5(self):
+        with pytest.raises(Exception):
+            Pyverso(1234)
+
+    def test_6(self):
+        with pytest.raises(Exception):
+            Pyverso("123asd")

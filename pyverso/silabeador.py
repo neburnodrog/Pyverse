@@ -52,7 +52,7 @@ class Pyverso:
         verse_final_accent = self.last_word.accentuation
 
         if (
-            self.last_word.word_text in atonic_monosyllabic
+            self.last_word.word_text in atonic_monosyll
             and self.word_list[-2].word_untrimmed + " " + self.last_word.word_untrimmed
             in self.sentence.synalephas
         ):
@@ -107,7 +107,7 @@ class Pyverso:
             else:
                 raise ValueError("Invalid mixture of letters and digits")
 
-        return "".join(new_words)
+        return " ".join(new_words)
 
 
 class Sentence:
@@ -321,12 +321,14 @@ class Word:
         clean_block = vowel_block.replace("-", "").replace("h", "")
         first_vowel, second_vowel = tuple(clean_block)
 
-        if (  # they fulfill one of the conditions for beeing an hiatus:
-            (first_vowel.lower() == second_vowel.lower())
-            or (first_vowel in strong_vowels and second_vowel in strong_vowels)
-            or (first_vowel in weak_accented_vowels and second_vowel in strong_vowels)
-            or (first_vowel in strong_vowels and second_vowel in weak_accented_vowels)
-        ):
+        hiatus_conditions = [
+            first_vowel.lower() == second_vowel.lower(),
+            first_vowel in strong_vowels and second_vowel in strong_vowels,
+            first_vowel in weak_accented_vowels and second_vowel in strong_vowels,
+            first_vowel in strong_vowels and second_vowel in weak_accented_vowels,
+        ]
+
+        if any(hiatus_conditions):
             return vowel_block
 
         else:
