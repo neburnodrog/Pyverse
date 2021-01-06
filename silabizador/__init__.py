@@ -1,0 +1,1 @@
+from .silabizar import Silabizador

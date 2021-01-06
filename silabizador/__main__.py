@@ -3,7 +3,11 @@ silabizador - Spanish syllabification algorythm
 
 Usage:
 ------
+silabizador as a command line tool returns 3 things:
 
+- The syllabified verse or word specified in the TEXT argument.
+- The count of the syllables.
+- The assonant and consonant rhymes.
 
 Contact:
 --------
@@ -23,44 +27,20 @@ from .silabizar import Silabizador
 
 
 @click.command()
-@click.argument("text")
-@click.option(
-    "--v",
-    default=0,
-    help="0: Only get syllabified text\n1: Also Syllable Count\n2: Also Rhymes",
-)
-def silabify(text, v):
-    """silabizador as a CLI is only capable of returning a syllabified spanish sentence or word.
+@click.option("-t", prompt="Enter text to syllabify", help="Text to syllabify")
+def silabify(t):
+    """silabizador as a command line tool returns 3 things:
 
+    \t1. The syllabified verse or word specified in the TEXT argument.\n
+    \t2. The count of the syllables.\n
+    \t3. The assonant and consonant rhymes."""
 
-    It has three possible"""
-
-    try:
-        verbosity = int(v)
-    except ValueError:
-        raise ValueError("Only digits allowed as parameters to the --v option")
-
-    if verbosity == 0:
-        silabiz = Silabizador(text)
-        click.echo(silabiz.get_syllables())
-
-    elif verbosity == 1:
-        silabiz = Silabizador(text)
-        click.echo(
-            f"""{silabiz.get_syllables()}
-            Count: {silabiz.count}
-            """
-        )
-
-    elif verbosity == 2:
-        silabiz = Silabizador(text)
-        click.echo(
-            f"""{silabiz.get_syllables()}
-            Count: {silabiz.count}
-            Consonant Rhyme: {silabiz.consonant_rhyme}
-            Assonant Rhyme: {silabiz.assonant_rhyme}
-            """
-        )
-
-    else:
-        print("Only values 0, 1 or 2 allowed", file=sys.stderr)
+    silabiz = Silabizador(t)
+    click.echo(
+        f"""
+        Syllabified Text | {silabiz.get_syllables()}
+        Count            | {silabiz.count}
+        Consonant Rhyme  | {silabiz.consonant_rhyme}
+        Assonant Rhyme   | {silabiz.assonant_rhyme}
+        """
+    )

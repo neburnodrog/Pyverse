@@ -30,12 +30,12 @@ class Silabizador:
         )
 
     def counter(self) -> int:
-        """In counting the syllables of a verse in spanish poetry
-        the last stressed syllable is of importance:
-        if the the last word is oxytone we add 1 syllable to the verse meter.
-        if it is paroxytone (the most common case in spanish) we leave it as it is.
-        if it is proparoxytone we sustract 1 syllable from the counting.
-        and so on...
+        """Counts the number of syllables:
+
+        1. if the the last word is oxytone we add 1 syllable to the verse meter.
+        2. if it is paroxytone (the most common case in spanish) we leave it as it is.
+        3. if it is proparoxytone we sustract 1 syllable from the counting.
+
         """
 
         verse_final_accent = self.last_word.accentuation
@@ -53,10 +53,9 @@ class Silabizador:
 
     def type_verse(self) -> Dict[str, bool]:
         sentence = self.original_verse
-
         type_of_verse = {}
-
         first_letter = sentence.strip(punctuation)[0]
+
         if first_letter == first_letter.upper():
             type_of_verse["is_beg"] = True
         else:
@@ -74,17 +73,16 @@ class Silabizador:
 
         return type_of_verse
 
-    def verse_consonant_rhyme_finder(self):
-        if cons_rhy := self.last_word.consonant_rhyme:
-            return cons_rhy
+    def verse_consonant_rhyme_finder(self) -> str:
+        return self.last_word.consonant_rhyme
 
-    def verse_assonant_rhyme_finder(self):
+    def verse_assonant_rhyme_finder(self) -> str:
         return "".join([letter for letter in self.consonant_rhyme if letter in vowels])
 
-    def get_syllables(self):
+    def get_syllables(self) -> str:
         return self.sentence.syllabified_sentence
 
-    def get_synalephas(self):
+    def get_synalephas(self) -> List[str]:
         return self.sentence.synalephas
 
 
@@ -156,7 +154,7 @@ class Sentence:
             return False
 
         if word_text[0] in unaccented_vowels:
-            """if it an unaccented vowel return False if word has 2 syllable and is paroxytone:
+            """\tif it an unaccented vowel return False if word has 2 syllable and is paroxytone:
             'el arma antigua' -> True -> '-el -ar-ma an-ti-gua'
             'el arma antes' -> False -> '-el -ar-ma -an-tes'
             'el arma azul' -> True -> '-el -ar-ma -a-zul'"""
@@ -167,8 +165,8 @@ class Sentence:
         return True
 
     def append_synalepha(self, first_word, second_word) -> None:
-        first_word_text = first_word.untrimmed_word
-        second_word_text = second_word.untrimmed_word
+        first_word_text = first_word.word_untrimmed
+        second_word_text = second_word.word_untrimmed
         self.synalephas.append(first_word_text + " " + second_word_text)
 
 
