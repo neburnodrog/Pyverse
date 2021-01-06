@@ -21,7 +21,6 @@ Version:
 - pyverso v1.0.0
 """
 
-import sys
 import click
 from .silabeador import Pyverso
 

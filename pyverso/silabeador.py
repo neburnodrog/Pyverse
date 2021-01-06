@@ -380,8 +380,8 @@ class Word:
     def consonant_rhyme_finder(self) -> str:
         """If the word is atonic, then it has no rhyme -> None
         return the word from its last stressed vowel.
-        Also remove any posible accents as they don't provide any extra info and would just duplicate
-        entries in the DB for the same rhyme.
+        Also remove any posible accents as they don't provide any info:
+        would just duplicate entries in the DB for the same rhyme.
         Ex: '-al-ga-ra-bí-a' -> 'ia'"""
 
         stressed_syll, rest_of_sylls = self.rhyme_block_getter()
@@ -427,7 +427,7 @@ class Word:
 
     def last_stressed_vowel_finder(self, syllable: str, rest: str) -> str:
         if not rest:
-            if re.search(f"[y]$", syllable):
+            if re.search("[y]$", syllable):
                 syllable = syllable.replace("y", "i")
 
         if match := re.search(f"[{accented_vowels}]", syllable):
@@ -461,7 +461,7 @@ class Word:
     def assonant_rhyme_finder(self) -> str:
         consonant_rhyme = self.consonant_rhyme
 
-        if match := re.search(f"[gq]u[éeíi]", consonant_rhyme):
+        if match := re.search("[gq]u[éeíi]", consonant_rhyme):
             sub = match.group().replace("u", "")
             consonant_rhyme = consonant_rhyme.replace(match.group(), sub)
 

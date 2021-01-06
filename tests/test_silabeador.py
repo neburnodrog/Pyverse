@@ -315,29 +315,33 @@ class TestSentence:
     def test_sentence4(self):
         sentence = Sentence("Los ahíncos del aire albo, alzaban el vuelo.")
         assert (
-            sentence.syllabified_sentence
-            == "-Los -a-hín-cos -del -ai-re -al-bo, -al-za-ban -el -vue-lo."
+            sentence.syllabified_sentence == "-Los -a-hín-cos -del "
+                                             "-ai-re -al-bo, "
+                                             "-al-za-ban -el -vue-lo."
         )
 
     def test_sentence5(self):
         text = "Las cornisas de la brisa se inventaron el asco de Carlos."
 
-        resultado = "-Las -cor-ni-sas -de -la -bri-sa -se in-ven-ta-ron -el -as-co -de -Car-los."
+        resultado = "-Las -cor-ni-sas -de -la -bri-sa -se " \
+                    "in-ven-ta-ron -el -as-co -de -Car-los."
 
         sentence = Sentence(text)
         assert sentence.syllabified_sentence == resultado
 
     def test_repr(self):
         assert (
-            self.sentence3.__repr__()
-            == "<Sentence: El augusta ánima canta y baila antes de cada alimaña [...]>"
+            self.sentence3.__repr__() == "<Sentence: "
+                                         "El augusta ánima canta y baila "
+                                         "antes de cada alimaña [...]>"
         )
 
     def test_repr2(self):
         sentence = Sentence("El gozne de la puerta aliena la tuerca del frigorífico")
         assert (
-            sentence.__repr__()
-            == "<Sentence: El gozne de la puerta aliena la tuerca del frigorífico>"
+            sentence.__repr__() == "<Sentence: "
+                                   "El gozne de la puerta aliena "
+                                   "la tuerca del frigorífico>"
         )
 
 
