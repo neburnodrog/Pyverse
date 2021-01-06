@@ -35,12 +35,12 @@ def silabify(text):
     \t2. The count of the syllables.\n
     \t3. The assonant and consonant rhymes."""
 
-    silabiz = Pyverso(text)
+    verso = Pyverso(text)
     click.echo(
         f"""
-        Syllabified Text | {silabiz.get_syllables()}
-        Count            | {silabiz.count}
-        Consonant Rhyme  | {silabiz.consonant_rhyme}
-        Assonant Rhyme   | {silabiz.assonant_rhyme}
+        Syllabified Text | {verso.syllables}
+        Count            | {verso.count}
+        Consonant Rhyme  | {verso.consonant_rhyme}
+        Assonant Rhyme   | {verso.assonant_rhyme}
         """
     )
