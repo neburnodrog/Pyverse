@@ -3,9 +3,12 @@
 # Pyverse
 #### A automatic syllabification algorithm for Spanish verses written in Python
 
+<<<<<<< HEAD
 Pyverse comes from Python & Verso.
 Verso beeing verse in Spanish.
 
+=======
+>>>>>>> b6c26b835e85222557c8cfc4777db1b55a37d8fb
 - It separates every syllable of words and verses. It counts the syllables of verses as it's done in the spanish language poetry tradition.
 
 ### Description
@@ -20,7 +23,7 @@ Verso beeing verse in Spanish.
 
 ### Instalation
 ```
-pip install pyverso
+pip install pyverse
 ```
 ### Use
 You can either use Pyverse in the command line:
