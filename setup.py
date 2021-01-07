@@ -1,7 +1,6 @@
 import pathlib
 from setuptools import setup
 
-
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 setup(
@@ -20,7 +19,11 @@ setup(
         "Programming Language :: Python :: 3.8",
     ],
     packages=["pyverso"],
-    install_requires=["Click"],
+    install_requires=[
+        "Click",
+        "paquete-nlt-roylanmartinez @ git+https://github.com/roylanmartinez/Numlet"
+    ],
+
     entry_points={
         "console_scripts": [
             "pyverso=pyverso.__main__:silabify",
