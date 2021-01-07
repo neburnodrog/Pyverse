@@ -5,7 +5,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 setup(
     name="pyverso",
-    version="1.0.0",
+    version="1.0.1",
     description="find syllables and rhymes of words/verses in spanish",
     long_description=README,
     long_description_content_type="text/markdown",
