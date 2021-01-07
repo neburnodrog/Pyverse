@@ -1,10 +1,7 @@
 [![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
 
-# Pyverso
+# Pyverse
 #### A automatic syllabification algorithm for Spanish verses written in Python
-
-Pyverso comes from Python & Verso.
-Verso beeing verse in Spanish.
 
 - It separates every syllable of words and verses. It counts the syllables of verses as it's done in the spanish language poetry tradition.
 
@@ -20,10 +17,10 @@ Verso beeing verse in Spanish.
 
 ### Instalation
 ```
-pip install pyverso
+pip install pyverse
 ```
 ### Use
-You can either use Pyverso in the command line:
+You can either use Pyverse in the command line:
 ```
 pyverso "un velero bergantín;"
 
@@ -43,7 +40,7 @@ or as a python package
 ```
 ---
 
-# Pyverso en Español
+# Pyverse en Español
 #### Un algoritmo silabeador de versos en español escrito en Python.
 ```
 [silabear](https://dle.rae.es/silabear)
@@ -51,7 +48,7 @@ or as a python package
 ```
 
 ### Descripcion
-Pyverso silabea palabras y versos en Español. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
+Pyverse silabea palabras y versos en Español. Cuenta las sílabas a la manera de la tradición poética en lengua española. 
 Es decir: tiene en cuenta sinalefas y finales de verso. 
 
 - Según la [acentuación fonética](https://es.wikipedia.org/wiki/Acentuaci%C3%B3n_del_idioma_espa%C3%B1ol#Reglas_generales_de_acentuaci%C3%B3n) de la última palabra del verso se dan varios casos:
@@ -81,11 +78,11 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
 
 ### Instalación
 ```
-pip install Pyverso
+pip install Pyverse
 ```
 
 ### Uso
-puedes usar Pyverso desde el terminal:
+puedes usar Pyverse desde el terminal:
 ```
 pyverso "un velero bergantín;"
 
