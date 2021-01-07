@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "41486d979c0137cb221053745df57f495623e74d628f3005492ab067d7d413ea"
+            "sha256": "2c669ebbc317a2d3733d6bd954aa44b2c369d4f273426be68cdb4d1763ee9331"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -24,10 +24,13 @@
             "index": "pypi",
             "version": "==7.1.2"
         },
-        "paquete-nlt-roylanmartinez": {
-            "editable": true,
-            "git": "https://github.com/roylanmartinez/Numlet.git",
-            "ref": "acf947c64fed2cdf4c1d27d836562a202505b892"
+        "numlet": {
+            "hashes": [
+                "sha256:b571a1b4fbfd2654667b043b926a47fe56e8fd3cc32203e4c376adad420faecd",
+                "sha256:bc144119a6ef987ab719eedaaa88e0a499ff3b7fee50466296541a189e01b99c"
+            ],
+            "index": "pypi",
+            "version": "==2.0.0"
         }
     },
     "develop": {

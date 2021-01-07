@@ -9,7 +9,7 @@ setup(
     description="find syllables and rhymes of words/verses in spanish",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/neburnodrog/silabizador",
+    url="https://github.com/neburnodrog/Pyverso",
     author="Ruben Karlsson",
     author_email="neburnodrog@gmail.com",
     license="MIT",
@@ -20,13 +20,14 @@ setup(
     ],
     packages=["pyverso"],
     install_requires=[
-        "Click",
-        "paquete-nlt-roylanmartinez @ git+https://github.com/roylanmartinez/Numlet"
+        "Click==7.1.2",
+        "numlet"
     ],
-
+    python_requires=">=3.8",
     entry_points={
         "console_scripts": [
             "pyverso=pyverso.__main__:silabify",
         ]
     },
+
 )

@@ -10,7 +10,7 @@ twine = "*"
 
 [packages]
 click = "*"
-paquete-nlt-roylanmartinez = {editable = true, git = "https://github.com/roylanmartinez/Numlet.git"}
+numlet = "*"
 
 [requires]
 python_version = "3.8"
