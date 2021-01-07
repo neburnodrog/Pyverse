@@ -1,9 +1,9 @@
 import pytest
 
-from pyverso.silabeador import (
+from pyverse.silabeador import (
     Word,
     Sentence,
-    Pyverso,
+    Pyverse,
 )
 
 
@@ -347,14 +347,14 @@ class TestSentence:
 
 # TESTING Class-Silabizador
 class TestSilabizador:
-    verse = Pyverso("Que haya Ariadnas nada cambia.")
-    verse2 = Pyverso(
+    verse = Pyverse("Que haya Ariadnas nada cambia.")
+    verse2 = Pyverse(
         "el augusta ánima canta y baila antes de cada alimaña en el camino"
     )
-    verse3 = Pyverso("la muerte estaba murmurándome bien.")
-    verse4 = Pyverso("Las cornisas de la brisa se inventaron el asco de Carlos")
-    verse5 = Pyverso("Estamos en el mundo y")
-    verse6 = Pyverso("Las manzanas y los arbustos porque...")
+    verse3 = Pyverse("la muerte estaba murmurándome bien.")
+    verse4 = Pyverse("Las cornisas de la brisa se inventaron el asco de Carlos")
+    verse5 = Pyverse("Estamos en el mundo y")
+    verse6 = Pyverse("Las manzanas y los arbustos porque...")
 
     def test_counter1(self):
         assert self.verse.counter() == 9
@@ -391,7 +391,7 @@ class TestSilabizador:
         )
 
     def test_repr4(self):
-        verse = Pyverso("Los mentecatos comían manzanas todos juntos")
+        verse = Pyverse("Los mentecatos comían manzanas todos juntos")
         assert (
             verse.__repr__() == "<Verse: "
                                 "'-Los -men-te-ca-tos -co-mí-an "
@@ -455,35 +455,35 @@ class TestSilabizador:
         assert self.verse6.verse_consonant_rhyme_finder() == "orque"
 
     def test_verse_consonant_rhyme_finder6(self):
-        verse = Pyverso("Eran los monjes esdrújulos con")
+        verse = Pyverse("Eran los monjes esdrújulos con")
         assert verse.verse_consonant_rhyme_finder() == "on"
 
     def test_verse_consonant_rhyme_finder7(self):
-        verse = Pyverso("El ánima atraviesa mi")
+        verse = Pyverse("El ánima atraviesa mi")
         assert verse.verse_consonant_rhyme_finder() == "i"
 
 
 class TestOther:
     def test_1(self):
-        sil = Pyverso("Las mñnas son de miedo")
+        sil = Pyverse("Las mñnas son de miedo")
         assert sil.syllables == "-Las -mñ-nas -son -de -mie-do"
 
     def test_2(self):
-        sil = Pyverso("asdf")
+        sil = Pyverse("asdf")
         assert(sil.syllables == "-asdf")
 
     def test_3(self):
-        sil = Pyverso("1234")
+        sil = Pyverse("1234")
         assert(sil.syllables == '-mil -dos-cien-tos -trein-ta y -cua-tro')
 
     def test_4(self):
-        sil = Pyverso("mil 1000")
+        sil = Pyverse("mil 1000")
         assert(sil.syllables == "-mil -mil")
 
     def test_5(self):
         with pytest.raises(Exception):
-            Pyverso(1234)
+            Pyverse(1234)
 
     def test_6(self):
         with pytest.raises(Exception):
-            Pyverso("123asd")
+            Pyverse("123asd")

@@ -4,8 +4,8 @@ from setuptools import setup
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 setup(
-    name="pyverso",
-    version="1.0.1",
+    name="pyverse",
+    version="1.0.0",
     description="find syllables and rhymes of words/verses in spanish",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -18,7 +18,7 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
     ],
-    packages=["pyverso"],
+    packages=["pyverse"],
     install_requires=[
         "Click==7.1.2",
         "numlet"
@@ -26,7 +26,7 @@ setup(
     python_requires=">=3.8",
     entry_points={
         "console_scripts": [
-            "pyverso=pyverso.__main__:silabify",
+            "pyverse=pyverse.__main__:silabify",
         ]
     },
 

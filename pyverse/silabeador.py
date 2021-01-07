@@ -1,10 +1,10 @@
 import re
 from typing import List, Union, Dict, Tuple
-from pyverso.vars import *
+from pyverse.vars import *
 from nlt import numlet as nl
 
 
-class Pyverso:
+class Pyverse:
     def __init__(self, verse: str):
         self.original_verse = verse
 
