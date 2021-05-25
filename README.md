@@ -89,7 +89,7 @@ pip install Pyverse
 ### Uso
 puedes usar Pyverse desde el terminal:
 ```
-pyverso "un velero bergantín;"
+$ pyverse "un velero bergantín;"
 
         Syllabified Text | -un -ve-le-ro -ber-ga-tín;
         Count            | 8
@@ -98,10 +98,10 @@ pyverso "un velero bergantín;"
 ```
 o como una librería de Python
 ```
->>> from pyverse import Pyverse
->>> verse = Pyverse("un velero bergantín;")
->>> print(verse.get_syllables())
-'-un -ve-le-ro -ber-gan-tín;'
->>> print(verse.count)
-8
+from pyverse import Pyverse
+verse = Pyverse("un velero bergantín;")
+print(verse.get_syllables())
+>>> '-un -ve-le-ro -ber-gan-tín;'
+print(verse.count)
+>>> 8
 ```
