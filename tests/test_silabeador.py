@@ -119,6 +119,10 @@ class TestDiphthongsFinder:
         assert Word.diphthong_finder("í-e") == "í-e"
         assert Word.diphthong_finder("ú-a") == "ú-a"
 
+    # def test_diphthongs_finde12(self):
+    #     """ tripthongs """
+
+
 
 class TestPreSyllabify:
     def test_pre_syllabify1(self):
@@ -214,6 +218,18 @@ class TestWord:
     def test_init5(self):
         word = Word("y")
         assert word.word_syllabified == "-y"
+
+    def test_init6(self):
+        word = Word("¡.,+'esternohioideo...!")
+        assert word.word_syllabified == "-es-ter-no-hioi-de-o"
+
+    def test_init7(self):
+        word = Word("¡.,+'radioautografía...!")
+        assert word.word_syllabified == "-ra-dioau-to-gra-fí-a"
+
+    def test_init8(self):
+        word = Word("¡.,+'glacioeustatismo...!")
+        assert word.word_syllabified == "-gla-cioeus-ta-tis-mo"
 
     def test_repr(self):
         word = Word("hierático.")
