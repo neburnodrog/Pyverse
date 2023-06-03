@@ -113,11 +113,3 @@ class Pyverse:
                 raise ValueError("Invalid mixture of letters and digits")
 
         return " ".join(new_words)
-
-
-if __name__ == '__main__':
-    pyverse = Pyverse('para')
-    print(pyverse)
-    print(pyverse.count)
-    print(pyverse.synalephas)
-    print(pyverse.assonant_rhyme)

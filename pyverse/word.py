@@ -1,4 +1,5 @@
-from typing import Union, Tuple
+import string
+from typing import Union, Tuple, List
 import re
 from pyverse.vars import punctuation, vowels, strong_vowels, weak_accented_vowels, accented_vowels, unaccented_vowels, \
     trans_accented_vowels
@@ -37,23 +38,35 @@ class Word:
             if diphthong:
                 syllabified_word = syllabified_word.replace(hiatus, diphthong)
 
-        vowel_groupings_two = re.findall(f"h?[{vowels}]-h?[{vowels}]+", syllabified_word)
+        vowel_groupings_two = re.findall(f"[{vowels}]-h?[{vowels}]+", syllabified_word)
         if vowel_groupings_two:
             for hiatus in vowel_groupings_two:
                 diphthong = self.diphthong_finder(hiatus)
                 if diphthong:
                     syllabified_word = syllabified_word.replace(hiatus, diphthong)
 
-        vowel_groupings_three = re.findall(f"[{vowels}]-[{vowels}]+", syllabified_word)
-        for hiatus in vowel_groupings_three:
-            diphthong = self.diphthong_finder(hiatus)
-            if diphthong:
-                syllabified_word = syllabified_word.replace(hiatus, diphthong)
+        vowel_groupings_three = re.findall(f"[h{vowels}]+", syllabified_word)
+        longer_than_3 = filter(lambda x: len(x) > 3, vowel_groupings_three)
+        for vowel_group in longer_than_3:
+            syllabified_word = syllabified_word.replace(vowel_group, self.check_if_separation(vowel_group))
+
 
         if not syllabified_word.startswith("-"):
             syllabified_word = "-" + syllabified_word
 
         return syllabified_word
+
+    @staticmethod
+    def check_if_separation(vowel_groups_longer_than_3: string):
+        result = ''
+
+        for vowel in vowel_groups_longer_than_3:
+            if vowel == 'h':
+                result += '-h'
+            else:
+                result += vowel
+
+        return result
 
     def pre_syllabify(self) -> str:
         """Basic logic of the syllabifier"""
@@ -124,7 +137,8 @@ class Word:
             else:
                 return block[:-2] + "-" + block[-2:]  # Cases 3, 5 and 7
 
-    def diphthong_finder(self, vowel_block: str) -> Union[str, None]:
+    @staticmethod
+    def diphthong_finder(vowel_block: str) -> Union[str, None]:
         """Vowels are already separated.
         Now we have to check if they are diphthongs instead of hiatus.
         Possible inputs:
@@ -138,7 +152,7 @@ class Word:
         clean_without_hache = clean_block.replace("h", "")
 
         if len(clean_without_hache) > 2:
-            return self.tripthong_parser(vowel_block)
+            return Word.tripthong_parser(vowel_block)
 
         first_vowel, second_vowel = list(clean_without_hache)
 
@@ -147,7 +161,6 @@ class Word:
             first_vowel in strong_vowels and second_vowel in strong_vowels,
             first_vowel in weak_accented_vowels and second_vowel in strong_vowels,
             first_vowel in strong_vowels and second_vowel in weak_accented_vowels,
-            len(clean_block) > len(clean_without_hache)
         ]
 
         if any(hiatus_conditions):
@@ -299,9 +312,3 @@ class Word:
                 assonant_rhyme.append(letter)
 
         return "".join(assonant_rhyme)
-
-if __name__ == '__main__':
-    word = Word('de')
-    print(word)
-    print(word.number_of_syllables)
-    print(word.assonant_rhyme)
