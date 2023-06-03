@@ -119,6 +119,10 @@ class TestDiphthongsFinder:
         assert Word.diphthong_finder("í-e") == "í-e"
         assert Word.diphthong_finder("ú-a") == "ú-a"
 
+    # def test_diphthongs_finde12(self):
+    #     """ tripthongs """
+
+
 
 class TestPreSyllabify:
     def test_pre_syllabify1(self):
