@@ -3,8 +3,7 @@
 # Pyverse
 #### A automatic syllabification algorithm for Spanish verses written in Python
 
-Pyverse comes from Python & Verso.
-Verso beeing verse in Spanish.
+Python + Verse = Pyverse.
 
 =======
 
