@@ -478,6 +478,44 @@ class TestSilabizador:
         verse = Pyverse("El ánima atraviesa mi")
         assert verse.verse_consonant_rhyme_finder() == "i"
 
+    def test_verse_assonant_rhyme1(self):
+        # 'cambia'
+        assert self.verse.assonant_rhyme == "aia"
+
+    def test_verse_assonant_rhyme2(self):
+        # 'camino'
+        assert self.verse2.assonant_rhyme == "io"
+
+    def test_verse_assonant_rhyme3(self):
+        """'bien': the rhyme starts at the stressed vowel, so the 'i' is not in it."""
+        assert self.verse3.assonant_rhyme == "e"
+
+    def test_verse_assonant_rhyme4(self):
+        # 'mundo y'
+        assert self.verse5.assonant_rhyme == "i"
+
+    def test_verse_assonant_rhyme5(self):
+        """The 'u' in 'que' is silent -> it carries no vowel into the rhyme."""
+        assert self.verse6.assonant_rhyme == "oe"
+
+    def test_verse_assonant_rhyme6(self):
+        """Same rule for 'gue'."""
+        assert Pyverse("El caballo nos sigue").assonant_rhyme == "ie"
+
+    def test_verse_assonant_rhyme7(self):
+        """'ü' is pronounced, unlike the 'u' of 'gue', so it stays in the rhyme."""
+        assert Pyverse("No sé qué averigüe").assonant_rhyme == "iüe"
+
+    def test_verse_assonant_rhyme_matches_last_word(self):
+        for text in [
+            "Las manzanas y los arbustos porque...",
+            "la muerte estaba murmurándome bien.",
+            "El caballo nos sigue",
+        ]:
+            verse = Pyverse(text)
+            assert verse.assonant_rhyme == verse.last_word.assonant_rhyme
+            assert verse.consonant_rhyme == verse.last_word.consonant_rhyme
+
 
 class TestOther:
     def test_1(self):

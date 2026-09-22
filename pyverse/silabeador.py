@@ -93,7 +93,7 @@ class Pyverse:
         return self.last_word.consonant_rhyme
 
     def verse_assonant_rhyme_finder(self) -> str:
-        return "".join([letter for letter in self.consonant_rhyme if letter in vowels])
+        return self.last_word.assonant_rhyme
 
     @staticmethod
     def numbers_to_words(verse: str) -> str:
