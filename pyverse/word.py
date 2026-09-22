@@ -1,8 +1,16 @@
 import string
-from typing import Union, Tuple, List
+from functools import cached_property
+from typing import Union
 import re
-from pyverse.vars import punctuation, vowels, strong_vowels, weak_accented_vowels, accented_vowels, unaccented_vowels, \
-    trans_accented_vowels
+from pyverse.rhyme import Rhyme, rhyme
+from pyverse.vars import (
+    accented_vowels,
+    punctuation,
+    strong_vowels,
+    unaccented_vowels,
+    vowels,
+    weak_accented_vowels,
+)
 
 
 class Word:
@@ -13,8 +21,6 @@ class Word:
         self.syllabified_w_punct = self.add_punctuation()
         self.syllable_count = self.syllable_counter()
         self.accentuation = self.accentuation_finder(self.word_syllabified)
-        self.consonant_rhyme = self.consonant_rhyme_finder()
-        self.assonant_rhyme = self.assonant_rhyme_finder()
 
     def __repr__(self):
         return f"<Word: '{self.word_syllabified}'>"
@@ -218,97 +224,6 @@ class Word:
     def syllable_counter(self):
         return self.word_syllabified.count("-")
 
-    def consonant_rhyme_finder(self) -> str:
-        """If the word is atonic, then it has no rhyme -> None
-        return the word from its last stressed vowel.
-        Also remove any posible accents as they don't provide any info:
-        would just duplicate entries in the DB for the same rhyme.
-        Ex: '-al-ga-ra-bí-a' -> 'ia'"""
-
-        stressed_syll, rest_of_sylls = self.rhyme_block_getter()
-        from_last_stressed_vowel = self.last_stressed_vowel_finder(
-            stressed_syll, rest_of_sylls
-        )
-
-        from_last_stressed_vowel = from_last_stressed_vowel.translate(
-            trans_accented_vowels
-        )
-        return from_last_stressed_vowel + rest_of_sylls
-
-    def rhyme_block_getter(self) -> Tuple[str, str]:
-        """ Gets the ending of self.word_text from the beginning of the last stressed syllable. """
-
-        rhyme_block = self.word_syllabified
-        hyphens_left_in_block = self.accentuation
-
-        while rhyme_block.count("-") > hyphens_left_in_block:
-            rhyme_block = rhyme_block[rhyme_block.find("-", 1):]
-
-        return self.rhyme_block_chopper(rhyme_block)
-
-    @staticmethod
-    def rhyme_block_chopper(rhyme_block: str) -> Tuple[str, str]:
-        """Returns a tuple -> (last_stressed_syllable, rest_of_the_syllables)
-        where all of them are stripped of the hyphens.
-        If word is oxytone -> one syllable -> (stressed_one, "")
-        if paroxytone -> two syllables -> (stressed_one, rest)"""
-
-        rhyme_block = rhyme_block.lstrip("-")
-
-        cut_index = rhyme_block.find("-")
-        if cut_index > 0:
-            stressed_syllable = rhyme_block[:cut_index]
-            rest_of_the_syllables = rhyme_block[cut_index + 1:].replace("-", "")
-
-        else:
-            stressed_syllable = rhyme_block
-            rest_of_the_syllables = ""
-
-        return stressed_syllable.replace("-", ""), rest_of_the_syllables
-
-    def last_stressed_vowel_finder(self, syllable: str, rest: str) -> str:
-        if not rest:
-            if re.search("[y]$", syllable):
-                syllable = syllable.replace("y", "i")
-
-        if match := re.search(f"[{accented_vowels}]", syllable):
-            last_stressed_vowel: str = match.group()
-            rest_of_syll: str = syllable[match.end():]  # Can be empty string
-            return last_stressed_vowel + rest_of_syll
-
-        if match := re.search(f"[{vowels}]+", syllable):
-            last_stressed_vowel = self.find_stressed_vowel(match.group())
-            rest_of_syll = syllable[match.end():]
-            return last_stressed_vowel + rest_of_syll
-
-        return syllable
-
-    @staticmethod
-    def find_stressed_vowel(vowel_group: str) -> str:
-        """Can be a vowel or a diphthong or a tripthong.
-        Hiatuses are already discarded."""
-
-        if len(vowel_group) == 1:
-            return vowel_group
-
-        if strong_vowel := re.search(f"[{strong_vowels}]", vowel_group):
-            #  This regex excludes triphthongs and diphthongs with strong vowels
-            return strong_vowel.group() + vowel_group[strong_vowel.end():]
-
-        return vowel_group[
-            -1
-        ]  # only diphthons with weak vowels left -> stress on the second one
-
-    def assonant_rhyme_finder(self) -> str:
-        consonant_rhyme = self.consonant_rhyme
-
-        if match := re.search("[gq]u[éeíi]", consonant_rhyme):
-            sub = match.group().replace("u", "")
-            consonant_rhyme = consonant_rhyme.replace(match.group(), sub)
-
-        assonant_rhyme = []
-        for letter in consonant_rhyme:
-            if letter in vowels:
-                assonant_rhyme.append(letter)
-
-        return "".join(assonant_rhyme)
+    @cached_property
+    def rhyme(self) -> Rhyme:
+        return rhyme(self.word_syllabified, self.accentuation)

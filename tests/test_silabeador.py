@@ -1,5 +1,6 @@
 import pytest
 
+from pyverse.rhyme import Rhyme, rhyme, _stressed_vowel
 from pyverse.silabeador import (
     Word,
     Sentence,
@@ -192,10 +193,41 @@ class TestAccentuationFinder:
         assert Word.accentuation_finder("-ma-ná") == 1
 
 
-class TestFindStressedVowel:
-    def test_find_stressed_vowel1(self):
-        word = Word("huida")
-        assert word.consonant_rhyme == "ida"
+class TestStressedVowel:
+    def test_single_vowel(self):
+        assert _stressed_vowel("a") == "a"
+
+    def test_strong_vowel_wins(self):
+        """ hui-da -> the strong vowel carries the stress """
+        assert _stressed_vowel("ui") == "i"
+        assert _stressed_vowel("ia") == "a"
+        assert _stressed_vowel("ai") == "ai"
+
+    def test_weak_diphthong_stresses_the_second(self):
+        assert _stressed_vowel("iu") == "u"
+
+    def test_through_the_interface(self):
+        assert Word("huida").rhyme.consonant == "ida"
+
+
+class TestRhyme:
+    def test_returns_both_rhymes(self):
+        assert rhyme("-al-ga-ra-bí-a", 2) == Rhyme(consonant="ia", assonant="ia")
+
+    def test_strips_the_accent(self):
+        """ Accents carry no rhyming information. """
+        assert rhyme("-ber-gan-tín", 1).consonant == "in"
+
+    def test_silent_u(self):
+        """ The 'u' of que/qui/gue/gui is silent. """
+        assert rhyme("-por-que", 2) == Rhyme(consonant="orque", assonant="oe")
+        assert rhyme("-si-gue", 2) == Rhyme(consonant="igue", assonant="ie")
+
+    def test_dieresis_u_is_pronounced(self):
+        assert rhyme("-a-ve-ri-güe", 2) == Rhyme(consonant="igüe", assonant="iüe")
+
+    def test_final_y_counts_as_i(self):
+        assert rhyme("-y", 1) == Rhyme(consonant="i", assonant="i")
 
 
 class TestWord:
@@ -450,33 +482,33 @@ class TestSilabizador:
             "is_end": False,
         }
 
-    def test_verse_consonant_rhyme_finder1(self):
+    def test_verse_consonant_rhyme1(self):
         # 'cambia'
-        assert self.verse.verse_consonant_rhyme_finder() == "ambia"
+        assert self.verse.consonant_rhyme == "ambia"
 
-    def test_verse_consonant_rhyme_finder2(self):
+    def test_verse_consonant_rhyme2(self):
         # 'camino'
-        assert self.verse2.verse_consonant_rhyme_finder() == "ino"
+        assert self.verse2.consonant_rhyme == "ino"
 
-    def test_verse_consonant_rhyme_finder3(self):
+    def test_verse_consonant_rhyme3(self):
         # 'bien'
-        assert self.verse3.verse_consonant_rhyme_finder() == "en"
+        assert self.verse3.consonant_rhyme == "en"
 
-    def test_verse_consonant_rhyme_finder4(self):
+    def test_verse_consonant_rhyme4(self):
         # 'mundo y'
-        assert self.verse5.verse_consonant_rhyme_finder() == "i"
+        assert self.verse5.consonant_rhyme == "i"
 
-    def test_verse_consonant_rhyme_finder5(self):
+    def test_verse_consonant_rhyme5(self):
         # 'porque'
-        assert self.verse6.verse_consonant_rhyme_finder() == "orque"
+        assert self.verse6.consonant_rhyme == "orque"
 
-    def test_verse_consonant_rhyme_finder6(self):
+    def test_verse_consonant_rhyme6(self):
         verse = Pyverse("Eran los monjes esdrújulos con")
-        assert verse.verse_consonant_rhyme_finder() == "on"
+        assert verse.consonant_rhyme == "on"
 
-    def test_verse_consonant_rhyme_finder7(self):
+    def test_verse_consonant_rhyme7(self):
         verse = Pyverse("El ánima atraviesa mi")
-        assert verse.verse_consonant_rhyme_finder() == "i"
+        assert verse.consonant_rhyme == "i"
 
     def test_verse_assonant_rhyme1(self):
         # 'cambia'
@@ -513,8 +545,8 @@ class TestSilabizador:
             "El caballo nos sigue",
         ]:
             verse = Pyverse(text)
-            assert verse.assonant_rhyme == verse.last_word.assonant_rhyme
-            assert verse.consonant_rhyme == verse.last_word.consonant_rhyme
+            assert verse.assonant_rhyme == verse.last_word.rhyme.assonant
+            assert verse.consonant_rhyme == verse.last_word.rhyme.consonant
 
 
 class TestOther:

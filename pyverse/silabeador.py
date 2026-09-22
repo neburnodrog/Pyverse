@@ -23,8 +23,8 @@ class Pyverse:
         self.syllables = self.sentence.syllabified_sentence
         self.synalephas = self.sentence.synalephas
         self.count = self.counter()
-        self.consonant_rhyme = self.verse_consonant_rhyme_finder()
-        self.assonant_rhyme = self.verse_assonant_rhyme_finder()
+        self.consonant_rhyme = self.last_word.rhyme.consonant
+        self.assonant_rhyme = self.last_word.rhyme.assonant
         self.type_of_verse = self.type_verse()
 
     def __repr__(self):
@@ -88,12 +88,6 @@ class Pyverse:
             type_of_verse["is_int"] = False
 
         return type_of_verse
-
-    def verse_consonant_rhyme_finder(self) -> str:
-        return self.last_word.consonant_rhyme
-
-    def verse_assonant_rhyme_finder(self) -> str:
-        return self.last_word.assonant_rhyme
 
     @staticmethod
     def numbers_to_words(verse: str) -> str:
