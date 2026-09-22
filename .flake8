@@ -1,4 +1,3 @@
 [flake8]
 max-line-length = 99
-ignore = F405
 exclude = .git,__pycache__,build,dist,.vscode,.pytest_cache,.mypy_cache

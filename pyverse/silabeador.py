@@ -1,7 +1,7 @@
 import re
 from typing import List, Dict
 from pyverse.sentence import Sentence
-from pyverse.vars import *
+from pyverse.vars import atonic_monosyll, punctuation
 from nlt import numlet as nl
 from pyverse.word import Word
 

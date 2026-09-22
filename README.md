@@ -1,4 +1,4 @@
-[![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
+[![codecov](https://img.shields.io/codecov/c/github/neburnodrog/Pyverse)](https://codecov.io/gh/neburnodrog/Pyverse)
 
 # Pyverse
 #### A automatic syllabification algorithm for Spanish verses written in Python

@@ -124,7 +124,6 @@ class TestDiphthongsFinder:
     #     """ tripthongs """
 
 
-
 class TestPreSyllabify:
     def test_pre_syllabify1(self):
         """Hiatus with 'h' inbetween vowels"""
@@ -556,15 +555,15 @@ class TestOther:
 
     def test_2(self):
         sil = Pyverse("asdf")
-        assert(sil.syllables == "-asdf")
+        assert sil.syllables == "-asdf"
 
     def test_3(self):
         sil = Pyverse("1234")
-        assert(sil.syllables == '-mil -dos-cien-tos -trein-ta y -cua-tro')
+        assert sil.syllables == '-mil -dos-cien-tos -trein-ta y -cua-tro'
 
     def test_4(self):
         sil = Pyverse("mil 1000")
-        assert(sil.syllables == "-mil -mil")
+        assert sil.syllables == "-mil -mil"
 
     def test_5(self):
         with pytest.raises(Exception):

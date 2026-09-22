@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyverse"
+version = "2.0.0"
+description = "find syllables and rhymes of words/verses in spanish"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Ruben Karlsson", email = "neburnodrog@gmail.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Text Processing :: Linguistic",
+    "Natural Language :: Spanish",
+]
+dependencies = [
+    "click>=8.1",
+    "numlet>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "coverage[toml]>=7",
+    "flake8>=7",
+    "build>=1",
+    "twine>=5",
+]
+
+[project.urls]
+Homepage = "https://github.com/neburnodrog/Pyverse"
+Repository = "https://github.com/neburnodrog/Pyverse"
+
+[project.scripts]
+pyverse = "pyverse.__main__:silabify"
+
+[tool.setuptools]
+packages = ["pyverse"]
+
+[tool.coverage.run]
+source = ["pyverse"]
+
+[tool.coverage.report]
+show_missing = true

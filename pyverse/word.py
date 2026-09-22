@@ -54,8 +54,9 @@ class Word:
         vowel_groupings_three = re.findall(f"[h{vowels}]+", syllabified_word)
         longer_than_3 = filter(lambda x: len(x) > 3, vowel_groupings_three)
         for vowel_group in longer_than_3:
-            syllabified_word = syllabified_word.replace(vowel_group, self.check_if_separation(vowel_group))
-
+            syllabified_word = syllabified_word.replace(
+                vowel_group, self.check_if_separation(vowel_group)
+            )
 
         if not syllabified_word.startswith("-"):
             syllabified_word = "-" + syllabified_word
