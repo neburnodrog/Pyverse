@@ -1,4 +1,4 @@
-[![codecov](https://img.shields.io/codecov/c/github/neburnodrog/silabizador)](https://codecov.io/gh/neburnodrog/silabizador)
+[![codecov](https://img.shields.io/codecov/c/github/neburnodrog/Pyverse)](https://codecov.io/gh/neburnodrog/Pyverse)
 
 # Pyverse
 #### A automatic syllabification algorithm for Spanish verses written in Python
@@ -19,7 +19,8 @@ Python + Verse = Pyverse.
     3. If it's [proparoxytone](https://en.wikipedia.org/wiki/Proparoxytone) we substract one syllable.
     4. If it's **superproparoxytone** we substract two.  
 
-### Instalation
+### Installation
+Requires Python 3.12 or newer.
 ```
 pip install pyverse
 ```
@@ -28,19 +29,21 @@ You can either use Pyverse in the command line:
 ```
 pyverso "un velero bergantín;"
 
-        Syllabified Text | -un -ve-le-ro -ber-ga-tín;
+        Syllabified Text | -un -ve-le-ro -ber-gan-tín;
         Count            | 8
-        Consonant Rhyme  | atin
-        Assonant Rhyme   | ai
+        Consonant Rhyme  | in
+        Assonant Rhyme   | i
 ```
 or as a python package
 ```
 >>> from pyverse import Pyverse
 >>> verse = Pyverse("un velero bergantín;")
->>> print(verse.get_syllables())
+>>> verse.syllables
 '-un -ve-le-ro -ber-gan-tín;'
->>> print(verse.count)
+>>> verse.count
 8
+>>> verse.consonant_rhyme, verse.assonant_rhyme
+('in', 'i')
 ```
 ---
 
@@ -81,8 +84,9 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
   - El silabizador proporciona las rimas [asonante](https://es.wikipedia.org/wiki/Rima_asonante) y [consonantes](https://es.wikipedia.org/wiki/Rima_consonante) tanto de palabras como de versos
 
 ### Instalación
+Requiere Python 3.12 o superior.
 ```
-pip install Pyverse
+pip install pyverse
 ```
 
 ### Uso
@@ -90,17 +94,19 @@ puedes usar Pyverse desde el terminal:
 ```
 $ pyverse "un velero bergantín;"
 
-        Syllabified Text | -un -ve-le-ro -ber-ga-tín;
+        Syllabified Text | -un -ve-le-ro -ber-gan-tín;
         Count            | 8
-        Consonant Rhyme  | atin
-        Assonant Rhyme   | ai
+        Consonant Rhyme  | in
+        Assonant Rhyme   | i
 ```
 o como una librería de Python
 ```
-from pyverse import Pyverse
-verse = Pyverse("un velero bergantín;")
-print(verse.get_syllables())
->>> '-un -ve-le-ro -ber-gan-tín;'
-print(verse.count)
->>> 8
+>>> from pyverse import Pyverse
+>>> verse = Pyverse("un velero bergantín;")
+>>> verse.syllables
+'-un -ve-le-ro -ber-gan-tín;'
+>>> verse.count
+8
+>>> verse.consonant_rhyme, verse.assonant_rhyme
+('in', 'i')
 ```

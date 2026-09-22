@@ -1,5 +1,5 @@
 """
-pyverse - Spanish syllabification algorythm
+pyverse - Spanish syllabification algorithm
 
 Usage:
 ------
@@ -13,12 +13,8 @@ Contact:
 --------
 - neburnodrog@gmail.com
 More information is available at:
-- https://pypi.org/project/silabizador/
-- https://github.com/neburnodrog/silabizador
-
-Version:
---------
-- pyverse v1.0.0
+- https://pypi.org/project/pyverse/
+- https://github.com/neburnodrog/Pyverse
 """
 
 import click
@@ -43,3 +39,7 @@ def silabify(text):
         Assonant Rhyme   | {verso.assonant_rhyme}
         """
     )
+
+
+if __name__ == "__main__":
+    silabify()
