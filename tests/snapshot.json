@@ -308,7 +308,6 @@
   "syllables": "-el -ar-ma ¿-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma ¿antigua",
    "¿antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -328,9 +327,7 @@
   "verse": "el arma ¿antigua? antigua",
   "syllables": "-el -ar-ma ¿-an-ti-gua? -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma ¿antigua?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -339,7 +336,6 @@
   "syllables": "-el -al-ma ¿-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma ¿antigua",
    "¿antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -359,9 +355,7 @@
   "verse": "el alma ¿antigua? eterna",
   "syllables": "-el -al-ma ¿-an-ti-gua? -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma ¿antigua?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -370,7 +364,6 @@
   "syllables": "-can-ta ¿-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta ¿antigua",
    "¿antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -390,9 +383,7 @@
   "verse": "canta ¿antigua? y baila",
   "syllables": "-can-ta ¿-an-ti-gua? -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta ¿antigua?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -400,9 +391,7 @@
   "verse": "la casa ¿antigua alta",
   "syllables": "-la -ca-sa ¿-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¿antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -420,9 +409,7 @@
   "verse": "la casa ¿antigua? alta",
   "syllables": "-la -ca-sa ¿-an-ti-gua? -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¿antigua?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -430,9 +417,7 @@
   "verse": "el viento ¿antigua ártico",
   "syllables": "-el -vien-to ¿-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¿antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -450,9 +435,7 @@
   "verse": "el viento ¿antigua? ártico",
   "syllables": "-el -vien-to ¿-an-ti-gua? -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¿antigua?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -486,9 +469,7 @@
   "verse": "el arma ¿antigua",
   "syllables": "-el -ar-ma ¿-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma ¿antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -506,19 +487,15 @@
   "verse": "el arma ¿antigua?",
   "syllables": "-el -ar-ma ¿-an-ti-gua?",
   "count": 6,
-  "synalephas": [
-   "arma ¿antigua?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma ¿ antigua",
-  "syllables": "-el -ar-ma ¿- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -527,7 +504,6 @@
   "syllables": "-el -ar-ma ¿-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma ¿eterna",
    "¿eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -547,9 +523,7 @@
   "verse": "el arma ¿eterna? antigua",
   "syllables": "-el -ar-ma ¿-e-ter-na? -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma ¿eterna?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -558,7 +532,6 @@
   "syllables": "-el -al-ma ¿-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma ¿eterna",
    "¿eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -578,9 +551,7 @@
   "verse": "el alma ¿eterna? eterna",
   "syllables": "-el -al-ma ¿-e-ter-na? -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma ¿eterna?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -589,7 +560,6 @@
   "syllables": "-can-ta ¿-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta ¿eterna",
    "¿eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -609,9 +579,7 @@
   "verse": "canta ¿eterna? y baila",
   "syllables": "-can-ta ¿-e-ter-na? -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta ¿eterna?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -619,9 +587,7 @@
   "verse": "la casa ¿eterna alta",
   "syllables": "-la -ca-sa ¿-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¿eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -639,9 +605,7 @@
   "verse": "la casa ¿eterna? alta",
   "syllables": "-la -ca-sa ¿-e-ter-na? -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¿eterna?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -649,9 +613,7 @@
   "verse": "el viento ¿eterna ártico",
   "syllables": "-el -vien-to ¿-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¿eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -669,9 +631,7 @@
   "verse": "el viento ¿eterna? ártico",
   "syllables": "-el -vien-to ¿-e-ter-na? -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¿eterna?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -705,9 +665,7 @@
   "verse": "el arma ¿eterna",
   "syllables": "-el -ar-ma ¿-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma ¿eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -725,19 +683,15 @@
   "verse": "el arma ¿eterna?",
   "syllables": "-el -ar-ma ¿-e-ter-na?",
   "count": 6,
-  "synalephas": [
-   "arma ¿eterna?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ¿ eterna",
-  "syllables": "-el -ar-ma ¿- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -745,9 +699,7 @@
   "verse": "el arma ¿azul antigua",
   "syllables": "-el -ar-ma ¿-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¿azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -765,9 +717,7 @@
   "verse": "el arma ¿azul? antigua",
   "syllables": "-el -ar-ma ¿-a-zul? -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¿azul?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -775,9 +725,7 @@
   "verse": "el alma ¿azul eterna",
   "syllables": "-el -al-ma ¿-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¿azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -795,9 +743,7 @@
   "verse": "el alma ¿azul? eterna",
   "syllables": "-el -al-ma ¿-a-zul? -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¿azul?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -805,9 +751,7 @@
   "verse": "canta ¿azul y baila",
   "syllables": "-can-ta ¿-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¿azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -825,9 +769,7 @@
   "verse": "canta ¿azul? y baila",
   "syllables": "-can-ta ¿-a-zul? -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¿azul?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -835,9 +777,7 @@
   "verse": "la casa ¿azul alta",
   "syllables": "-la -ca-sa ¿-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¿azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -855,9 +795,7 @@
   "verse": "la casa ¿azul? alta",
   "syllables": "-la -ca-sa ¿-a-zul? -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¿azul?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -865,9 +803,7 @@
   "verse": "el viento ¿azul ártico",
   "syllables": "-el -vien-to ¿-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¿azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -885,9 +821,7 @@
   "verse": "el viento ¿azul? ártico",
   "syllables": "-el -vien-to ¿-a-zul? -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¿azul?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -919,9 +853,7 @@
   "verse": "el arma ¿azul",
   "syllables": "-el -ar-ma ¿-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma ¿azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -939,19 +871,15 @@
   "verse": "el arma ¿azul?",
   "syllables": "-el -ar-ma ¿-a-zul?",
   "count": 6,
-  "synalephas": [
-   "arma ¿azul?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma ¿ azul",
-  "syllables": "-el -ar-ma ¿- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -960,7 +888,6 @@
   "syllables": "-el -ar-ma ¿-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma ¿ánima",
    "¿ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -978,9 +905,7 @@
   "verse": "el arma ¿ánima? antigua",
   "syllables": "-el -ar-ma ¿-á-ni-ma? -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma ¿ánima?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -989,7 +914,6 @@
   "syllables": "-el -al-ma ¿-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma ¿ánima",
    "¿ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -1007,9 +931,7 @@
   "verse": "el alma ¿ánima? eterna",
   "syllables": "-el -al-ma ¿-á-ni-ma? -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma ¿ánima?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -1018,7 +940,6 @@
   "syllables": "-can-ta ¿-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta ¿ánima",
    "¿ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -1036,9 +957,7 @@
   "verse": "canta ¿ánima? y baila",
   "syllables": "-can-ta ¿-á-ni-ma? -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta ¿ánima?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -1046,9 +965,7 @@
   "verse": "la casa ¿ánima alta",
   "syllables": "-la -ca-sa ¿-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¿ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1064,9 +981,7 @@
   "verse": "la casa ¿ánima? alta",
   "syllables": "-la -ca-sa ¿-á-ni-ma? -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¿ánima?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1074,9 +989,7 @@
   "verse": "el viento ¿ánima ártico",
   "syllables": "-el -vien-to ¿-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¿ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1092,9 +1005,7 @@
   "verse": "el viento ¿ánima? ártico",
   "syllables": "-el -vien-to ¿-á-ni-ma? -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¿ánima?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1128,9 +1039,7 @@
   "verse": "el arma ¿ánima",
   "syllables": "-el -ar-ma ¿-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma ¿ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -1146,19 +1055,15 @@
   "verse": "el arma ¿ánima?",
   "syllables": "-el -ar-ma ¿-á-ni-ma?",
   "count": 5,
-  "synalephas": [
-   "arma ¿ánima?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma ¿ ánima",
-  "syllables": "-el -ar-ma ¿- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -1166,9 +1071,7 @@
   "verse": "el arma ¿y antigua",
   "syllables": "-el -ar-ma ¿-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma ¿y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -1186,9 +1089,7 @@
   "verse": "el arma ¿y? antigua",
   "syllables": "-el -ar-ma ¿-y? -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma ¿y?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -1196,9 +1097,7 @@
   "verse": "el alma ¿y eterna",
   "syllables": "-el -al-ma ¿-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma ¿y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -1216,9 +1115,7 @@
   "verse": "el alma ¿y? eterna",
   "syllables": "-el -al-ma ¿-y? -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma ¿y?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -1226,9 +1123,7 @@
   "verse": "canta ¿y y baila",
   "syllables": "-can-ta ¿-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta ¿y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -1246,9 +1141,7 @@
   "verse": "canta ¿y? y baila",
   "syllables": "-can-ta ¿-y? -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta ¿y?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -1256,9 +1149,7 @@
   "verse": "la casa ¿y alta",
   "syllables": "-la -ca-sa ¿-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa ¿y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1276,9 +1167,7 @@
   "verse": "la casa ¿y? alta",
   "syllables": "-la -ca-sa ¿-y? -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa ¿y?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1286,9 +1175,7 @@
   "verse": "el viento ¿y ártico",
   "syllables": "-el -vien-to ¿-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento ¿y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1306,9 +1193,7 @@
   "verse": "el viento ¿y? ártico",
   "syllables": "-el -vien-to ¿-y? -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento ¿y?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1339,10 +1224,8 @@
  {
   "verse": "el arma ¿y",
   "syllables": "-el -ar-ma ¿-y",
-  "count": 4,
-  "synalephas": [
-   "arma ¿y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -1359,20 +1242,16 @@
  {
   "verse": "el arma ¿y?",
   "syllables": "-el -ar-ma ¿-y?",
-  "count": 4,
-  "synalephas": [
-   "arma ¿y?"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma ¿ y",
-  "syllables": "-el -ar-ma ¿- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -1381,7 +1260,6 @@
   "syllables": "-el -ar-ma ¿-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma ¿alma",
    "¿alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -1399,9 +1277,7 @@
   "verse": "el arma ¿alma? antigua",
   "syllables": "-el -ar-ma ¿-al-ma? -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¿alma?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -1410,7 +1286,6 @@
   "syllables": "-el -al-ma ¿-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma ¿alma",
    "¿alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -1428,9 +1303,7 @@
   "verse": "el alma ¿alma? eterna",
   "syllables": "-el -al-ma ¿-al-ma? -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¿alma?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -1439,7 +1312,6 @@
   "syllables": "-can-ta ¿-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta ¿alma",
    "¿alma y"
   ],
   "consonant_rhyme": "aila",
@@ -1457,9 +1329,7 @@
   "verse": "canta ¿alma? y baila",
   "syllables": "-can-ta ¿-al-ma? -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¿alma?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -1467,9 +1337,7 @@
   "verse": "la casa ¿alma alta",
   "syllables": "-la -ca-sa ¿-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¿alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1485,9 +1353,7 @@
   "verse": "la casa ¿alma? alta",
   "syllables": "-la -ca-sa ¿-al-ma? -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¿alma?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1495,9 +1361,7 @@
   "verse": "el viento ¿alma ártico",
   "syllables": "-el -vien-to ¿-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¿alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1513,9 +1377,7 @@
   "verse": "el viento ¿alma? ártico",
   "syllables": "-el -vien-to ¿-al-ma? -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¿alma?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1549,9 +1411,7 @@
   "verse": "el arma ¿alma",
   "syllables": "-el -ar-ma ¿-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma ¿alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -1567,19 +1427,15 @@
   "verse": "el arma ¿alma?",
   "syllables": "-el -ar-ma ¿-al-ma?",
   "count": 5,
-  "synalephas": [
-   "arma ¿alma?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma ¿ alma",
-  "syllables": "-el -ar-ma ¿- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -1588,7 +1444,6 @@
   "syllables": "-el -ar-ma ¿-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma ¿hiedra",
    "¿hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -1606,9 +1461,7 @@
   "verse": "el arma ¿hiedra? antigua",
   "syllables": "-el -ar-ma ¿-hie-dra? -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¿hiedra?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -1617,7 +1470,6 @@
   "syllables": "-el -al-ma ¿-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma ¿hiedra",
    "¿hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -1635,9 +1487,7 @@
   "verse": "el alma ¿hiedra? eterna",
   "syllables": "-el -al-ma ¿-hie-dra? -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¿hiedra?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -1646,7 +1496,6 @@
   "syllables": "-can-ta ¿-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta ¿hiedra",
    "¿hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -1664,9 +1513,7 @@
   "verse": "canta ¿hiedra? y baila",
   "syllables": "-can-ta ¿-hie-dra? -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¿hiedra?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -1674,9 +1521,7 @@
   "verse": "la casa ¿hiedra alta",
   "syllables": "-la -ca-sa ¿-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¿hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1692,9 +1537,7 @@
   "verse": "la casa ¿hiedra? alta",
   "syllables": "-la -ca-sa ¿-hie-dra? -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¿hiedra?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1702,9 +1545,7 @@
   "verse": "el viento ¿hiedra ártico",
   "syllables": "-el -vien-to ¿-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¿hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1720,9 +1561,7 @@
   "verse": "el viento ¿hiedra? ártico",
   "syllables": "-el -vien-to ¿-hie-dra? -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¿hiedra?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1756,9 +1595,7 @@
   "verse": "el arma ¿hiedra",
   "syllables": "-el -ar-ma ¿-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma ¿hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -1774,19 +1611,15 @@
   "verse": "el arma ¿hiedra?",
   "syllables": "-el -ar-ma ¿-hie-dra?",
   "count": 5,
-  "synalephas": [
-   "arma ¿hiedra?"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ¿ hiedra",
-  "syllables": "-el -ar-ma ¿- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ¿"
-  ],
+  "syllables": "-el -ar-ma ¿ -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -1795,7 +1628,6 @@
   "syllables": "-el -ar-ma ¡-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma ¡antigua",
    "¡antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -1815,9 +1647,7 @@
   "verse": "el arma ¡antigua! antigua",
   "syllables": "-el -ar-ma ¡-an-ti-gua! -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma ¡antigua!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -1826,7 +1656,6 @@
   "syllables": "-el -al-ma ¡-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma ¡antigua",
    "¡antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -1846,9 +1675,7 @@
   "verse": "el alma ¡antigua! eterna",
   "syllables": "-el -al-ma ¡-an-ti-gua! -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma ¡antigua!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -1857,7 +1684,6 @@
   "syllables": "-can-ta ¡-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta ¡antigua",
    "¡antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -1877,9 +1703,7 @@
   "verse": "canta ¡antigua! y baila",
   "syllables": "-can-ta ¡-an-ti-gua! -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta ¡antigua!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -1887,9 +1711,7 @@
   "verse": "la casa ¡antigua alta",
   "syllables": "-la -ca-sa ¡-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¡antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1907,9 +1729,7 @@
   "verse": "la casa ¡antigua! alta",
   "syllables": "-la -ca-sa ¡-an-ti-gua! -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¡antigua!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -1917,9 +1737,7 @@
   "verse": "el viento ¡antigua ártico",
   "syllables": "-el -vien-to ¡-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¡antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1937,9 +1755,7 @@
   "verse": "el viento ¡antigua! ártico",
   "syllables": "-el -vien-to ¡-an-ti-gua! -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¡antigua!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -1973,9 +1789,7 @@
   "verse": "el arma ¡antigua",
   "syllables": "-el -ar-ma ¡-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma ¡antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -1993,19 +1807,15 @@
   "verse": "el arma ¡antigua!",
   "syllables": "-el -ar-ma ¡-an-ti-gua!",
   "count": 6,
-  "synalephas": [
-   "arma ¡antigua!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma ¡ antigua",
-  "syllables": "-el -ar-ma ¡- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2014,7 +1824,6 @@
   "syllables": "-el -ar-ma ¡-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma ¡eterna",
    "¡eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -2034,9 +1843,7 @@
   "verse": "el arma ¡eterna! antigua",
   "syllables": "-el -ar-ma ¡-e-ter-na! -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma ¡eterna!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2045,7 +1852,6 @@
   "syllables": "-el -al-ma ¡-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma ¡eterna",
    "¡eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -2065,9 +1871,7 @@
   "verse": "el alma ¡eterna! eterna",
   "syllables": "-el -al-ma ¡-e-ter-na! -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma ¡eterna!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2076,7 +1880,6 @@
   "syllables": "-can-ta ¡-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta ¡eterna",
    "¡eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -2096,9 +1899,7 @@
   "verse": "canta ¡eterna! y baila",
   "syllables": "-can-ta ¡-e-ter-na! -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta ¡eterna!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2106,9 +1907,7 @@
   "verse": "la casa ¡eterna alta",
   "syllables": "-la -ca-sa ¡-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¡eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2126,9 +1925,7 @@
   "verse": "la casa ¡eterna! alta",
   "syllables": "-la -ca-sa ¡-e-ter-na! -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¡eterna!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2136,9 +1933,7 @@
   "verse": "el viento ¡eterna ártico",
   "syllables": "-el -vien-to ¡-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¡eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2156,9 +1951,7 @@
   "verse": "el viento ¡eterna! ártico",
   "syllables": "-el -vien-to ¡-e-ter-na! -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¡eterna!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2192,9 +1985,7 @@
   "verse": "el arma ¡eterna",
   "syllables": "-el -ar-ma ¡-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma ¡eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2212,19 +2003,15 @@
   "verse": "el arma ¡eterna!",
   "syllables": "-el -ar-ma ¡-e-ter-na!",
   "count": 6,
-  "synalephas": [
-   "arma ¡eterna!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ¡ eterna",
-  "syllables": "-el -ar-ma ¡- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2232,9 +2019,7 @@
   "verse": "el arma ¡azul antigua",
   "syllables": "-el -ar-ma ¡-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¡azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2252,9 +2037,7 @@
   "verse": "el arma ¡azul! antigua",
   "syllables": "-el -ar-ma ¡-a-zul! -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¡azul!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2262,9 +2045,7 @@
   "verse": "el alma ¡azul eterna",
   "syllables": "-el -al-ma ¡-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¡azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2282,9 +2063,7 @@
   "verse": "el alma ¡azul! eterna",
   "syllables": "-el -al-ma ¡-a-zul! -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¡azul!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2292,9 +2071,7 @@
   "verse": "canta ¡azul y baila",
   "syllables": "-can-ta ¡-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¡azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2312,9 +2089,7 @@
   "verse": "canta ¡azul! y baila",
   "syllables": "-can-ta ¡-a-zul! -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¡azul!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2322,9 +2097,7 @@
   "verse": "la casa ¡azul alta",
   "syllables": "-la -ca-sa ¡-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¡azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2342,9 +2115,7 @@
   "verse": "la casa ¡azul! alta",
   "syllables": "-la -ca-sa ¡-a-zul! -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¡azul!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2352,9 +2123,7 @@
   "verse": "el viento ¡azul ártico",
   "syllables": "-el -vien-to ¡-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¡azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2372,9 +2141,7 @@
   "verse": "el viento ¡azul! ártico",
   "syllables": "-el -vien-to ¡-a-zul! -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¡azul!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2406,9 +2173,7 @@
   "verse": "el arma ¡azul",
   "syllables": "-el -ar-ma ¡-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma ¡azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -2426,19 +2191,15 @@
   "verse": "el arma ¡azul!",
   "syllables": "-el -ar-ma ¡-a-zul!",
   "count": 6,
-  "synalephas": [
-   "arma ¡azul!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma ¡ azul",
-  "syllables": "-el -ar-ma ¡- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -2447,7 +2208,6 @@
   "syllables": "-el -ar-ma ¡-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma ¡ánima",
    "¡ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -2465,9 +2225,7 @@
   "verse": "el arma ¡ánima! antigua",
   "syllables": "-el -ar-ma ¡-á-ni-ma! -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma ¡ánima!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2476,7 +2234,6 @@
   "syllables": "-el -al-ma ¡-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma ¡ánima",
    "¡ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -2494,9 +2251,7 @@
   "verse": "el alma ¡ánima! eterna",
   "syllables": "-el -al-ma ¡-á-ni-ma! -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma ¡ánima!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2505,7 +2260,6 @@
   "syllables": "-can-ta ¡-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta ¡ánima",
    "¡ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -2523,9 +2277,7 @@
   "verse": "canta ¡ánima! y baila",
   "syllables": "-can-ta ¡-á-ni-ma! -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta ¡ánima!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2533,9 +2285,7 @@
   "verse": "la casa ¡ánima alta",
   "syllables": "-la -ca-sa ¡-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¡ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2551,9 +2301,7 @@
   "verse": "la casa ¡ánima! alta",
   "syllables": "-la -ca-sa ¡-á-ni-ma! -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa ¡ánima!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2561,9 +2309,7 @@
   "verse": "el viento ¡ánima ártico",
   "syllables": "-el -vien-to ¡-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¡ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2579,9 +2325,7 @@
   "verse": "el viento ¡ánima! ártico",
   "syllables": "-el -vien-to ¡-á-ni-ma! -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento ¡ánima!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2615,9 +2359,7 @@
   "verse": "el arma ¡ánima",
   "syllables": "-el -ar-ma ¡-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma ¡ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -2633,19 +2375,15 @@
   "verse": "el arma ¡ánima!",
   "syllables": "-el -ar-ma ¡-á-ni-ma!",
   "count": 5,
-  "synalephas": [
-   "arma ¡ánima!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma ¡ ánima",
-  "syllables": "-el -ar-ma ¡- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -2653,9 +2391,7 @@
   "verse": "el arma ¡y antigua",
   "syllables": "-el -ar-ma ¡-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma ¡y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2673,9 +2409,7 @@
   "verse": "el arma ¡y! antigua",
   "syllables": "-el -ar-ma ¡-y! -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma ¡y!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2683,9 +2417,7 @@
   "verse": "el alma ¡y eterna",
   "syllables": "-el -al-ma ¡-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma ¡y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2703,9 +2435,7 @@
   "verse": "el alma ¡y! eterna",
   "syllables": "-el -al-ma ¡-y! -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma ¡y!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2713,9 +2443,7 @@
   "verse": "canta ¡y y baila",
   "syllables": "-can-ta ¡-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta ¡y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2733,9 +2461,7 @@
   "verse": "canta ¡y! y baila",
   "syllables": "-can-ta ¡-y! -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta ¡y!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2743,9 +2469,7 @@
   "verse": "la casa ¡y alta",
   "syllables": "-la -ca-sa ¡-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa ¡y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2763,9 +2487,7 @@
   "verse": "la casa ¡y! alta",
   "syllables": "-la -ca-sa ¡-y! -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa ¡y!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2773,9 +2495,7 @@
   "verse": "el viento ¡y ártico",
   "syllables": "-el -vien-to ¡-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento ¡y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2793,9 +2513,7 @@
   "verse": "el viento ¡y! ártico",
   "syllables": "-el -vien-to ¡-y! -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento ¡y!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -2826,10 +2544,8 @@
  {
   "verse": "el arma ¡y",
   "syllables": "-el -ar-ma ¡-y",
-  "count": 4,
-  "synalephas": [
-   "arma ¡y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -2846,20 +2562,16 @@
  {
   "verse": "el arma ¡y!",
   "syllables": "-el -ar-ma ¡-y!",
-  "count": 4,
-  "synalephas": [
-   "arma ¡y!"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma ¡ y",
-  "syllables": "-el -ar-ma ¡- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -2868,7 +2580,6 @@
   "syllables": "-el -ar-ma ¡-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma ¡alma",
    "¡alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -2886,9 +2597,7 @@
   "verse": "el arma ¡alma! antigua",
   "syllables": "-el -ar-ma ¡-al-ma! -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¡alma!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -2897,7 +2606,6 @@
   "syllables": "-el -al-ma ¡-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma ¡alma",
    "¡alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -2915,9 +2623,7 @@
   "verse": "el alma ¡alma! eterna",
   "syllables": "-el -al-ma ¡-al-ma! -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¡alma!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -2926,7 +2632,6 @@
   "syllables": "-can-ta ¡-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta ¡alma",
    "¡alma y"
   ],
   "consonant_rhyme": "aila",
@@ -2944,9 +2649,7 @@
   "verse": "canta ¡alma! y baila",
   "syllables": "-can-ta ¡-al-ma! -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¡alma!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -2954,9 +2657,7 @@
   "verse": "la casa ¡alma alta",
   "syllables": "-la -ca-sa ¡-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¡alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2972,9 +2673,7 @@
   "verse": "la casa ¡alma! alta",
   "syllables": "-la -ca-sa ¡-al-ma! -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¡alma!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -2982,9 +2681,7 @@
   "verse": "el viento ¡alma ártico",
   "syllables": "-el -vien-to ¡-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¡alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3000,9 +2697,7 @@
   "verse": "el viento ¡alma! ártico",
   "syllables": "-el -vien-to ¡-al-ma! -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¡alma!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3036,9 +2731,7 @@
   "verse": "el arma ¡alma",
   "syllables": "-el -ar-ma ¡-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma ¡alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -3054,19 +2747,15 @@
   "verse": "el arma ¡alma!",
   "syllables": "-el -ar-ma ¡-al-ma!",
   "count": 5,
-  "synalephas": [
-   "arma ¡alma!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma ¡ alma",
-  "syllables": "-el -ar-ma ¡- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -3075,7 +2764,6 @@
   "syllables": "-el -ar-ma ¡-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma ¡hiedra",
    "¡hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -3093,9 +2781,7 @@
   "verse": "el arma ¡hiedra! antigua",
   "syllables": "-el -ar-ma ¡-hie-dra! -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma ¡hiedra!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3104,7 +2790,6 @@
   "syllables": "-el -al-ma ¡-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma ¡hiedra",
    "¡hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -3122,9 +2807,7 @@
   "verse": "el alma ¡hiedra! eterna",
   "syllables": "-el -al-ma ¡-hie-dra! -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma ¡hiedra!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3133,7 +2816,6 @@
   "syllables": "-can-ta ¡-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta ¡hiedra",
    "¡hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -3151,9 +2833,7 @@
   "verse": "canta ¡hiedra! y baila",
   "syllables": "-can-ta ¡-hie-dra! -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta ¡hiedra!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -3161,9 +2841,7 @@
   "verse": "la casa ¡hiedra alta",
   "syllables": "-la -ca-sa ¡-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¡hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3179,9 +2857,7 @@
   "verse": "la casa ¡hiedra! alta",
   "syllables": "-la -ca-sa ¡-hie-dra! -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa ¡hiedra!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3189,9 +2865,7 @@
   "verse": "el viento ¡hiedra ártico",
   "syllables": "-el -vien-to ¡-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¡hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3207,9 +2881,7 @@
   "verse": "el viento ¡hiedra! ártico",
   "syllables": "-el -vien-to ¡-hie-dra! -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento ¡hiedra!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3243,9 +2915,7 @@
   "verse": "el arma ¡hiedra",
   "syllables": "-el -ar-ma ¡-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma ¡hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -3261,19 +2931,15 @@
   "verse": "el arma ¡hiedra!",
   "syllables": "-el -ar-ma ¡-hie-dra!",
   "count": 5,
-  "synalephas": [
-   "arma ¡hiedra!"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ¡ hiedra",
-  "syllables": "-el -ar-ma ¡- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ¡"
-  ],
+  "syllables": "-el -ar-ma ¡ -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -3282,7 +2948,6 @@
   "syllables": "-el -ar-ma \"-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma \"antigua",
    "\"antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -3302,9 +2967,7 @@
   "verse": "el arma \"antigua\" antigua",
   "syllables": "-el -ar-ma \"-an-ti-gua\" -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma \"antigua\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3313,7 +2976,6 @@
   "syllables": "-el -al-ma \"-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma \"antigua",
    "\"antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -3333,9 +2995,7 @@
   "verse": "el alma \"antigua\" eterna",
   "syllables": "-el -al-ma \"-an-ti-gua\" -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma \"antigua\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3344,7 +3004,6 @@
   "syllables": "-can-ta \"-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta \"antigua",
    "\"antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -3364,9 +3023,7 @@
   "verse": "canta \"antigua\" y baila",
   "syllables": "-can-ta \"-an-ti-gua\" -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta \"antigua\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -3374,9 +3031,7 @@
   "verse": "la casa \"antigua alta",
   "syllables": "-la -ca-sa \"-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa \"antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3394,9 +3049,7 @@
   "verse": "la casa \"antigua\" alta",
   "syllables": "-la -ca-sa \"-an-ti-gua\" -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa \"antigua\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3404,9 +3057,7 @@
   "verse": "el viento \"antigua ártico",
   "syllables": "-el -vien-to \"-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento \"antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3424,9 +3075,7 @@
   "verse": "el viento \"antigua\" ártico",
   "syllables": "-el -vien-to \"-an-ti-gua\" -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento \"antigua\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3460,9 +3109,7 @@
   "verse": "el arma \"antigua",
   "syllables": "-el -ar-ma \"-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma \"antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3480,19 +3127,15 @@
   "verse": "el arma \"antigua\"",
   "syllables": "-el -ar-ma \"-an-ti-gua\"",
   "count": 6,
-  "synalephas": [
-   "arma \"antigua\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma \" antigua",
-  "syllables": "-el -ar-ma \"- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3501,7 +3144,6 @@
   "syllables": "-el -ar-ma \"-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma \"eterna",
    "\"eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -3521,9 +3163,7 @@
   "verse": "el arma \"eterna\" antigua",
   "syllables": "-el -ar-ma \"-e-ter-na\" -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma \"eterna\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3532,7 +3172,6 @@
   "syllables": "-el -al-ma \"-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma \"eterna",
    "\"eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -3552,9 +3191,7 @@
   "verse": "el alma \"eterna\" eterna",
   "syllables": "-el -al-ma \"-e-ter-na\" -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma \"eterna\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3563,7 +3200,6 @@
   "syllables": "-can-ta \"-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta \"eterna",
    "\"eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -3583,9 +3219,7 @@
   "verse": "canta \"eterna\" y baila",
   "syllables": "-can-ta \"-e-ter-na\" -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta \"eterna\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -3593,9 +3227,7 @@
   "verse": "la casa \"eterna alta",
   "syllables": "-la -ca-sa \"-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa \"eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3613,9 +3245,7 @@
   "verse": "la casa \"eterna\" alta",
   "syllables": "-la -ca-sa \"-e-ter-na\" -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa \"eterna\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3623,9 +3253,7 @@
   "verse": "el viento \"eterna ártico",
   "syllables": "-el -vien-to \"-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento \"eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3643,9 +3271,7 @@
   "verse": "el viento \"eterna\" ártico",
   "syllables": "-el -vien-to \"-e-ter-na\" -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento \"eterna\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3679,9 +3305,7 @@
   "verse": "el arma \"eterna",
   "syllables": "-el -ar-ma \"-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma \"eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3699,19 +3323,15 @@
   "verse": "el arma \"eterna\"",
   "syllables": "-el -ar-ma \"-e-ter-na\"",
   "count": 6,
-  "synalephas": [
-   "arma \"eterna\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma \" eterna",
-  "syllables": "-el -ar-ma \"- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3719,9 +3339,7 @@
   "verse": "el arma \"azul antigua",
   "syllables": "-el -ar-ma \"-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma \"azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3739,9 +3357,7 @@
   "verse": "el arma \"azul\" antigua",
   "syllables": "-el -ar-ma \"-a-zul\" -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma \"azul\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3749,9 +3365,7 @@
   "verse": "el alma \"azul eterna",
   "syllables": "-el -al-ma \"-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma \"azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3769,9 +3383,7 @@
   "verse": "el alma \"azul\" eterna",
   "syllables": "-el -al-ma \"-a-zul\" -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma \"azul\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3779,9 +3391,7 @@
   "verse": "canta \"azul y baila",
   "syllables": "-can-ta \"-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta \"azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -3799,9 +3409,7 @@
   "verse": "canta \"azul\" y baila",
   "syllables": "-can-ta \"-a-zul\" -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta \"azul\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -3809,9 +3417,7 @@
   "verse": "la casa \"azul alta",
   "syllables": "-la -ca-sa \"-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa \"azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3829,9 +3435,7 @@
   "verse": "la casa \"azul\" alta",
   "syllables": "-la -ca-sa \"-a-zul\" -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa \"azul\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -3839,9 +3443,7 @@
   "verse": "el viento \"azul ártico",
   "syllables": "-el -vien-to \"-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento \"azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3859,9 +3461,7 @@
   "verse": "el viento \"azul\" ártico",
   "syllables": "-el -vien-to \"-a-zul\" -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento \"azul\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -3893,9 +3493,7 @@
   "verse": "el arma \"azul",
   "syllables": "-el -ar-ma \"-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma \"azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -3913,19 +3511,15 @@
   "verse": "el arma \"azul\"",
   "syllables": "-el -ar-ma \"-a-zul\"",
   "count": 6,
-  "synalephas": [
-   "arma \"azul\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma \" azul",
-  "syllables": "-el -ar-ma \"- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -3934,7 +3528,6 @@
   "syllables": "-el -ar-ma \"-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma \"ánima",
    "\"ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -3952,9 +3545,7 @@
   "verse": "el arma \"ánima\" antigua",
   "syllables": "-el -ar-ma \"-á-ni-ma\" -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma \"ánima\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -3963,7 +3554,6 @@
   "syllables": "-el -al-ma \"-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma \"ánima",
    "\"ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -3981,9 +3571,7 @@
   "verse": "el alma \"ánima\" eterna",
   "syllables": "-el -al-ma \"-á-ni-ma\" -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma \"ánima\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -3992,7 +3580,6 @@
   "syllables": "-can-ta \"-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta \"ánima",
    "\"ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -4010,9 +3597,7 @@
   "verse": "canta \"ánima\" y baila",
   "syllables": "-can-ta \"-á-ni-ma\" -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta \"ánima\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -4020,9 +3605,7 @@
   "verse": "la casa \"ánima alta",
   "syllables": "-la -ca-sa \"-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa \"ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4038,9 +3621,7 @@
   "verse": "la casa \"ánima\" alta",
   "syllables": "-la -ca-sa \"-á-ni-ma\" -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa \"ánima\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4048,9 +3629,7 @@
   "verse": "el viento \"ánima ártico",
   "syllables": "-el -vien-to \"-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento \"ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4066,9 +3645,7 @@
   "verse": "el viento \"ánima\" ártico",
   "syllables": "-el -vien-to \"-á-ni-ma\" -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento \"ánima\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4102,9 +3679,7 @@
   "verse": "el arma \"ánima",
   "syllables": "-el -ar-ma \"-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma \"ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -4120,19 +3695,15 @@
   "verse": "el arma \"ánima\"",
   "syllables": "-el -ar-ma \"-á-ni-ma\"",
   "count": 5,
-  "synalephas": [
-   "arma \"ánima\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma \" ánima",
-  "syllables": "-el -ar-ma \"- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -4140,9 +3711,7 @@
   "verse": "el arma \"y antigua",
   "syllables": "-el -ar-ma \"-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma \"y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4160,9 +3729,7 @@
   "verse": "el arma \"y\" antigua",
   "syllables": "-el -ar-ma \"-y\" -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma \"y\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4170,9 +3737,7 @@
   "verse": "el alma \"y eterna",
   "syllables": "-el -al-ma \"-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma \"y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -4190,9 +3755,7 @@
   "verse": "el alma \"y\" eterna",
   "syllables": "-el -al-ma \"-y\" -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma \"y\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -4200,9 +3763,7 @@
   "verse": "canta \"y y baila",
   "syllables": "-can-ta \"-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta \"y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -4220,9 +3781,7 @@
   "verse": "canta \"y\" y baila",
   "syllables": "-can-ta \"-y\" -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta \"y\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -4230,9 +3789,7 @@
   "verse": "la casa \"y alta",
   "syllables": "-la -ca-sa \"-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa \"y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4250,9 +3807,7 @@
   "verse": "la casa \"y\" alta",
   "syllables": "-la -ca-sa \"-y\" -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa \"y\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4260,9 +3815,7 @@
   "verse": "el viento \"y ártico",
   "syllables": "-el -vien-to \"-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento \"y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4280,9 +3833,7 @@
   "verse": "el viento \"y\" ártico",
   "syllables": "-el -vien-to \"-y\" -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento \"y\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4313,10 +3864,8 @@
  {
   "verse": "el arma \"y",
   "syllables": "-el -ar-ma \"-y",
-  "count": 4,
-  "synalephas": [
-   "arma \"y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -4333,20 +3882,16 @@
  {
   "verse": "el arma \"y\"",
   "syllables": "-el -ar-ma \"-y\"",
-  "count": 4,
-  "synalephas": [
-   "arma \"y\""
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma \" y",
-  "syllables": "-el -ar-ma \"- -y",
-  "count": 6,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -4355,7 +3900,6 @@
   "syllables": "-el -ar-ma \"-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma \"alma",
    "\"alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -4373,9 +3917,7 @@
   "verse": "el arma \"alma\" antigua",
   "syllables": "-el -ar-ma \"-al-ma\" -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma \"alma\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4384,7 +3926,6 @@
   "syllables": "-el -al-ma \"-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma \"alma",
    "\"alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -4402,9 +3943,7 @@
   "verse": "el alma \"alma\" eterna",
   "syllables": "-el -al-ma \"-al-ma\" -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma \"alma\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -4413,7 +3952,6 @@
   "syllables": "-can-ta \"-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta \"alma",
    "\"alma y"
   ],
   "consonant_rhyme": "aila",
@@ -4431,9 +3969,7 @@
   "verse": "canta \"alma\" y baila",
   "syllables": "-can-ta \"-al-ma\" -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta \"alma\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -4441,9 +3977,7 @@
   "verse": "la casa \"alma alta",
   "syllables": "-la -ca-sa \"-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa \"alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4459,9 +3993,7 @@
   "verse": "la casa \"alma\" alta",
   "syllables": "-la -ca-sa \"-al-ma\" -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa \"alma\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4469,9 +4001,7 @@
   "verse": "el viento \"alma ártico",
   "syllables": "-el -vien-to \"-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento \"alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4487,9 +4017,7 @@
   "verse": "el viento \"alma\" ártico",
   "syllables": "-el -vien-to \"-al-ma\" -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento \"alma\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4523,9 +4051,7 @@
   "verse": "el arma \"alma",
   "syllables": "-el -ar-ma \"-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma \"alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -4541,19 +4067,15 @@
   "verse": "el arma \"alma\"",
   "syllables": "-el -ar-ma \"-al-ma\"",
   "count": 5,
-  "synalephas": [
-   "arma \"alma\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma \" alma",
-  "syllables": "-el -ar-ma \"- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -4562,7 +4084,6 @@
   "syllables": "-el -ar-ma \"-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma \"hiedra",
    "\"hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -4580,9 +4101,7 @@
   "verse": "el arma \"hiedra\" antigua",
   "syllables": "-el -ar-ma \"-hie-dra\" -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma \"hiedra\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4591,7 +4110,6 @@
   "syllables": "-el -al-ma \"-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma \"hiedra",
    "\"hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -4609,9 +4127,7 @@
   "verse": "el alma \"hiedra\" eterna",
   "syllables": "-el -al-ma \"-hie-dra\" -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma \"hiedra\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -4620,7 +4136,6 @@
   "syllables": "-can-ta \"-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta \"hiedra",
    "\"hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -4638,9 +4153,7 @@
   "verse": "canta \"hiedra\" y baila",
   "syllables": "-can-ta \"-hie-dra\" -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta \"hiedra\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -4648,9 +4161,7 @@
   "verse": "la casa \"hiedra alta",
   "syllables": "-la -ca-sa \"-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa \"hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4666,9 +4177,7 @@
   "verse": "la casa \"hiedra\" alta",
   "syllables": "-la -ca-sa \"-hie-dra\" -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa \"hiedra\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4676,9 +4185,7 @@
   "verse": "el viento \"hiedra ártico",
   "syllables": "-el -vien-to \"-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento \"hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4694,9 +4201,7 @@
   "verse": "el viento \"hiedra\" ártico",
   "syllables": "-el -vien-to \"-hie-dra\" -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento \"hiedra\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4730,9 +4235,7 @@
   "verse": "el arma \"hiedra",
   "syllables": "-el -ar-ma \"-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma \"hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -4748,19 +4251,15 @@
   "verse": "el arma \"hiedra\"",
   "syllables": "-el -ar-ma \"-hie-dra\"",
   "count": 5,
-  "synalephas": [
-   "arma \"hiedra\""
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma \" hiedra",
-  "syllables": "-el -ar-ma \"- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma \""
-  ],
+  "syllables": "-el -ar-ma \" -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -4769,7 +4268,6 @@
   "syllables": "-el -ar-ma «-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma «antigua",
    "«antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -4789,9 +4287,7 @@
   "verse": "el arma «antigua» antigua",
   "syllables": "-el -ar-ma «-an-ti-gua» -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma «antigua»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4800,7 +4296,6 @@
   "syllables": "-el -al-ma «-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma «antigua",
    "«antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -4820,9 +4315,7 @@
   "verse": "el alma «antigua» eterna",
   "syllables": "-el -al-ma «-an-ti-gua» -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma «antigua»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -4831,7 +4324,6 @@
   "syllables": "-can-ta «-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta «antigua",
    "«antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -4851,9 +4343,7 @@
   "verse": "canta «antigua» y baila",
   "syllables": "-can-ta «-an-ti-gua» -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta «antigua»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -4861,9 +4351,7 @@
   "verse": "la casa «antigua alta",
   "syllables": "-la -ca-sa «-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa «antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4881,9 +4369,7 @@
   "verse": "la casa «antigua» alta",
   "syllables": "-la -ca-sa «-an-ti-gua» -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa «antigua»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -4891,9 +4377,7 @@
   "verse": "el viento «antigua ártico",
   "syllables": "-el -vien-to «-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento «antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4911,9 +4395,7 @@
   "verse": "el viento «antigua» ártico",
   "syllables": "-el -vien-to «-an-ti-gua» -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento «antigua»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -4947,9 +4429,7 @@
   "verse": "el arma «antigua",
   "syllables": "-el -ar-ma «-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma «antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4967,19 +4447,15 @@
   "verse": "el arma «antigua»",
   "syllables": "-el -ar-ma «-an-ti-gua»",
   "count": 6,
-  "synalephas": [
-   "arma «antigua»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma « antigua",
-  "syllables": "-el -ar-ma «- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -4988,7 +4464,6 @@
   "syllables": "-el -ar-ma «-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma «eterna",
    "«eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -5008,9 +4483,7 @@
   "verse": "el arma «eterna» antigua",
   "syllables": "-el -ar-ma «-e-ter-na» -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma «eterna»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5019,7 +4492,6 @@
   "syllables": "-el -al-ma «-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma «eterna",
    "«eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -5039,9 +4511,7 @@
   "verse": "el alma «eterna» eterna",
   "syllables": "-el -al-ma «-e-ter-na» -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma «eterna»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5050,7 +4520,6 @@
   "syllables": "-can-ta «-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta «eterna",
    "«eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -5070,9 +4539,7 @@
   "verse": "canta «eterna» y baila",
   "syllables": "-can-ta «-e-ter-na» -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta «eterna»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5080,9 +4547,7 @@
   "verse": "la casa «eterna alta",
   "syllables": "-la -ca-sa «-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa «eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5100,9 +4565,7 @@
   "verse": "la casa «eterna» alta",
   "syllables": "-la -ca-sa «-e-ter-na» -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa «eterna»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5110,9 +4573,7 @@
   "verse": "el viento «eterna ártico",
   "syllables": "-el -vien-to «-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento «eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5130,9 +4591,7 @@
   "verse": "el viento «eterna» ártico",
   "syllables": "-el -vien-to «-e-ter-na» -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento «eterna»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5166,9 +4625,7 @@
   "verse": "el arma «eterna",
   "syllables": "-el -ar-ma «-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma «eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5186,19 +4643,15 @@
   "verse": "el arma «eterna»",
   "syllables": "-el -ar-ma «-e-ter-na»",
   "count": 6,
-  "synalephas": [
-   "arma «eterna»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma « eterna",
-  "syllables": "-el -ar-ma «- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5206,9 +4659,7 @@
   "verse": "el arma «azul antigua",
   "syllables": "-el -ar-ma «-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma «azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5226,9 +4677,7 @@
   "verse": "el arma «azul» antigua",
   "syllables": "-el -ar-ma «-a-zul» -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma «azul»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5236,9 +4685,7 @@
   "verse": "el alma «azul eterna",
   "syllables": "-el -al-ma «-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma «azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5256,9 +4703,7 @@
   "verse": "el alma «azul» eterna",
   "syllables": "-el -al-ma «-a-zul» -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma «azul»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5266,9 +4711,7 @@
   "verse": "canta «azul y baila",
   "syllables": "-can-ta «-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta «azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5286,9 +4729,7 @@
   "verse": "canta «azul» y baila",
   "syllables": "-can-ta «-a-zul» -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta «azul»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5296,9 +4737,7 @@
   "verse": "la casa «azul alta",
   "syllables": "-la -ca-sa «-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa «azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5316,9 +4755,7 @@
   "verse": "la casa «azul» alta",
   "syllables": "-la -ca-sa «-a-zul» -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa «azul»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5326,9 +4763,7 @@
   "verse": "el viento «azul ártico",
   "syllables": "-el -vien-to «-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento «azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5346,9 +4781,7 @@
   "verse": "el viento «azul» ártico",
   "syllables": "-el -vien-to «-a-zul» -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento «azul»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5380,9 +4813,7 @@
   "verse": "el arma «azul",
   "syllables": "-el -ar-ma «-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma «azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -5400,19 +4831,15 @@
   "verse": "el arma «azul»",
   "syllables": "-el -ar-ma «-a-zul»",
   "count": 6,
-  "synalephas": [
-   "arma «azul»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma « azul",
-  "syllables": "-el -ar-ma «- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -5421,7 +4848,6 @@
   "syllables": "-el -ar-ma «-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma «ánima",
    "«ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -5439,9 +4865,7 @@
   "verse": "el arma «ánima» antigua",
   "syllables": "-el -ar-ma «-á-ni-ma» -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma «ánima»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5450,7 +4874,6 @@
   "syllables": "-el -al-ma «-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma «ánima",
    "«ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -5468,9 +4891,7 @@
   "verse": "el alma «ánima» eterna",
   "syllables": "-el -al-ma «-á-ni-ma» -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma «ánima»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5479,7 +4900,6 @@
   "syllables": "-can-ta «-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta «ánima",
    "«ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -5497,9 +4917,7 @@
   "verse": "canta «ánima» y baila",
   "syllables": "-can-ta «-á-ni-ma» -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta «ánima»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5507,9 +4925,7 @@
   "verse": "la casa «ánima alta",
   "syllables": "-la -ca-sa «-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa «ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5525,9 +4941,7 @@
   "verse": "la casa «ánima» alta",
   "syllables": "-la -ca-sa «-á-ni-ma» -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa «ánima»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5535,9 +4949,7 @@
   "verse": "el viento «ánima ártico",
   "syllables": "-el -vien-to «-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento «ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5553,9 +4965,7 @@
   "verse": "el viento «ánima» ártico",
   "syllables": "-el -vien-to «-á-ni-ma» -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento «ánima»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5589,9 +4999,7 @@
   "verse": "el arma «ánima",
   "syllables": "-el -ar-ma «-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma «ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -5607,19 +5015,15 @@
   "verse": "el arma «ánima»",
   "syllables": "-el -ar-ma «-á-ni-ma»",
   "count": 5,
-  "synalephas": [
-   "arma «ánima»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma « ánima",
-  "syllables": "-el -ar-ma «- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -5627,9 +5031,7 @@
   "verse": "el arma «y antigua",
   "syllables": "-el -ar-ma «-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma «y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5647,9 +5049,7 @@
   "verse": "el arma «y» antigua",
   "syllables": "-el -ar-ma «-y» -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma «y»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5657,9 +5057,7 @@
   "verse": "el alma «y eterna",
   "syllables": "-el -al-ma «-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma «y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5677,9 +5075,7 @@
   "verse": "el alma «y» eterna",
   "syllables": "-el -al-ma «-y» -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma «y»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5687,9 +5083,7 @@
   "verse": "canta «y y baila",
   "syllables": "-can-ta «-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta «y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5707,9 +5101,7 @@
   "verse": "canta «y» y baila",
   "syllables": "-can-ta «-y» -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta «y»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5717,9 +5109,7 @@
   "verse": "la casa «y alta",
   "syllables": "-la -ca-sa «-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa «y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5737,9 +5127,7 @@
   "verse": "la casa «y» alta",
   "syllables": "-la -ca-sa «-y» -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa «y»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5747,9 +5135,7 @@
   "verse": "el viento «y ártico",
   "syllables": "-el -vien-to «-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento «y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5767,9 +5153,7 @@
   "verse": "el viento «y» ártico",
   "syllables": "-el -vien-to «-y» -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento «y»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5800,10 +5184,8 @@
  {
   "verse": "el arma «y",
   "syllables": "-el -ar-ma «-y",
-  "count": 4,
-  "synalephas": [
-   "arma «y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -5820,20 +5202,16 @@
  {
   "verse": "el arma «y»",
   "syllables": "-el -ar-ma «-y»",
-  "count": 4,
-  "synalephas": [
-   "arma «y»"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma « y",
-  "syllables": "-el -ar-ma «- -y",
-  "count": 6,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -5842,7 +5220,6 @@
   "syllables": "-el -ar-ma «-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma «alma",
    "«alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -5860,9 +5237,7 @@
   "verse": "el arma «alma» antigua",
   "syllables": "-el -ar-ma «-al-ma» -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma «alma»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -5871,7 +5246,6 @@
   "syllables": "-el -al-ma «-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma «alma",
    "«alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -5889,9 +5263,7 @@
   "verse": "el alma «alma» eterna",
   "syllables": "-el -al-ma «-al-ma» -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma «alma»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -5900,7 +5272,6 @@
   "syllables": "-can-ta «-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta «alma",
    "«alma y"
   ],
   "consonant_rhyme": "aila",
@@ -5918,9 +5289,7 @@
   "verse": "canta «alma» y baila",
   "syllables": "-can-ta «-al-ma» -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta «alma»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -5928,9 +5297,7 @@
   "verse": "la casa «alma alta",
   "syllables": "-la -ca-sa «-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa «alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5946,9 +5313,7 @@
   "verse": "la casa «alma» alta",
   "syllables": "-la -ca-sa «-al-ma» -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa «alma»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -5956,9 +5321,7 @@
   "verse": "el viento «alma ártico",
   "syllables": "-el -vien-to «-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento «alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -5974,9 +5337,7 @@
   "verse": "el viento «alma» ártico",
   "syllables": "-el -vien-to «-al-ma» -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento «alma»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6010,9 +5371,7 @@
   "verse": "el arma «alma",
   "syllables": "-el -ar-ma «-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma «alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -6028,19 +5387,15 @@
   "verse": "el arma «alma»",
   "syllables": "-el -ar-ma «-al-ma»",
   "count": 5,
-  "synalephas": [
-   "arma «alma»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma « alma",
-  "syllables": "-el -ar-ma «- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -6049,7 +5404,6 @@
   "syllables": "-el -ar-ma «-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma «hiedra",
    "«hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -6067,9 +5421,7 @@
   "verse": "el arma «hiedra» antigua",
   "syllables": "-el -ar-ma «-hie-dra» -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma «hiedra»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6078,7 +5430,6 @@
   "syllables": "-el -al-ma «-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma «hiedra",
    "«hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -6096,9 +5447,7 @@
   "verse": "el alma «hiedra» eterna",
   "syllables": "-el -al-ma «-hie-dra» -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma «hiedra»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6107,7 +5456,6 @@
   "syllables": "-can-ta «-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta «hiedra",
    "«hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -6125,9 +5473,7 @@
   "verse": "canta «hiedra» y baila",
   "syllables": "-can-ta «-hie-dra» -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta «hiedra»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -6135,9 +5481,7 @@
   "verse": "la casa «hiedra alta",
   "syllables": "-la -ca-sa «-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa «hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6153,9 +5497,7 @@
   "verse": "la casa «hiedra» alta",
   "syllables": "-la -ca-sa «-hie-dra» -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa «hiedra»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6163,9 +5505,7 @@
   "verse": "el viento «hiedra ártico",
   "syllables": "-el -vien-to «-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento «hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6181,9 +5521,7 @@
   "verse": "el viento «hiedra» ártico",
   "syllables": "-el -vien-to «-hie-dra» -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento «hiedra»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6217,9 +5555,7 @@
   "verse": "el arma «hiedra",
   "syllables": "-el -ar-ma «-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma «hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -6235,19 +5571,15 @@
   "verse": "el arma «hiedra»",
   "syllables": "-el -ar-ma «-hie-dra»",
   "count": 5,
-  "synalephas": [
-   "arma «hiedra»"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma « hiedra",
-  "syllables": "-el -ar-ma «- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma «"
-  ],
+  "syllables": "-el -ar-ma « -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -6256,7 +5588,6 @@
   "syllables": "-el -ar-ma (-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma (antigua",
    "(antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -6276,9 +5607,7 @@
   "verse": "el arma (antigua) antigua",
   "syllables": "-el -ar-ma (-an-ti-gua) -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma (antigua)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6287,7 +5616,6 @@
   "syllables": "-el -al-ma (-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma (antigua",
    "(antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -6307,9 +5635,7 @@
   "verse": "el alma (antigua) eterna",
   "syllables": "-el -al-ma (-an-ti-gua) -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma (antigua)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6318,7 +5644,6 @@
   "syllables": "-can-ta (-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta (antigua",
    "(antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -6338,9 +5663,7 @@
   "verse": "canta (antigua) y baila",
   "syllables": "-can-ta (-an-ti-gua) -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta (antigua)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -6348,9 +5671,7 @@
   "verse": "la casa (antigua alta",
   "syllables": "-la -ca-sa (-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa (antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6368,9 +5689,7 @@
   "verse": "la casa (antigua) alta",
   "syllables": "-la -ca-sa (-an-ti-gua) -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa (antigua)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6378,9 +5697,7 @@
   "verse": "el viento (antigua ártico",
   "syllables": "-el -vien-to (-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento (antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6398,9 +5715,7 @@
   "verse": "el viento (antigua) ártico",
   "syllables": "-el -vien-to (-an-ti-gua) -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento (antigua)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6434,9 +5749,7 @@
   "verse": "el arma (antigua",
   "syllables": "-el -ar-ma (-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma (antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6454,19 +5767,15 @@
   "verse": "el arma (antigua)",
   "syllables": "-el -ar-ma (-an-ti-gua)",
   "count": 6,
-  "synalephas": [
-   "arma (antigua)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma ( antigua",
-  "syllables": "-el -ar-ma (- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6475,7 +5784,6 @@
   "syllables": "-el -ar-ma (-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma (eterna",
    "(eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -6495,9 +5803,7 @@
   "verse": "el arma (eterna) antigua",
   "syllables": "-el -ar-ma (-e-ter-na) -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma (eterna)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6506,7 +5812,6 @@
   "syllables": "-el -al-ma (-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma (eterna",
    "(eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -6526,9 +5831,7 @@
   "verse": "el alma (eterna) eterna",
   "syllables": "-el -al-ma (-e-ter-na) -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma (eterna)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6537,7 +5840,6 @@
   "syllables": "-can-ta (-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta (eterna",
    "(eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -6557,9 +5859,7 @@
   "verse": "canta (eterna) y baila",
   "syllables": "-can-ta (-e-ter-na) -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta (eterna)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -6567,9 +5867,7 @@
   "verse": "la casa (eterna alta",
   "syllables": "-la -ca-sa (-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa (eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6587,9 +5885,7 @@
   "verse": "la casa (eterna) alta",
   "syllables": "-la -ca-sa (-e-ter-na) -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa (eterna)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6597,9 +5893,7 @@
   "verse": "el viento (eterna ártico",
   "syllables": "-el -vien-to (-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento (eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6617,9 +5911,7 @@
   "verse": "el viento (eterna) ártico",
   "syllables": "-el -vien-to (-e-ter-na) -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento (eterna)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6653,9 +5945,7 @@
   "verse": "el arma (eterna",
   "syllables": "-el -ar-ma (-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma (eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6673,19 +5963,15 @@
   "verse": "el arma (eterna)",
   "syllables": "-el -ar-ma (-e-ter-na)",
   "count": 6,
-  "synalephas": [
-   "arma (eterna)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ( eterna",
-  "syllables": "-el -ar-ma (- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6693,9 +5979,7 @@
   "verse": "el arma (azul antigua",
   "syllables": "-el -ar-ma (-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma (azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6713,9 +5997,7 @@
   "verse": "el arma (azul) antigua",
   "syllables": "-el -ar-ma (-a-zul) -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma (azul)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6723,9 +6005,7 @@
   "verse": "el alma (azul eterna",
   "syllables": "-el -al-ma (-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma (azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6743,9 +6023,7 @@
   "verse": "el alma (azul) eterna",
   "syllables": "-el -al-ma (-a-zul) -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma (azul)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6753,9 +6031,7 @@
   "verse": "canta (azul y baila",
   "syllables": "-can-ta (-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta (azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -6773,9 +6049,7 @@
   "verse": "canta (azul) y baila",
   "syllables": "-can-ta (-a-zul) -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta (azul)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -6783,9 +6057,7 @@
   "verse": "la casa (azul alta",
   "syllables": "-la -ca-sa (-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa (azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6803,9 +6075,7 @@
   "verse": "la casa (azul) alta",
   "syllables": "-la -ca-sa (-a-zul) -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa (azul)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -6813,9 +6083,7 @@
   "verse": "el viento (azul ártico",
   "syllables": "-el -vien-to (-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento (azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6833,9 +6101,7 @@
   "verse": "el viento (azul) ártico",
   "syllables": "-el -vien-to (-a-zul) -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento (azul)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -6867,9 +6133,7 @@
   "verse": "el arma (azul",
   "syllables": "-el -ar-ma (-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma (azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -6887,19 +6151,15 @@
   "verse": "el arma (azul)",
   "syllables": "-el -ar-ma (-a-zul)",
   "count": 6,
-  "synalephas": [
-   "arma (azul)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma ( azul",
-  "syllables": "-el -ar-ma (- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -6908,7 +6168,6 @@
   "syllables": "-el -ar-ma (-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma (ánima",
    "(ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -6926,9 +6185,7 @@
   "verse": "el arma (ánima) antigua",
   "syllables": "-el -ar-ma (-á-ni-ma) -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma (ánima)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -6937,7 +6194,6 @@
   "syllables": "-el -al-ma (-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma (ánima",
    "(ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -6955,9 +6211,7 @@
   "verse": "el alma (ánima) eterna",
   "syllables": "-el -al-ma (-á-ni-ma) -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma (ánima)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -6966,7 +6220,6 @@
   "syllables": "-can-ta (-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta (ánima",
    "(ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -6984,9 +6237,7 @@
   "verse": "canta (ánima) y baila",
   "syllables": "-can-ta (-á-ni-ma) -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta (ánima)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -6994,9 +6245,7 @@
   "verse": "la casa (ánima alta",
   "syllables": "-la -ca-sa (-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa (ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7012,9 +6261,7 @@
   "verse": "la casa (ánima) alta",
   "syllables": "-la -ca-sa (-á-ni-ma) -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa (ánima)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7022,9 +6269,7 @@
   "verse": "el viento (ánima ártico",
   "syllables": "-el -vien-to (-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento (ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7040,9 +6285,7 @@
   "verse": "el viento (ánima) ártico",
   "syllables": "-el -vien-to (-á-ni-ma) -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento (ánima)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7076,9 +6319,7 @@
   "verse": "el arma (ánima",
   "syllables": "-el -ar-ma (-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma (ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -7094,19 +6335,15 @@
   "verse": "el arma (ánima)",
   "syllables": "-el -ar-ma (-á-ni-ma)",
   "count": 5,
-  "synalephas": [
-   "arma (ánima)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma ( ánima",
-  "syllables": "-el -ar-ma (- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -7114,9 +6351,7 @@
   "verse": "el arma (y antigua",
   "syllables": "-el -ar-ma (-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma (y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7134,9 +6369,7 @@
   "verse": "el arma (y) antigua",
   "syllables": "-el -ar-ma (-y) -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma (y)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7144,9 +6377,7 @@
   "verse": "el alma (y eterna",
   "syllables": "-el -al-ma (-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma (y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -7164,9 +6395,7 @@
   "verse": "el alma (y) eterna",
   "syllables": "-el -al-ma (-y) -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma (y)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -7174,9 +6403,7 @@
   "verse": "canta (y y baila",
   "syllables": "-can-ta (-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta (y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -7194,9 +6421,7 @@
   "verse": "canta (y) y baila",
   "syllables": "-can-ta (-y) -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta (y)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -7204,9 +6429,7 @@
   "verse": "la casa (y alta",
   "syllables": "-la -ca-sa (-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa (y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7224,9 +6447,7 @@
   "verse": "la casa (y) alta",
   "syllables": "-la -ca-sa (-y) -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa (y)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7234,9 +6455,7 @@
   "verse": "el viento (y ártico",
   "syllables": "-el -vien-to (-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento (y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7254,9 +6473,7 @@
   "verse": "el viento (y) ártico",
   "syllables": "-el -vien-to (-y) -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento (y)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7287,10 +6504,8 @@
  {
   "verse": "el arma (y",
   "syllables": "-el -ar-ma (-y",
-  "count": 4,
-  "synalephas": [
-   "arma (y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -7307,20 +6522,16 @@
  {
   "verse": "el arma (y)",
   "syllables": "-el -ar-ma (-y)",
-  "count": 4,
-  "synalephas": [
-   "arma (y)"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma ( y",
-  "syllables": "-el -ar-ma (- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -7329,7 +6540,6 @@
   "syllables": "-el -ar-ma (-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma (alma",
    "(alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -7347,9 +6557,7 @@
   "verse": "el arma (alma) antigua",
   "syllables": "-el -ar-ma (-al-ma) -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma (alma)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7358,7 +6566,6 @@
   "syllables": "-el -al-ma (-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma (alma",
    "(alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -7376,9 +6583,7 @@
   "verse": "el alma (alma) eterna",
   "syllables": "-el -al-ma (-al-ma) -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma (alma)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -7387,7 +6592,6 @@
   "syllables": "-can-ta (-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta (alma",
    "(alma y"
   ],
   "consonant_rhyme": "aila",
@@ -7405,9 +6609,7 @@
   "verse": "canta (alma) y baila",
   "syllables": "-can-ta (-al-ma) -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta (alma)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -7415,9 +6617,7 @@
   "verse": "la casa (alma alta",
   "syllables": "-la -ca-sa (-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa (alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7433,9 +6633,7 @@
   "verse": "la casa (alma) alta",
   "syllables": "-la -ca-sa (-al-ma) -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa (alma)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7443,9 +6641,7 @@
   "verse": "el viento (alma ártico",
   "syllables": "-el -vien-to (-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento (alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7461,9 +6657,7 @@
   "verse": "el viento (alma) ártico",
   "syllables": "-el -vien-to (-al-ma) -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento (alma)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7497,9 +6691,7 @@
   "verse": "el arma (alma",
   "syllables": "-el -ar-ma (-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma (alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -7515,19 +6707,15 @@
   "verse": "el arma (alma)",
   "syllables": "-el -ar-ma (-al-ma)",
   "count": 5,
-  "synalephas": [
-   "arma (alma)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma ( alma",
-  "syllables": "-el -ar-ma (- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -7536,7 +6724,6 @@
   "syllables": "-el -ar-ma (-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma (hiedra",
    "(hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -7554,9 +6741,7 @@
   "verse": "el arma (hiedra) antigua",
   "syllables": "-el -ar-ma (-hie-dra) -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma (hiedra)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7565,7 +6750,6 @@
   "syllables": "-el -al-ma (-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma (hiedra",
    "(hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -7583,9 +6767,7 @@
   "verse": "el alma (hiedra) eterna",
   "syllables": "-el -al-ma (-hie-dra) -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma (hiedra)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -7594,7 +6776,6 @@
   "syllables": "-can-ta (-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta (hiedra",
    "(hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -7612,9 +6793,7 @@
   "verse": "canta (hiedra) y baila",
   "syllables": "-can-ta (-hie-dra) -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta (hiedra)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -7622,9 +6801,7 @@
   "verse": "la casa (hiedra alta",
   "syllables": "-la -ca-sa (-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa (hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7640,9 +6817,7 @@
   "verse": "la casa (hiedra) alta",
   "syllables": "-la -ca-sa (-hie-dra) -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa (hiedra)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7650,9 +6825,7 @@
   "verse": "el viento (hiedra ártico",
   "syllables": "-el -vien-to (-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento (hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7668,9 +6841,7 @@
   "verse": "el viento (hiedra) ártico",
   "syllables": "-el -vien-to (-hie-dra) -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento (hiedra)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7704,9 +6875,7 @@
   "verse": "el arma (hiedra",
   "syllables": "-el -ar-ma (-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma (hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -7722,19 +6891,15 @@
   "verse": "el arma (hiedra)",
   "syllables": "-el -ar-ma (-hie-dra)",
   "count": 5,
-  "synalephas": [
-   "arma (hiedra)"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ( hiedra",
-  "syllables": "-el -ar-ma (- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ("
-  ],
+  "syllables": "-el -ar-ma ( -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -7743,7 +6908,6 @@
   "syllables": "-el -ar-ma —-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma —antigua",
    "—antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -7763,9 +6927,7 @@
   "verse": "el arma —antigua— antigua",
   "syllables": "-el -ar-ma —-an-ti-gua— -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma —antigua—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7774,7 +6936,6 @@
   "syllables": "-el -al-ma —-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma —antigua",
    "—antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -7794,9 +6955,7 @@
   "verse": "el alma —antigua— eterna",
   "syllables": "-el -al-ma —-an-ti-gua— -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma —antigua—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -7805,7 +6964,6 @@
   "syllables": "-can-ta —-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta —antigua",
    "—antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -7825,9 +6983,7 @@
   "verse": "canta —antigua— y baila",
   "syllables": "-can-ta —-an-ti-gua— -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta —antigua—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -7835,9 +6991,7 @@
   "verse": "la casa —antigua alta",
   "syllables": "-la -ca-sa —-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa —antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7855,9 +7009,7 @@
   "verse": "la casa —antigua— alta",
   "syllables": "-la -ca-sa —-an-ti-gua— -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa —antigua—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -7865,9 +7017,7 @@
   "verse": "el viento —antigua ártico",
   "syllables": "-el -vien-to —-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento —antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7885,9 +7035,7 @@
   "verse": "el viento —antigua— ártico",
   "syllables": "-el -vien-to —-an-ti-gua— -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento —antigua—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -7921,9 +7069,7 @@
   "verse": "el arma —antigua",
   "syllables": "-el -ar-ma —-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma —antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7941,19 +7087,15 @@
   "verse": "el arma —antigua—",
   "syllables": "-el -ar-ma —-an-ti-gua—",
   "count": 6,
-  "synalephas": [
-   "arma —antigua—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma — antigua",
-  "syllables": "-el -ar-ma —- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7962,7 +7104,6 @@
   "syllables": "-el -ar-ma —-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma —eterna",
    "—eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -7982,9 +7123,7 @@
   "verse": "el arma —eterna— antigua",
   "syllables": "-el -ar-ma —-e-ter-na— -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma —eterna—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -7993,7 +7132,6 @@
   "syllables": "-el -al-ma —-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma —eterna",
    "—eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -8013,9 +7151,7 @@
   "verse": "el alma —eterna— eterna",
   "syllables": "-el -al-ma —-e-ter-na— -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma —eterna—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8024,7 +7160,6 @@
   "syllables": "-can-ta —-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta —eterna",
    "—eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -8044,9 +7179,7 @@
   "verse": "canta —eterna— y baila",
   "syllables": "-can-ta —-e-ter-na— -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta —eterna—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8054,9 +7187,7 @@
   "verse": "la casa —eterna alta",
   "syllables": "-la -ca-sa —-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa —eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8074,9 +7205,7 @@
   "verse": "la casa —eterna— alta",
   "syllables": "-la -ca-sa —-e-ter-na— -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa —eterna—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8084,9 +7213,7 @@
   "verse": "el viento —eterna ártico",
   "syllables": "-el -vien-to —-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento —eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8104,9 +7231,7 @@
   "verse": "el viento —eterna— ártico",
   "syllables": "-el -vien-to —-e-ter-na— -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento —eterna—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8140,9 +7265,7 @@
   "verse": "el arma —eterna",
   "syllables": "-el -ar-ma —-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma —eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8160,19 +7283,15 @@
   "verse": "el arma —eterna—",
   "syllables": "-el -ar-ma —-e-ter-na—",
   "count": 6,
-  "synalephas": [
-   "arma —eterna—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma — eterna",
-  "syllables": "-el -ar-ma —- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8180,9 +7299,7 @@
   "verse": "el arma —azul antigua",
   "syllables": "-el -ar-ma —-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma —azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -8200,9 +7317,7 @@
   "verse": "el arma —azul— antigua",
   "syllables": "-el -ar-ma —-a-zul— -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma —azul—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -8210,9 +7325,7 @@
   "verse": "el alma —azul eterna",
   "syllables": "-el -al-ma —-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma —azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8230,9 +7343,7 @@
   "verse": "el alma —azul— eterna",
   "syllables": "-el -al-ma —-a-zul— -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma —azul—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8240,9 +7351,7 @@
   "verse": "canta —azul y baila",
   "syllables": "-can-ta —-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta —azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8260,9 +7369,7 @@
   "verse": "canta —azul— y baila",
   "syllables": "-can-ta —-a-zul— -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta —azul—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8270,9 +7377,7 @@
   "verse": "la casa —azul alta",
   "syllables": "-la -ca-sa —-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa —azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8290,9 +7395,7 @@
   "verse": "la casa —azul— alta",
   "syllables": "-la -ca-sa —-a-zul— -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa —azul—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8300,9 +7403,7 @@
   "verse": "el viento —azul ártico",
   "syllables": "-el -vien-to —-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento —azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8320,9 +7421,7 @@
   "verse": "el viento —azul— ártico",
   "syllables": "-el -vien-to —-a-zul— -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento —azul—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8354,9 +7453,7 @@
   "verse": "el arma —azul",
   "syllables": "-el -ar-ma —-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma —azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -8374,19 +7471,15 @@
   "verse": "el arma —azul—",
   "syllables": "-el -ar-ma —-a-zul—",
   "count": 6,
-  "synalephas": [
-   "arma —azul—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma — azul",
-  "syllables": "-el -ar-ma —- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -8395,7 +7488,6 @@
   "syllables": "-el -ar-ma —-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma —ánima",
    "—ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -8413,9 +7505,7 @@
   "verse": "el arma —ánima— antigua",
   "syllables": "-el -ar-ma —-á-ni-ma— -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma —ánima—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -8424,7 +7514,6 @@
   "syllables": "-el -al-ma —-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma —ánima",
    "—ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -8442,9 +7531,7 @@
   "verse": "el alma —ánima— eterna",
   "syllables": "-el -al-ma —-á-ni-ma— -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma —ánima—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8453,7 +7540,6 @@
   "syllables": "-can-ta —-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta —ánima",
    "—ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -8471,9 +7557,7 @@
   "verse": "canta —ánima— y baila",
   "syllables": "-can-ta —-á-ni-ma— -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta —ánima—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8481,9 +7565,7 @@
   "verse": "la casa —ánima alta",
   "syllables": "-la -ca-sa —-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa —ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8499,9 +7581,7 @@
   "verse": "la casa —ánima— alta",
   "syllables": "-la -ca-sa —-á-ni-ma— -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa —ánima—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8509,9 +7589,7 @@
   "verse": "el viento —ánima ártico",
   "syllables": "-el -vien-to —-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento —ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8527,9 +7605,7 @@
   "verse": "el viento —ánima— ártico",
   "syllables": "-el -vien-to —-á-ni-ma— -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento —ánima—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8563,9 +7639,7 @@
   "verse": "el arma —ánima",
   "syllables": "-el -ar-ma —-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma —ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -8581,19 +7655,15 @@
   "verse": "el arma —ánima—",
   "syllables": "-el -ar-ma —-á-ni-ma—",
   "count": 5,
-  "synalephas": [
-   "arma —ánima—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma — ánima",
-  "syllables": "-el -ar-ma —- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -8601,9 +7671,7 @@
   "verse": "el arma —y antigua",
   "syllables": "-el -ar-ma —-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma —y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -8621,9 +7689,7 @@
   "verse": "el arma —y— antigua",
   "syllables": "-el -ar-ma —-y— -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma —y—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -8631,9 +7697,7 @@
   "verse": "el alma —y eterna",
   "syllables": "-el -al-ma —-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma —y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8651,9 +7715,7 @@
   "verse": "el alma —y— eterna",
   "syllables": "-el -al-ma —-y— -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma —y—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8661,9 +7723,7 @@
   "verse": "canta —y y baila",
   "syllables": "-can-ta —-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta —y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8681,9 +7741,7 @@
   "verse": "canta —y— y baila",
   "syllables": "-can-ta —-y— -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta —y—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8691,9 +7749,7 @@
   "verse": "la casa —y alta",
   "syllables": "-la -ca-sa —-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa —y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8711,9 +7767,7 @@
   "verse": "la casa —y— alta",
   "syllables": "-la -ca-sa —-y— -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa —y—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8721,9 +7775,7 @@
   "verse": "el viento —y ártico",
   "syllables": "-el -vien-to —-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento —y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8741,9 +7793,7 @@
   "verse": "el viento —y— ártico",
   "syllables": "-el -vien-to —-y— -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento —y—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8774,10 +7824,8 @@
  {
   "verse": "el arma —y",
   "syllables": "-el -ar-ma —-y",
-  "count": 4,
-  "synalephas": [
-   "arma —y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -8794,20 +7842,16 @@
  {
   "verse": "el arma —y—",
   "syllables": "-el -ar-ma —-y—",
-  "count": 4,
-  "synalephas": [
-   "arma —y—"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma — y",
-  "syllables": "-el -ar-ma —- -y",
-  "count": 6,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -8816,7 +7860,6 @@
   "syllables": "-el -ar-ma —-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma —alma",
    "—alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -8834,9 +7877,7 @@
   "verse": "el arma —alma— antigua",
   "syllables": "-el -ar-ma —-al-ma— -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma —alma—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -8845,7 +7886,6 @@
   "syllables": "-el -al-ma —-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma —alma",
    "—alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -8863,9 +7903,7 @@
   "verse": "el alma —alma— eterna",
   "syllables": "-el -al-ma —-al-ma— -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma —alma—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -8874,7 +7912,6 @@
   "syllables": "-can-ta —-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta —alma",
    "—alma y"
   ],
   "consonant_rhyme": "aila",
@@ -8892,9 +7929,7 @@
   "verse": "canta —alma— y baila",
   "syllables": "-can-ta —-al-ma— -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta —alma—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -8902,9 +7937,7 @@
   "verse": "la casa —alma alta",
   "syllables": "-la -ca-sa —-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa —alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8920,9 +7953,7 @@
   "verse": "la casa —alma— alta",
   "syllables": "-la -ca-sa —-al-ma— -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa —alma—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -8930,9 +7961,7 @@
   "verse": "el viento —alma ártico",
   "syllables": "-el -vien-to —-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento —alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8948,9 +7977,7 @@
   "verse": "el viento —alma— ártico",
   "syllables": "-el -vien-to —-al-ma— -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento —alma—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -8984,9 +8011,7 @@
   "verse": "el arma —alma",
   "syllables": "-el -ar-ma —-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma —alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -9002,19 +8027,15 @@
   "verse": "el arma —alma—",
   "syllables": "-el -ar-ma —-al-ma—",
   "count": 5,
-  "synalephas": [
-   "arma —alma—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma — alma",
-  "syllables": "-el -ar-ma —- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -9023,7 +8044,6 @@
   "syllables": "-el -ar-ma —-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma —hiedra",
    "—hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -9041,9 +8061,7 @@
   "verse": "el arma —hiedra— antigua",
   "syllables": "-el -ar-ma —-hie-dra— -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma —hiedra—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9052,7 +8070,6 @@
   "syllables": "-el -al-ma —-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma —hiedra",
    "—hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -9070,9 +8087,7 @@
   "verse": "el alma —hiedra— eterna",
   "syllables": "-el -al-ma —-hie-dra— -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma —hiedra—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9081,7 +8096,6 @@
   "syllables": "-can-ta —-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta —hiedra",
    "—hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -9099,9 +8113,7 @@
   "verse": "canta —hiedra— y baila",
   "syllables": "-can-ta —-hie-dra— -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta —hiedra—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -9109,9 +8121,7 @@
   "verse": "la casa —hiedra alta",
   "syllables": "-la -ca-sa —-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa —hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9127,9 +8137,7 @@
   "verse": "la casa —hiedra— alta",
   "syllables": "-la -ca-sa —-hie-dra— -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa —hiedra—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9137,9 +8145,7 @@
   "verse": "el viento —hiedra ártico",
   "syllables": "-el -vien-to —-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento —hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9155,9 +8161,7 @@
   "verse": "el viento —hiedra— ártico",
   "syllables": "-el -vien-to —-hie-dra— -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento —hiedra—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9191,9 +8195,7 @@
   "verse": "el arma —hiedra",
   "syllables": "-el -ar-ma —-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma —hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -9209,19 +8211,15 @@
   "verse": "el arma —hiedra—",
   "syllables": "-el -ar-ma —-hie-dra—",
   "count": 5,
-  "synalephas": [
-   "arma —hiedra—"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma — hiedra",
-  "syllables": "-el -ar-ma —- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma —"
-  ],
+  "syllables": "-el -ar-ma — -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -9230,7 +8228,6 @@
   "syllables": "-el -ar-ma '-an-ti-gua an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma 'antigua",
    "'antigua antigua"
   ],
   "consonant_rhyme": "igua",
@@ -9250,9 +8247,7 @@
   "verse": "el arma 'antigua' antigua",
   "syllables": "-el -ar-ma '-an-ti-gua' -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma 'antigua'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9261,7 +8256,6 @@
   "syllables": "-el -al-ma '-an-ti-gua e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma 'antigua",
    "'antigua eterna"
   ],
   "consonant_rhyme": "erna",
@@ -9281,9 +8275,7 @@
   "verse": "el alma 'antigua' eterna",
   "syllables": "-el -al-ma '-an-ti-gua' -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma 'antigua'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9292,7 +8284,6 @@
   "syllables": "-can-ta '-an-ti-gua y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta 'antigua",
    "'antigua y"
   ],
   "consonant_rhyme": "aila",
@@ -9312,9 +8303,7 @@
   "verse": "canta 'antigua' y baila",
   "syllables": "-can-ta '-an-ti-gua' -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta 'antigua'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -9322,9 +8311,7 @@
   "verse": "la casa 'antigua alta",
   "syllables": "-la -ca-sa '-an-ti-gua -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa 'antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9342,9 +8329,7 @@
   "verse": "la casa 'antigua' alta",
   "syllables": "-la -ca-sa '-an-ti-gua' -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa 'antigua'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9352,9 +8337,7 @@
   "verse": "el viento 'antigua ártico",
   "syllables": "-el -vien-to '-an-ti-gua -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento 'antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9372,9 +8355,7 @@
   "verse": "el viento 'antigua' ártico",
   "syllables": "-el -vien-to '-an-ti-gua' -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento 'antigua'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9408,9 +8389,7 @@
   "verse": "el arma 'antigua",
   "syllables": "-el -ar-ma '-an-ti-gua",
   "count": 6,
-  "synalephas": [
-   "arma 'antigua"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9428,19 +8407,15 @@
   "verse": "el arma 'antigua'",
   "syllables": "-el -ar-ma '-an-ti-gua'",
   "count": 6,
-  "synalephas": [
-   "arma 'antigua'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma ' antigua",
-  "syllables": "-el -ar-ma '- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9449,7 +8424,6 @@
   "syllables": "-el -ar-ma '-e-ter-na an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma 'eterna",
    "'eterna antigua"
   ],
   "consonant_rhyme": "igua",
@@ -9469,9 +8443,7 @@
   "verse": "el arma 'eterna' antigua",
   "syllables": "-el -ar-ma '-e-ter-na' -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma 'eterna'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9480,7 +8452,6 @@
   "syllables": "-el -al-ma '-e-ter-na e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma 'eterna",
    "'eterna eterna"
   ],
   "consonant_rhyme": "erna",
@@ -9500,9 +8471,7 @@
   "verse": "el alma 'eterna' eterna",
   "syllables": "-el -al-ma '-e-ter-na' -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma 'eterna'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9511,7 +8480,6 @@
   "syllables": "-can-ta '-e-ter-na y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta 'eterna",
    "'eterna y"
   ],
   "consonant_rhyme": "aila",
@@ -9531,9 +8499,7 @@
   "verse": "canta 'eterna' y baila",
   "syllables": "-can-ta '-e-ter-na' -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta 'eterna'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -9541,9 +8507,7 @@
   "verse": "la casa 'eterna alta",
   "syllables": "-la -ca-sa '-e-ter-na -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa 'eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9561,9 +8525,7 @@
   "verse": "la casa 'eterna' alta",
   "syllables": "-la -ca-sa '-e-ter-na' -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa 'eterna'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9571,9 +8533,7 @@
   "verse": "el viento 'eterna ártico",
   "syllables": "-el -vien-to '-e-ter-na -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento 'eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9591,9 +8551,7 @@
   "verse": "el viento 'eterna' ártico",
   "syllables": "-el -vien-to '-e-ter-na' -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento 'eterna'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9627,9 +8585,7 @@
   "verse": "el arma 'eterna",
   "syllables": "-el -ar-ma '-e-ter-na",
   "count": 6,
-  "synalephas": [
-   "arma 'eterna"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9647,19 +8603,15 @@
   "verse": "el arma 'eterna'",
   "syllables": "-el -ar-ma '-e-ter-na'",
   "count": 6,
-  "synalephas": [
-   "arma 'eterna'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ' eterna",
-  "syllables": "-el -ar-ma '- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9667,9 +8619,7 @@
   "verse": "el arma 'azul antigua",
   "syllables": "-el -ar-ma '-a-zul -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma 'azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9687,9 +8637,7 @@
   "verse": "el arma 'azul' antigua",
   "syllables": "-el -ar-ma '-a-zul' -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma 'azul'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9697,9 +8645,7 @@
   "verse": "el alma 'azul eterna",
   "syllables": "-el -al-ma '-a-zul -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma 'azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9717,9 +8663,7 @@
   "verse": "el alma 'azul' eterna",
   "syllables": "-el -al-ma '-a-zul' -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma 'azul'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9727,9 +8671,7 @@
   "verse": "canta 'azul y baila",
   "syllables": "-can-ta '-a-zul -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta 'azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -9747,9 +8689,7 @@
   "verse": "canta 'azul' y baila",
   "syllables": "-can-ta '-a-zul' -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta 'azul'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -9757,9 +8697,7 @@
   "verse": "la casa 'azul alta",
   "syllables": "-la -ca-sa '-a-zul -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa 'azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9777,9 +8715,7 @@
   "verse": "la casa 'azul' alta",
   "syllables": "-la -ca-sa '-a-zul' -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa 'azul'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9787,9 +8723,7 @@
   "verse": "el viento 'azul ártico",
   "syllables": "-el -vien-to '-a-zul -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento 'azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9807,9 +8741,7 @@
   "verse": "el viento 'azul' ártico",
   "syllables": "-el -vien-to '-a-zul' -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento 'azul'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -9841,9 +8773,7 @@
   "verse": "el arma 'azul",
   "syllables": "-el -ar-ma '-a-zul",
   "count": 6,
-  "synalephas": [
-   "arma 'azul"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -9861,19 +8791,15 @@
   "verse": "el arma 'azul'",
   "syllables": "-el -ar-ma '-a-zul'",
   "count": 6,
-  "synalephas": [
-   "arma 'azul'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma ' azul",
-  "syllables": "-el -ar-ma '- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -9882,7 +8808,6 @@
   "syllables": "-el -ar-ma '-á-ni-ma an-ti-gua",
   "count": 8,
   "synalephas": [
-   "arma 'ánima",
    "'ánima antigua"
   ],
   "consonant_rhyme": "igua",
@@ -9900,9 +8825,7 @@
   "verse": "el arma 'ánima' antigua",
   "syllables": "-el -ar-ma '-á-ni-ma' -an-ti-gua",
   "count": 9,
-  "synalephas": [
-   "arma 'ánima'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -9911,7 +8834,6 @@
   "syllables": "-el -al-ma '-á-ni-ma e-ter-na",
   "count": 8,
   "synalephas": [
-   "alma 'ánima",
    "'ánima eterna"
   ],
   "consonant_rhyme": "erna",
@@ -9929,9 +8851,7 @@
   "verse": "el alma 'ánima' eterna",
   "syllables": "-el -al-ma '-á-ni-ma' -e-ter-na",
   "count": 9,
-  "synalephas": [
-   "alma 'ánima'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -9940,7 +8860,6 @@
   "syllables": "-can-ta '-á-ni-ma y -bai-la",
   "count": 7,
   "synalephas": [
-   "canta 'ánima",
    "'ánima y"
   ],
   "consonant_rhyme": "aila",
@@ -9958,9 +8877,7 @@
   "verse": "canta 'ánima' y baila",
   "syllables": "-can-ta '-á-ni-ma' -y -bai-la",
   "count": 8,
-  "synalephas": [
-   "canta 'ánima'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -9968,9 +8885,7 @@
   "verse": "la casa 'ánima alta",
   "syllables": "-la -ca-sa '-á-ni-ma -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa 'ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9986,9 +8901,7 @@
   "verse": "la casa 'ánima' alta",
   "syllables": "-la -ca-sa '-á-ni-ma' -al-ta",
   "count": 8,
-  "synalephas": [
-   "casa 'ánima'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -9996,9 +8909,7 @@
   "verse": "el viento 'ánima ártico",
   "syllables": "-el -vien-to '-á-ni-ma -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento 'ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10014,9 +8925,7 @@
   "verse": "el viento 'ánima' ártico",
   "syllables": "-el -vien-to '-á-ni-ma' -ár-ti-co",
   "count": 8,
-  "synalephas": [
-   "viento 'ánima'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10050,9 +8959,7 @@
   "verse": "el arma 'ánima",
   "syllables": "-el -ar-ma '-á-ni-ma",
   "count": 5,
-  "synalephas": [
-   "arma 'ánima"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -10068,19 +8975,15 @@
   "verse": "el arma 'ánima'",
   "syllables": "-el -ar-ma '-á-ni-ma'",
   "count": 5,
-  "synalephas": [
-   "arma 'ánima'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma ' ánima",
-  "syllables": "-el -ar-ma '- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -10088,9 +8991,7 @@
   "verse": "el arma 'y antigua",
   "syllables": "-el -ar-ma '-y -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma 'y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -10108,9 +9009,7 @@
   "verse": "el arma 'y' antigua",
   "syllables": "-el -ar-ma '-y' -an-ti-gua",
   "count": 7,
-  "synalephas": [
-   "arma 'y'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -10118,9 +9017,7 @@
   "verse": "el alma 'y eterna",
   "syllables": "-el -al-ma '-y -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma 'y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -10138,9 +9035,7 @@
   "verse": "el alma 'y' eterna",
   "syllables": "-el -al-ma '-y' -e-ter-na",
   "count": 7,
-  "synalephas": [
-   "alma 'y'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -10148,9 +9043,7 @@
   "verse": "canta 'y y baila",
   "syllables": "-can-ta '-y -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta 'y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -10168,9 +9061,7 @@
   "verse": "canta 'y' y baila",
   "syllables": "-can-ta '-y' -y -bai-la",
   "count": 6,
-  "synalephas": [
-   "canta 'y'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -10178,9 +9069,7 @@
   "verse": "la casa 'y alta",
   "syllables": "-la -ca-sa '-y -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa 'y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -10198,9 +9087,7 @@
   "verse": "la casa 'y' alta",
   "syllables": "-la -ca-sa '-y' -al-ta",
   "count": 6,
-  "synalephas": [
-   "casa 'y'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -10208,9 +9095,7 @@
   "verse": "el viento 'y ártico",
   "syllables": "-el -vien-to '-y -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento 'y"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10228,9 +9113,7 @@
   "verse": "el viento 'y' ártico",
   "syllables": "-el -vien-to '-y' -ár-ti-co",
   "count": 6,
-  "synalephas": [
-   "viento 'y'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10261,10 +9144,8 @@
  {
   "verse": "el arma 'y",
   "syllables": "-el -ar-ma '-y",
-  "count": 4,
-  "synalephas": [
-   "arma 'y"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -10281,20 +9162,16 @@
  {
   "verse": "el arma 'y'",
   "syllables": "-el -ar-ma '-y'",
-  "count": 4,
-  "synalephas": [
-   "arma 'y'"
-  ],
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma ' y",
-  "syllables": "-el -ar-ma '- -y",
-  "count": 6,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -10303,7 +9180,6 @@
   "syllables": "-el -ar-ma '-al-ma an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma 'alma",
    "'alma antigua"
   ],
   "consonant_rhyme": "igua",
@@ -10321,9 +9197,7 @@
   "verse": "el arma 'alma' antigua",
   "syllables": "-el -ar-ma '-al-ma' -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma 'alma'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -10332,7 +9206,6 @@
   "syllables": "-el -al-ma '-al-ma e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma 'alma",
    "'alma eterna"
   ],
   "consonant_rhyme": "erna",
@@ -10350,9 +9223,7 @@
   "verse": "el alma 'alma' eterna",
   "syllables": "-el -al-ma '-al-ma' -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma 'alma'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -10361,7 +9232,6 @@
   "syllables": "-can-ta '-al-ma y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta 'alma",
    "'alma y"
   ],
   "consonant_rhyme": "aila",
@@ -10379,9 +9249,7 @@
   "verse": "canta 'alma' y baila",
   "syllables": "-can-ta '-al-ma' -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta 'alma'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -10389,9 +9257,7 @@
   "verse": "la casa 'alma alta",
   "syllables": "-la -ca-sa '-al-ma -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa 'alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -10407,9 +9273,7 @@
   "verse": "la casa 'alma' alta",
   "syllables": "-la -ca-sa '-al-ma' -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa 'alma'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -10417,9 +9281,7 @@
   "verse": "el viento 'alma ártico",
   "syllables": "-el -vien-to '-al-ma -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento 'alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10435,9 +9297,7 @@
   "verse": "el viento 'alma' ártico",
   "syllables": "-el -vien-to '-al-ma' -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento 'alma'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10471,9 +9331,7 @@
   "verse": "el arma 'alma",
   "syllables": "-el -ar-ma '-al-ma",
   "count": 5,
-  "synalephas": [
-   "arma 'alma"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -10489,19 +9347,15 @@
   "verse": "el arma 'alma'",
   "syllables": "-el -ar-ma '-al-ma'",
   "count": 5,
-  "synalephas": [
-   "arma 'alma'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma ' alma",
-  "syllables": "-el -ar-ma '- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -10510,7 +9364,6 @@
   "syllables": "-el -ar-ma '-hie-dra an-ti-gua",
   "count": 7,
   "synalephas": [
-   "arma 'hiedra",
    "'hiedra antigua"
   ],
   "consonant_rhyme": "igua",
@@ -10528,9 +9381,7 @@
   "verse": "el arma 'hiedra' antigua",
   "syllables": "-el -ar-ma '-hie-dra' -an-ti-gua",
   "count": 8,
-  "synalephas": [
-   "arma 'hiedra'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -10539,7 +9390,6 @@
   "syllables": "-el -al-ma '-hie-dra e-ter-na",
   "count": 7,
   "synalephas": [
-   "alma 'hiedra",
    "'hiedra eterna"
   ],
   "consonant_rhyme": "erna",
@@ -10557,9 +9407,7 @@
   "verse": "el alma 'hiedra' eterna",
   "syllables": "-el -al-ma '-hie-dra' -e-ter-na",
   "count": 8,
-  "synalephas": [
-   "alma 'hiedra'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -10568,7 +9416,6 @@
   "syllables": "-can-ta '-hie-dra y -bai-la",
   "count": 6,
   "synalephas": [
-   "canta 'hiedra",
    "'hiedra y"
   ],
   "consonant_rhyme": "aila",
@@ -10586,9 +9433,7 @@
   "verse": "canta 'hiedra' y baila",
   "syllables": "-can-ta '-hie-dra' -y -bai-la",
   "count": 7,
-  "synalephas": [
-   "canta 'hiedra'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "aila",
   "assonant_rhyme": "aia"
  },
@@ -10596,9 +9441,7 @@
   "verse": "la casa 'hiedra alta",
   "syllables": "-la -ca-sa '-hie-dra -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa 'hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -10614,9 +9457,7 @@
   "verse": "la casa 'hiedra' alta",
   "syllables": "-la -ca-sa '-hie-dra' -al-ta",
   "count": 7,
-  "synalephas": [
-   "casa 'hiedra'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "alta",
   "assonant_rhyme": "aa"
  },
@@ -10624,9 +9465,7 @@
   "verse": "el viento 'hiedra ártico",
   "syllables": "-el -vien-to '-hie-dra -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento 'hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10642,9 +9481,7 @@
   "verse": "el viento 'hiedra' ártico",
   "syllables": "-el -vien-to '-hie-dra' -ár-ti-co",
   "count": 7,
-  "synalephas": [
-   "viento 'hiedra'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "artico",
   "assonant_rhyme": "aio"
  },
@@ -10678,9 +9515,7 @@
   "verse": "el arma 'hiedra",
   "syllables": "-el -ar-ma '-hie-dra",
   "count": 5,
-  "synalephas": [
-   "arma 'hiedra"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -10696,19 +9531,15 @@
   "verse": "el arma 'hiedra'",
   "syllables": "-el -ar-ma '-hie-dra'",
   "count": 5,
-  "synalephas": [
-   "arma 'hiedra'"
-  ],
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ' hiedra",
-  "syllables": "-el -ar-ma '- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma '"
-  ],
+  "syllables": "-el -ar-ma ' -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -10724,11 +9555,9 @@
  },
  {
   "verse": "el arma , antigua",
-  "syllables": "-el -ar-ma ,- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -10744,11 +9573,9 @@
  },
  {
   "verse": "el arma , eterna",
-  "syllables": "-el -ar-ma ,- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -10764,11 +9591,9 @@
  },
  {
   "verse": "el arma , azul",
-  "syllables": "-el -ar-ma ,- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -10782,11 +9607,9 @@
  },
  {
   "verse": "el arma , ánima",
-  "syllables": "-el -ar-ma ,- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -10802,11 +9625,9 @@
  },
  {
   "verse": "el arma , y",
-  "syllables": "-el -ar-ma ,- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -10820,11 +9641,9 @@
  },
  {
   "verse": "el arma , alma",
-  "syllables": "-el -ar-ma ,- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -10838,11 +9657,9 @@
  },
  {
   "verse": "el arma , hiedra",
-  "syllables": "-el -ar-ma ,- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ,"
-  ],
+  "syllables": "-el -ar-ma , -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -10858,11 +9675,9 @@
  },
  {
   "verse": "el arma ; antigua",
-  "syllables": "-el -ar-ma ;- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -10878,11 +9693,9 @@
  },
  {
   "verse": "el arma ; eterna",
-  "syllables": "-el -ar-ma ;- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -10898,11 +9711,9 @@
  },
  {
   "verse": "el arma ; azul",
-  "syllables": "-el -ar-ma ;- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -10916,11 +9727,9 @@
  },
  {
   "verse": "el arma ; ánima",
-  "syllables": "-el -ar-ma ;- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -10936,11 +9745,9 @@
  },
  {
   "verse": "el arma ; y",
-  "syllables": "-el -ar-ma ;- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -10954,11 +9761,9 @@
  },
  {
   "verse": "el arma ; alma",
-  "syllables": "-el -ar-ma ;- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -10972,11 +9777,9 @@
  },
  {
   "verse": "el arma ; hiedra",
-  "syllables": "-el -ar-ma ;- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ;"
-  ],
+  "syllables": "-el -ar-ma ; -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -10992,11 +9795,9 @@
  },
  {
   "verse": "el arma : antigua",
-  "syllables": "-el -ar-ma :- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -11012,11 +9813,9 @@
  },
  {
   "verse": "el arma : eterna",
-  "syllables": "-el -ar-ma :- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -11032,11 +9831,9 @@
  },
  {
   "verse": "el arma : azul",
-  "syllables": "-el -ar-ma :- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -11050,11 +9847,9 @@
  },
  {
   "verse": "el arma : ánima",
-  "syllables": "-el -ar-ma :- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -11070,11 +9865,9 @@
  },
  {
   "verse": "el arma : y",
-  "syllables": "-el -ar-ma :- -y",
-  "count": 6,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -11088,11 +9881,9 @@
  },
  {
   "verse": "el arma : alma",
-  "syllables": "-el -ar-ma :- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -11106,11 +9897,9 @@
  },
  {
   "verse": "el arma : hiedra",
-  "syllables": "-el -ar-ma :- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma :"
-  ],
+  "syllables": "-el -ar-ma : -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -11126,11 +9915,9 @@
  },
  {
   "verse": "el arma ... antigua",
-  "syllables": "-el -ar-ma .-.-.- -an-ti-gua",
-  "count": 9,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -11146,11 +9933,9 @@
  },
  {
   "verse": "el arma ... eterna",
-  "syllables": "-el -ar-ma .-.-.- -e-ter-na",
-  "count": 9,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -11166,11 +9951,9 @@
  },
  {
   "verse": "el arma ... azul",
-  "syllables": "-el -ar-ma .-.-.- -a-zul",
-  "count": 9,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -11184,11 +9967,9 @@
  },
  {
   "verse": "el arma ... ánima",
-  "syllables": "-el -ar-ma .-.-.- -á-ni-ma",
-  "count": 8,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -11204,11 +9985,9 @@
  },
  {
   "verse": "el arma ... y",
-  "syllables": "-el -ar-ma .-.-.- -y",
-  "count": 8,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -11222,11 +10001,9 @@
  },
  {
   "verse": "el arma ... alma",
-  "syllables": "-el -ar-ma .-.-.- -al-ma",
-  "count": 8,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -11240,11 +10017,9 @@
  },
  {
   "verse": "el arma ... hiedra",
-  "syllables": "-el -ar-ma .-.-.- -hie-dra",
-  "count": 8,
-  "synalephas": [
-   "arma ..."
-  ],
+  "syllables": "-el -ar-ma ... -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
@@ -11260,11 +10035,9 @@
  },
  {
   "verse": "el arma . antigua",
-  "syllables": "-el -ar-ma .- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
@@ -11280,11 +10053,9 @@
  },
  {
   "verse": "el arma . eterna",
-  "syllables": "-el -ar-ma .- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
@@ -11300,11 +10071,9 @@
  },
  {
   "verse": "el arma . azul",
-  "syllables": "-el -ar-ma .- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
@@ -11318,11 +10087,9 @@
  },
  {
   "verse": "el arma . ánima",
-  "syllables": "-el -ar-ma .- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
@@ -11338,11 +10105,9 @@
  },
  {
   "verse": "el arma . y",
-  "syllables": "-el -ar-ma .- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
@@ -11356,11 +10121,9 @@
  },
  {
   "verse": "el arma . alma",
-  "syllables": "-el -ar-ma .- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
@@ -11374,151 +10137,121 @@
  },
  {
   "verse": "el arma . hiedra",
-  "syllables": "-el -ar-ma .- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ."
-  ],
+  "syllables": "-el -ar-ma . -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ? antigua",
-  "syllables": "-el -ar-ma ?- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma ? eterna",
-  "syllables": "-el -ar-ma ?- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ? azul",
-  "syllables": "-el -ar-ma ?- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma ? ánima",
-  "syllables": "-el -ar-ma ?- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma ? y",
-  "syllables": "-el -ar-ma ?- -y",
-  "count": 6,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma ? alma",
-  "syllables": "-el -ar-ma ?- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma ? hiedra",
-  "syllables": "-el -ar-ma ?- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma ?"
-  ],
+  "syllables": "-el -ar-ma ? -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ! antigua",
-  "syllables": "-el -ar-ma !- -an-ti-gua",
-  "count": 7,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -an-ti-gua",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "igua",
   "assonant_rhyme": "iua"
  },
  {
   "verse": "el arma ! eterna",
-  "syllables": "-el -ar-ma !- -e-ter-na",
-  "count": 7,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -e-ter-na",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "erna",
   "assonant_rhyme": "ea"
  },
  {
   "verse": "el arma ! azul",
-  "syllables": "-el -ar-ma !- -a-zul",
-  "count": 7,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -a-zul",
+  "count": 6,
+  "synalephas": [],
   "consonant_rhyme": "ul",
   "assonant_rhyme": "u"
  },
  {
   "verse": "el arma ! ánima",
-  "syllables": "-el -ar-ma !- -á-ni-ma",
-  "count": 6,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -á-ni-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "anima",
   "assonant_rhyme": "aia"
  },
  {
   "verse": "el arma ! y",
-  "syllables": "-el -ar-ma !- -y",
-  "count": 6,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -y",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "i",
   "assonant_rhyme": "i"
  },
  {
   "verse": "el arma ! alma",
-  "syllables": "-el -ar-ma !- -al-ma",
-  "count": 6,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -al-ma",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "alma",
   "assonant_rhyme": "aa"
  },
  {
   "verse": "el arma ! hiedra",
-  "syllables": "-el -ar-ma !- -hie-dra",
-  "count": 6,
-  "synalephas": [
-   "arma !"
-  ],
+  "syllables": "-el -ar-ma ! -hie-dra",
+  "count": 5,
+  "synalephas": [],
   "consonant_rhyme": "edra",
   "assonant_rhyme": "ea"
  },

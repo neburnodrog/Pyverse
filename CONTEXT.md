@@ -9,19 +9,23 @@ Spanish poetic tradition does, which is not the way the RAE counts them.
 Modelled by `Pyverse`. A verse knows its syllable count, its rhymes and whether
 it opens or closes a sentence. Not a "line" or a "sentence".
 
-**Sentence** - the ordered words of a verse plus the synalephas between them.
-Modelled by `Sentence`. Named for the class that exists; the concept is really
-"the words of one verse, joined".
+**Sentence** - the ordered words of a verse plus the positions where a
+synalepha joins a word to the one before it. Modelled by `Sentence`. Named for
+the class that exists; the concept is really "the words of one verse, joined".
 
 **Word** - one whitespace-delimited token of a verse, carrying its punctuation.
 Modelled by `Word`. A word knows its syllabification, its accentuation and its
 rhyme.
 
-**Syllable** - one beat of a word. Represented today as a hyphen in a
-syllabified string (`"-por-que"` is two syllables), not as its own type.
+**Syllable** - one beat of a word. Carried as a string in the `syllables`
+tuple of a `Syllabification`.
 
-**Syllabification** - a word or verse written with its syllable divisions
-marked. Always leads with a hyphen unless a synalepha has stripped it.
+**Syllabification** - a word's syllable division as a value. Modelled by
+`Syllabification` in `pyverse/syllabification.py`, a frozen dataclass holding
+the syllables plus the punctuation written before and after them. It renders
+itself back to the hyphen form (`"-por-que"`), with or without the leading
+hyphen, which is the hyphen a synalepha removes. Its `parse` is the one place
+the hyphen form is decoded; the syllabifier still produces that form.
 
 **Accentuation** - which syllable from the end carries the stress, as an
 integer. 1 is **oxytone** (stress on the last syllable, *bergantín*), 2 is
@@ -32,8 +36,11 @@ by `2 - accentuation` of its last word.
 **Synalepha** - two adjacent words pronounced as one syllable, because the
 first ends in a vowel and the second begins with one. *el arma antigua* counts
 as five syllables, not six. Blocked when the second word begins with an
-accented vowel (*el viento ártico*), and blocked for two-syllable paroxytones
-(*el arma antes*).
+accented vowel (*el viento ártico*), blocked for two-syllable paroxytones
+(*el arma antes*), and blocked by punctuation on either side of the join
+(*el arma, antigua*, *el arma ¿antigua?*). A verse's syllable count is the
+syllables of its words minus its synalephas; it is not read back out of the
+syllabified string.
 
 **Atonic monosyllable** - a one-syllable word that carries no stress of its own
 (*de*, *la*, *y*, *que*). A verse ending in one that formed a synalepha is
