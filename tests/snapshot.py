@@ -9,7 +9,7 @@ from typing import Dict, List
 
 from pyverse import Pyverse
 
-from corpus import verses
+from tests.corpus import verses
 
 SNAPSHOT_PATH = Path(__file__).with_name("snapshot.json")
 
@@ -47,4 +47,5 @@ def write() -> None:
 
 
 if __name__ == "__main__":
+    #  python -m tests.snapshot
     write()

@@ -313,7 +313,6 @@ class TestJoinsPreviousWord:
         )
 
     def test_punctuation_before_the_word_blocks_it(self):
-        """'¿' marks a pause: there is no elision across it."""
         sentence = Sentence("el arma ¿antigua?")
         assert sentence.joins_previous_word(sentence.word_objects[2]) is False
         assert sentence.synalephas == []
@@ -571,9 +570,6 @@ class TestSilabizador:
 
 
 class TestSynalephasAcrossPunctuation:
-    """Punctuation before a word blocks the synalepha, the same way
-    punctuation after the previous word already does."""
-
     def test_an_opening_question_mark_blocks_it(self):
         verse = Pyverse("el arma ¿antigua?")
         assert verse.synalephas == []

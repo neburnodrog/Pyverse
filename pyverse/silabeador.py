@@ -58,14 +58,14 @@ class Pyverse:
 
         if (
             self.last_word.word_text in atonic_monosyll
-            and len(self.word_list) - 1 in self.sentence.joined_words
+            and len(self.word_list) - 1 in self.sentence.synalepha_positions
         ):
             verse_final_accent = 2
 
         syllable_addition = 2 - verse_final_accent
         syllables = sum(word.syllable_count for word in self.word_list)
 
-        return syllables - len(self.sentence.joined_words) + syllable_addition
+        return syllables - len(self.sentence.synalepha_positions) + syllable_addition
 
     def type_verse(self) -> Dict[str, bool]:
         sentence = self.original_verse

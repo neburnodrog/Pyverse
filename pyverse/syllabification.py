@@ -35,9 +35,7 @@ class Syllabification:
     @classmethod
     def parse(cls, syllabified: str, token: str) -> "Syllabification":
         """syllabified is the hyphen form of the token's letters ('-por-que').
-        token is the word as it was written, punctuation included.
-
-        This is the one place the hyphen form is decoded."""
+        token is the word as it was written, punctuation included."""
 
         letters = token.strip(punctuation + " ")
 

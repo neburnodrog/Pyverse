@@ -1,4 +1,4 @@
-import snapshot
+from tests import snapshot
 
 
 class TestSnapshot:

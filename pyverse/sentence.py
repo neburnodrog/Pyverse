@@ -9,7 +9,7 @@ class Sentence:
         self.sentence_text = sentence
         self.word_objects = [Word(word) for word in self.sentence_text.split()]
         self.last_word = self.word_objects[-1]
-        self.joined_words = self.find_synalephas()
+        self.synalepha_positions = self.find_synalepha_positions()
         self.syllabified_sentence = self.sentence_syllabifier()
 
     def __repr__(self):
@@ -34,10 +34,10 @@ class Sentence:
         words = self.word_objects
         return [
             words[i - 1].word_untrimmed + " " + words[i].word_untrimmed
-            for i in self.joined_words
+            for i in self.synalepha_positions
         ]
 
-    def find_synalephas(self) -> Tuple[int, ...]:
+    def find_synalepha_positions(self) -> Tuple[int, ...]:
         """The positions of the words pronounced as one with the word before."""
 
         joined = []
@@ -53,7 +53,7 @@ class Sentence:
 
     def sentence_syllabifier(self) -> str:
         return " ".join(
-            word.syllabification.render(leading_hyphen=i not in self.joined_words)
+            word.syllabification.render(leading_hyphen=i not in self.synalepha_positions)
             for i, word in enumerate(self.word_objects)
         )
 
@@ -63,9 +63,7 @@ class Sentence:
         Only asked of a word whose predecessor ends in an unaccented vowel."""
 
         if word.syllabification.prefix:
-            """Punctuation before the word marks a pause, the same way
-            punctuation after the previous word already does.
-            'el arma ¿antigua?' -> False -> '-el -ar-ma ¿-an-ti-gua?'"""
+            """'el arma ¿antigua?' -> False -> '-el -ar-ma ¿-an-ti-gua?'"""
             return False
 
         word_text = word.syllabification.render(
