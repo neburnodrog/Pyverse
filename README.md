@@ -10,7 +10,10 @@ Python + Verse = Pyverse.
 - It separates every syllable of words and verses. It counts the syllables of verses as it's done in the spanish language poetry tradition.
 
 ### Description
-  **silabizador** syllabifies words and verses taking into account [synalephas](https://en.wikipedia.org/wiki/Synalepha) and the [accentuation](https://en.wikipedia.org/wiki/Metre_(poetry)#Spanish) of the final word in the verse. 
+  **silabizador** syllabifies words and verses taking into account [synalephas](https://en.wikipedia.org/wiki/Synalepha) and the [accentuation](https://en.wikipedia.org/wiki/Metre_(poetry)#Spanish) of the final word in the verse.
+
+  - A synalepha joins two adjacent words into one syllable when the first ends in a vowel and the second begins with one. It is blocked when the second word begins with an accented vowel, when the second word is a two-syllable paroxytone, and when punctuation falls between the two words, whichever side of the join it sits on.
+
 
   - The [prosodic](https://en.wikipedia.org/wiki/Prosody_(linguistics)) metre of a verse in Spanish poetry differs from the rules of syllabification specified by the [RAE](https://en.wikipedia.org/wiki/Royal_Spanish_Academy) for the counting of syllables. Depending on the accentuation of the last word of the verse we encounter different cases:
 
@@ -27,7 +30,7 @@ pip install pyverse
 ### Use
 You can either use Pyverse in the command line:
 ```
-pyverso "un velero bergantín;"
+pyverse "un velero bergantín;"
 
         Syllabified Text | -un -ve-le-ro -ber-gan-tín;
         Count            | 8
@@ -44,6 +47,8 @@ or as a python package
 8
 >>> verse.consonant_rhyme, verse.assonant_rhyme
 ('in', 'i')
+>>> Pyverse("el arma antigua").synalephas
+['arma antigua']
 ```
 ---
 
@@ -78,6 +83,12 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
     ```
     -el -ar-la -á-ri-da
     -el -vien-to -ár-ti-co
+    ```
+  - Tampoco si hay un signo de puntuación entre las dos palabras, vaya delante o detrás de la cesura:
+  
+    ```
+    -el -ar-ma, -an-ti-gua
+    -el -ar-ma ¿-an-ti-gua?
     ```
 - Rimas
 
