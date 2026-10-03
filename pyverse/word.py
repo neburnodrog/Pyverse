@@ -3,6 +3,7 @@ from functools import cached_property
 from typing import Union
 import re
 from pyverse.rhyme import Rhyme, rhyme
+from pyverse.syllabification import Syllabification
 from pyverse.vars import (
     accented_vowels,
     punctuation,
@@ -17,9 +18,10 @@ class Word:
     def __init__(self, word: str) -> None:
         self.word_untrimmed = word
         self.word_text = self.stripped_word.lower()
-        self.word_syllabified = self.syllabify_word()
-        self.syllabified_w_punct = self.add_punctuation()
-        self.syllable_count = self.syllable_counter()
+        self.syllabification = Syllabification.parse(self.syllabify_word(), word)
+        self.word_syllabified = self.syllabification.render(with_punctuation=False)
+        self.syllabified_w_punct = self.syllabification.render()
+        self.syllable_count = len(self.syllabification)
         self.accentuation = self.accentuation_finder(self.word_syllabified)
 
     def __repr__(self):
@@ -29,9 +31,6 @@ class Word:
     def stripped_word(self) -> str:
         _stripped_word = self.word_untrimmed.strip(punctuation + " ")
         return _stripped_word
-
-    def add_punctuation(self) -> str:
-        return self.word_untrimmed.replace(self.stripped_word, self.word_syllabified)
 
     def syllabify_word(self) -> str:
         """Find all vowel groupings in the pre_syllabified_word
@@ -193,7 +192,7 @@ class Word:
         See: https://en.wikipedia.org/wiki/Ultima_(linguistics)
         """
 
-        if word.count("-") == 1:
+        if word.count("-") <= 1:
             return 1
 
         accent = re.search(f"[{accented_vowels}]", word)
@@ -221,9 +220,6 @@ class Word:
             return 2
 
         return 1
-
-    def syllable_counter(self):
-        return self.word_syllabified.count("-")
 
     @cached_property
     def rhyme(self) -> Rhyme:

@@ -51,21 +51,21 @@ class Pyverse:
 
         """
 
-        if len(self.word_list) == 1 and str.count(self.syllables, '-') == 1:
+        if len(self.word_list) == 1 and self.last_word.syllable_count == 1:
             return 1
 
         verse_final_accent = self.last_word.accentuation
 
         if (
             self.last_word.word_text in atonic_monosyll
-            and self.word_list[-2].word_untrimmed + " " + self.last_word.word_untrimmed
-            in self.sentence.synalephas
+            and len(self.word_list) - 1 in self.sentence.synalepha_positions
         ):
             verse_final_accent = 2
 
         syllable_addition = 2 - verse_final_accent
+        syllables = sum(word.syllable_count for word in self.word_list)
 
-        return self.sentence.syllabified_sentence.count("-") + syllable_addition
+        return syllables - len(self.sentence.synalepha_positions) + syllable_addition
 
     def type_verse(self) -> Dict[str, bool]:
         sentence = self.original_verse

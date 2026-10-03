@@ -268,20 +268,20 @@ class TestWord:
 
 
 # TESTING Sentence-Class
-class TestStripHyphen:
+class TestJoinsPreviousWord:
     """Only a word after a word that ends in vowel become input to this method"""
 
-    def test_strip_hyphen(self):
+    def test_joins_previous_word(self):
         sentence = Sentence("El arma azul")
         assert sentence.syllabified_words_punctuation == ["-El", "-ar-ma", "-a-zul"]
-        assert sentence.strip_hyphen(sentence.word_objects[2]) == 1
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is True
 
-    def test_strip_hyphen2(self):
+    def test_joins_previous_word2(self):
         sentence = Sentence("El alma aire")
         assert sentence.syllabified_words_punctuation == ["-El", "-al-ma", "-ai-re"]
-        assert sentence.strip_hyphen(sentence.word_objects[2]) == 0
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is False
 
-    def test_strip_hyphen3(self):
+    def test_joins_previous_word3(self):
         sentence = Sentence("Que la muerte y")
         assert sentence.syllabified_words_punctuation == [
             "-Que",
@@ -289,16 +289,16 @@ class TestStripHyphen:
             "-muer-te",
             "-y",
         ]
-        assert sentence.strip_hyphen(sentence.word_objects[3]) == 1
+        assert sentence.joins_previous_word(sentence.word_objects[3]) is True
         assert sentence.syllabified_sentence == "-Que -la -muer-te y"
 
-    def test_strip_hyphen4(self):
+    def test_joins_previous_word4(self):
         sentence = Sentence("La hiena hiede")
         assert sentence.syllabified_words_punctuation == ["-La", "-hie-na", "-hie-de"]
-        assert sentence.strip_hyphen(sentence.word_objects[2]) == 0
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is False
         assert sentence.syllabified_sentence == "-La -hie-na -hie-de"
 
-    def test_strip_hyphen5(self):
+    def test_joins_previous_word5(self):
         sentence = Sentence("Que haya Ariadnas nada cambia.")
         assert sentence.syllabified_words_punctuation == [
             "-Que",
@@ -307,10 +307,31 @@ class TestStripHyphen:
             "-na-da",
             "-cam-bia.",
         ]
-        assert sentence.strip_hyphen(sentence.word_objects[2]) == 1
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is True
         assert (
             sentence.syllabified_sentence == "-Que -ha-ya A-riad-nas -na-da -cam-bia."
         )
+
+    def test_punctuation_before_the_word_blocks_it(self):
+        sentence = Sentence("el arma ¿antigua?")
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is False
+        assert sentence.synalephas == []
+        assert sentence.syllabified_sentence == "-el -ar-ma ¿-an-ti-gua?"
+
+    def test_punctuation_before_the_word_blocks_it_for_y_too(self):
+        sentence = Sentence("el arma ¡y")
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is False
+
+    def test_punctuation_after_the_word_does_not_block_it(self):
+        """The mark that blocks is the one before the word, not the one after."""
+        sentence = Sentence("el arma antigua?")
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is True
+        assert sentence.synalephas == ["arma antigua?"]
+
+    def test_a_token_without_letters_blocks_it(self):
+        sentence = Sentence("la casa ... alta")
+        assert sentence.joins_previous_word(sentence.word_objects[2]) is False
+        assert sentence.syllabified_sentence == "-la -ca-sa ... -al-ta"
 
 
 class TestSentence:
@@ -546,6 +567,44 @@ class TestSilabizador:
             verse = Pyverse(text)
             assert verse.assonant_rhyme == verse.last_word.rhyme.assonant
             assert verse.consonant_rhyme == verse.last_word.rhyme.consonant
+
+
+class TestSynalephasAcrossPunctuation:
+    def test_an_opening_question_mark_blocks_it(self):
+        verse = Pyverse("el arma ¿antigua?")
+        assert verse.synalephas == []
+        assert verse.syllables == "-el -ar-ma ¿-an-ti-gua?"
+        assert verse.count == 6
+
+    def test_every_opening_mark_blocks_it(self):
+        for text in [
+            "el arma ¡antigua!",
+            'el arma "antigua"',
+            "el arma «antigua»",
+            "el arma (antigua)",
+            "el arma —antigua",
+        ]:
+            assert Pyverse(text).synalephas == []
+
+    def test_without_the_mark_the_synalepha_is_there(self):
+        verse = Pyverse("el arma antigua")
+        assert verse.synalephas == ["arma antigua"]
+        assert verse.count == 5
+
+    def test_a_blocked_monosyllable_no_longer_ends_as_a_paroxytone(self):
+        """'¿y' does not elide, so the verse ends in an oxytone."""
+        assert Pyverse("el arma y").count == 3
+        assert Pyverse("el arma ¿y").count == 5
+
+
+class TestCountComesFromTheModel:
+    def test_the_count_is_the_words_minus_the_synalephas(self):
+        verse = Pyverse("el arma antigua")
+        words = sum(word.syllable_count for word in verse.word_list)
+        assert verse.count == words - len(verse.synalephas)
+
+    def test_a_single_syllable_verse_counts_as_one(self):
+        assert Pyverse("sol").count == 1
 
 
 class TestOther:
