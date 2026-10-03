@@ -177,8 +177,6 @@ class Word:
 
     @staticmethod
     def tripthong_parser(vowel_group):
-        print(vowel_group)
-        # return vowel_group
         return vowel_group.replace('-', '')
 
     @staticmethod

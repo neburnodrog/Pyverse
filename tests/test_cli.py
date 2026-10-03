@@ -46,3 +46,9 @@ class TestCli:
         result = run("un velero bergantín;")
         body = [line for line in result.output.splitlines() if line.strip()]
         assert len(body) == 4
+
+    def test_a_triphthong_does_not_leak_into_the_report(self, run):
+        result = run("esternohioideo")
+        body = [line for line in result.output.splitlines() if line.strip()]
+        assert len(body) == 4
+        assert "-es-ter-no-hioi-de-o" in result.output

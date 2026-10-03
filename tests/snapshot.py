@@ -1,8 +1,6 @@
 """Records what a Verse answers today, so that a change to how it is computed
 shows up as a diff rather than as a silent movement."""
 
-import contextlib
-import io
 import json
 from pathlib import Path
 from typing import Dict, List
@@ -18,9 +16,7 @@ def record() -> List[Dict[str, object]]:
     recorded = []
 
     for verse in verses():
-        with contextlib.redirect_stdout(io.StringIO()):
-            #  The triphthong handler writes to standard output.
-            pyverse = Pyverse(verse)
+        pyverse = Pyverse(verse)
 
         recorded.append(
             {
