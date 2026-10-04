@@ -22,6 +22,26 @@ Python + Verse = Pyverse.
     3. If it's [proparoxytone](https://en.wikipedia.org/wiki/Proparoxytone) we substract one syllable.
     4. If it's **superproparoxytone** we substract two.  
 
+  - A verse rhymes on its last word, counting from that word's last stressed
+    vowel. Every rhyme is lowercase and carries no accents, so that two words
+    that rhyme always give the same string.
+
+    1. The **consonant rhyme** is every letter from the last stressed vowel
+       onward: *algarabía* rhymes in `ia`, *porque* in `orque`.
+    2. The **assonant rhyme** is the stressed vowel followed by the last
+       vowel, and nothing in between: *lánguida* rhymes in `aa`, *baile* in
+       `ae`, *rey* in `e`.
+    3. Assonance comes in two readings. The default one is loose, where a
+       final unstressed `i` is read as `e` and a final unstressed `u` as `o`
+       (Quilis, *Métrica española*), so *Venus* rhymes in `eo` with *cielo*.
+       The strict one takes the final vowel as written, so *Venus* rhymes in
+       `eu`. The stressed vowel is never remapped.
+    4. The **yeísmo** consonant rhyme reads `ll` as `y`, so *playa* and
+       *falla* both rhyme in `aya`.
+
+  - Input the package cannot read as a verse raises `PyverseError`, which
+    subclasses `ValueError`.
+
 ### Installation
 Requires Python 3.12 or newer.
 ```
@@ -47,8 +67,16 @@ or as a python package
 8
 >>> verse.consonant_rhyme, verse.assonant_rhyme
 ('in', 'i')
+>>> venus = Pyverse("la luna Venus")
+>>> venus.assonant_rhyme, venus.assonant_rhyme_strict
+('eo', 'eu')
+>>> Pyverse("la luna falla").consonant_rhyme_yeismo
+'aya'
 >>> Pyverse("el arma antigua").synalephas
 ['arma antigua']
+>>> Pyverse("...")
+Traceback (most recent call last):
+pyverse.errors.PyverseError: '...' holds no word to read: a verse needs at least one letter.
 ```
 ---
 
@@ -92,7 +120,18 @@ Es decir: tiene en cuenta sinalefas y finales de verso.
     ```
 - Rimas
 
-  - El silabizador proporciona las rimas [asonante](https://es.wikipedia.org/wiki/Rima_asonante) y [consonantes](https://es.wikipedia.org/wiki/Rima_consonante) tanto de palabras como de versos
+  - El silabizador proporciona las rimas [asonante](https://es.wikipedia.org/wiki/Rima_asonante) y [consonantes](https://es.wikipedia.org/wiki/Rima_consonante) tanto de palabras como de versos. Todas las rimas van en minúsculas y sin tildes.
+
+  - La rima consonante son todas las letras a partir de la última vocal tónica: *algarabía* rima en `ia`, *porque* en `orque`.
+
+  - La rima asonante es la vocal tónica más la última vocal, sin lo que haya entre ellas: *lánguida* rima en `aa`, *baile* en `ae`, *rey* en `e`.
+
+    - En la lectura **relajada**, que es la de por defecto, una `i` final átona se lee como `e` y una `u` final átona como `o` (Quilis, *Métrica española*): *Venus* rima en `eo` con *cielo*.
+    - En la **estricta** la vocal final se toma tal cual se escribe: *Venus* rima en `eu`. La vocal tónica nunca cambia.
+
+  - La rima consonante con **yeísmo** lee `ll` como `y`: *playa* y *falla* riman las dos en `aya`.
+
+  - Lo que el paquete no puede leer como verso lanza `PyverseError`, que hereda de `ValueError`.
 
 ### Instalación
 Requiere Python 3.12 o superior.
@@ -120,4 +159,9 @@ o como una librería de Python
 8
 >>> verse.consonant_rhyme, verse.assonant_rhyme
 ('in', 'i')
+>>> venus = Pyverse("la luna Venus")
+>>> venus.assonant_rhyme, venus.assonant_rhyme_strict
+('eo', 'eu')
+>>> Pyverse("la luna falla").consonant_rhyme_yeismo
+'aya'
 ```

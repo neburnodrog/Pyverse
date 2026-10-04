@@ -1,6 +1,7 @@
 import pytest
 from click.testing import CliRunner
 
+from pyverse import PyverseError
 from pyverse.__main__ import silabify
 
 
@@ -28,7 +29,7 @@ class TestCli:
         assert "Assonant Rhyme   | oe" in run("Las manzanas y los arbustos porque").output
 
     def test_dieresis_u_reaches_the_output(self, run):
-        assert "Assonant Rhyme   | iüe" in run("No sé qué averigüe").output
+        assert "Assonant Rhyme   | ie" in run("No sé qué averigüe").output
 
     def test_expands_digits(self, run):
         assert "-mil -dos-cien-tos -trein-ta y -cua-tro" in run("1234").output
@@ -36,7 +37,7 @@ class TestCli:
     def test_rejects_mixed_letters_and_digits(self, run):
         result = run("123asd")
         assert result.exit_code != 0
-        assert isinstance(result.exception, ValueError)
+        assert isinstance(result.exception, PyverseError)
 
     def test_requires_the_text_argument(self, run):
         assert run().exit_code != 0

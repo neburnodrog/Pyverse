@@ -1,5 +1,6 @@
 import pytest
 
+from pyverse import PyverseError
 from pyverse.rhyme import Rhyme, rhyme, _stressed_vowel
 from pyverse.silabeador import (
     Word,
@@ -210,23 +211,90 @@ class TestStressedVowel:
 
 
 class TestRhyme:
-    def test_returns_both_rhymes(self):
-        assert rhyme("-al-ga-ra-bí-a", 2) == Rhyme(consonant="ia", assonant="ia")
+    def test_returns_every_rhyme(self):
+        assert rhyme("-al-ga-ra-bí-a", 2) == Rhyme(
+            consonant="ia",
+            consonant_yeismo="ia",
+            assonant="ia",
+            assonant_strict="ia",
+        )
 
     def test_strips_the_accent(self):
         """ Accents carry no rhyming information. """
         assert rhyme("-ber-gan-tín", 1).consonant == "in"
 
+    def test_lowercases_every_rhyme(self):
+        """ Case carries no rhyming information either, and would otherwise
+        split a group of words that rhyme. """
+        assert rhyme("-CO-RA-ZÓN", 1).consonant == "on"
+        assert rhyme("-Á-vi-la", 3) == rhyme("-á-vi-la", 3)
+
     def test_silent_u(self):
         """ The 'u' of que/qui/gue/gui is silent. """
-        assert rhyme("-por-que", 2) == Rhyme(consonant="orque", assonant="oe")
-        assert rhyme("-si-gue", 2) == Rhyme(consonant="igue", assonant="ie")
+        assert rhyme("-por-que", 2).assonant == "oe"
+        assert rhyme("-si-gue", 2).assonant == "ie"
 
-    def test_dieresis_u_is_pronounced(self):
-        assert rhyme("-a-ve-ri-güe", 2) == Rhyme(consonant="igüe", assonant="iüe")
+    def test_dieresis_u_is_pronounced_but_is_not_a_syllable(self):
+        """ The 'ü' is heard, and is the weak vowel of the 'üe' diphthong,
+        so the rhyme is the stressed 'i' and the 'e' that closes it. """
+        assert rhyme("-a-ve-ri-güe", 2).consonant == "igüe"
+        assert rhyme("-a-ve-ri-güe", 2).assonant == "ie"
 
     def test_final_y_counts_as_i(self):
-        assert rhyme("-y", 1) == Rhyme(consonant="i", assonant="i")
+        assert rhyme("-y", 1).consonant == "i"
+
+
+class TestAssonantRhyme:
+    """The stressed vowel plus the last audible one, and nothing between."""
+
+    @pytest.mark.parametrize(
+        "syllabified, accentuation, assonant",
+        [
+            ("-lán-gui-da", 3, "aa"),
+            ("-an-ti-gua", 2, "ia"),
+            ("-li-rio", 2, "io"),
+            ("-llu-via", 2, "ua"),
+            ("-bai-le", 2, "ae"),
+            ("-rei-na", 2, "ea"),
+            ("-rey", 1, "e"),
+            ("-a-ve-ri-güe", 2, "ie"),
+        ],
+    )
+    def test_the_vowels_in_between_drop_out(self, syllabified, accentuation, assonant):
+        assert rhyme(syllabified, accentuation).assonant == assonant
+
+    def test_one_audible_vowel_gives_one_character(self):
+        assert rhyme("-rey", 1).assonant == "e"
+        assert rhyme("-co-ra-zón", 1).assonant == "o"
+
+    def test_a_hiatus_keeps_both_of_its_vowels_in_play(self):
+        """ 'tío' is read in two syllables, so the 'o' is the last vowel. """
+        assert rhyme("-tí-o", 2).assonant == "io"
+        assert rhyme("-lí-ne-a", 3).assonant == "ia"
+
+    def test_loose_reads_a_final_i_as_e_and_a_final_u_as_o(self):
+        """ Quilis, Métrica española: 'Venus' rhymes with 'cielo'. """
+        assert rhyme("-Ve-nus", 2).assonant == "eo"
+        assert rhyme("-fá-cil", 2).assonant == "ae"
+        assert rhyme("-lá-piz", 2).assonant == "ae"
+
+    def test_strict_takes_the_final_vowel_as_written(self):
+        assert rhyme("-Ve-nus", 2).assonant_strict == "eu"
+        assert rhyme("-fá-cil", 2).assonant_strict == "ai"
+
+    def test_the_stressed_vowel_is_never_remapped(self):
+        """ Only the final vowel moves under loose assonance. """
+        assert rhyme("-tí-o", 2).assonant == "io"
+        assert rhyme("-a-quí", 1).assonant == "i"
+
+
+class TestYeismo:
+    def test_ll_reads_as_y(self):
+        assert rhyme("-fa-lla", 2).consonant_yeismo == "aya"
+        assert rhyme("-pla-ya", 2).consonant_yeismo == "aya"
+
+    def test_the_written_rhyme_is_left_alone(self):
+        assert rhyme("-fa-lla", 2).consonant == "alla"
 
 
 class TestWord:
@@ -531,8 +599,8 @@ class TestSilabizador:
         assert verse.consonant_rhyme == "i"
 
     def test_verse_assonant_rhyme1(self):
-        # 'cambia'
-        assert self.verse.assonant_rhyme == "aia"
+        # 'cambia': the 'i' is the weak vowel of the 'ia' diphthong
+        assert self.verse.assonant_rhyme == "aa"
 
     def test_verse_assonant_rhyme2(self):
         # 'camino'
@@ -555,8 +623,9 @@ class TestSilabizador:
         assert Pyverse("El caballo nos sigue").assonant_rhyme == "ie"
 
     def test_verse_assonant_rhyme7(self):
-        """'ü' is pronounced, unlike the 'u' of 'gue', so it stays in the rhyme."""
-        assert Pyverse("No sé qué averigüe").assonant_rhyme == "iüe"
+        """'ü' is pronounced, unlike the 'u' of 'gue', but it is the weak vowel
+        of a diphthong, so it is not one of the two vowels of the rhyme."""
+        assert Pyverse("No sé qué averigüe").assonant_rhyme == "ie"
 
     def test_verse_assonant_rhyme_matches_last_word(self):
         for text in [
@@ -625,9 +694,117 @@ class TestOther:
         assert sil.syllables == "-mil -mil"
 
     def test_5(self):
-        with pytest.raises(Exception):
+        with pytest.raises(PyverseError):
             Pyverse(1234)
 
     def test_6(self):
-        with pytest.raises(Exception):
+        with pytest.raises(PyverseError):
             Pyverse("123asd")
+
+
+class TestUnreadableVerse:
+    """One error for everything Pyverse cannot read, not whichever one the
+    first internal operation happened to raise."""
+
+    @pytest.mark.parametrize("verse", ["", "   ", "...", "—", "¿?", "el 3º"])
+    def test_raises_one_typed_error(self, verse):
+        with pytest.raises(PyverseError):
+            Pyverse(verse)
+
+    def test_stays_catchable_as_a_value_error(self):
+        """Callers written against the errors the package used to leak."""
+        with pytest.raises(ValueError):
+            Pyverse("")
+
+    def test_says_what_it_could_not_read(self):
+        with pytest.raises(PyverseError, match="3º"):
+            Pyverse("el 3º")
+
+
+class TestTrailingPunctuation:
+    """A Verse answers the same whatever punctuation closes it."""
+
+    @pytest.mark.parametrize(
+        "verse", ["la luna…", "la luna, —", "la luna “", "la luna’", "la luna –"]
+    )
+    def test_punctuation_changes_nothing(self, verse):
+        bare = Pyverse("la luna")
+        verse = Pyverse(verse)
+
+        assert verse.count == bare.count
+        assert verse.consonant_rhyme == bare.consonant_rhyme
+        assert verse.assonant_rhyme == bare.assonant_rhyme
+
+    def test_no_punctuation_reaches_the_rhyme(self):
+        assert Pyverse("la luna…").consonant_rhyme == "una"
+
+    def test_a_verse_closing_on_a_lone_mark_rhymes_on_the_word_before(self):
+        assert Pyverse("la luna, —").consonant_rhyme == "una"
+
+
+class TestMenteAdverbs:
+    """Read as paroxytones whatever the accent of the adjective they are
+    built from: the accentuation decides both the count and the rhyme."""
+
+    @pytest.mark.parametrize(
+        "verse, count", [("cortésmente", 4), ("comúnmente", 4), ("rápidamente", 5)]
+    )
+    def test_counts_every_syllable(self, verse, count):
+        assert Pyverse(verse).count == count
+
+    def test_the_rhyme_starts_at_the_stressed_vowel_of_mente(self):
+        assert Pyverse("cortésmente").consonant_rhyme == "ente"
+        assert Pyverse("comúnmente").consonant_rhyme == "ente"
+
+
+class TestCase:
+    """A capital changes how a verse is written, never how it is read."""
+
+    @pytest.mark.parametrize(
+        "word",
+        [
+            "corazón", "Ávila", "Carlos", "lunas", "blanco", "chorizo",
+            "hierático", "ahínco", "cortésmente", "rápidamente", "alcohol",
+        ],
+    )
+    def test_a_word_answers_the_same_in_upper_case(self, word):
+        written = Pyverse(word)
+        shouted = Pyverse(word.upper())
+
+        assert shouted.count == written.count
+        assert shouted.consonant_rhyme == written.consonant_rhyme
+        assert shouted.assonant_rhyme == written.assonant_rhyme
+
+    def test_the_division_keeps_the_capitals_of_the_verse(self):
+        """Only the reading is lower-cased, not the Verse."""
+        assert Pyverse("CORAZÓN").syllables == "-CO-RA-ZÓN"
+        assert Pyverse("Carlos").syllables == "-Car-los"
+
+
+class TestVerseRhymes:
+    """Pyverse publishes all four rhymes of its last word."""
+
+    def test_case_never_reaches_a_rhyme(self):
+        assert Pyverse("CORAZÓN").consonant_rhyme == "on"
+        assert Pyverse("Ávila").assonant_rhyme == "aa"
+
+    def test_the_assonant_rhyme_is_loose_by_default(self):
+        assert Pyverse("la luna Venus").assonant_rhyme == "eo"
+
+    def test_the_strict_assonant_rhyme_is_published_too(self):
+        assert Pyverse("la luna Venus").assonant_rhyme_strict == "eu"
+
+    def test_the_yeismo_consonant_rhyme_is_published_too(self):
+        falla = Pyverse("la luna falla")
+        playa = Pyverse("la luna playa")
+
+        assert falla.consonant_rhyme != playa.consonant_rhyme
+        assert falla.consonant_rhyme_yeismo == playa.consonant_rhyme_yeismo == "aya"
+
+    def test_every_rhyme_comes_from_the_last_word(self):
+        for text in ["Las manzanas y los arbustos porque...", "la luna, —"]:
+            verse = Pyverse(text)
+            assert verse.consonant_rhyme == verse.last_word.rhyme.consonant
+            assert verse.consonant_rhyme_yeismo == verse.last_word.rhyme.consonant_yeismo
+            assert verse.assonant_rhyme == verse.last_word.rhyme.assonant
+            assert verse.assonant_rhyme_strict == verse.last_word.rhyme.assonant_strict

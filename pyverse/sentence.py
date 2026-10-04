@@ -8,7 +8,6 @@ class Sentence:
     def __init__(self, sentence: str) -> None:
         self.sentence_text = sentence
         self.word_objects = [Word(word) for word in self.sentence_text.split()]
-        self.last_word = self.word_objects[-1]
         self.synalepha_positions = self.find_synalepha_positions()
         self.syllabified_sentence = self.sentence_syllabifier()
 

@@ -17,7 +17,7 @@ __all__ = [
 ]
 
 # VARIABLES
-punctuation = string.punctuation + r'¡¿—«”»'
+punctuation = string.punctuation + r'¡¿—–…«»“”‘’'
 
 # Letters
 spanish_uppercase = "ÑÁÉÍÓÚÜ"
