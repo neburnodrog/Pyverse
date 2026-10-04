@@ -77,7 +77,8 @@ A verse's rhyme is its last word's rhyme, the last word being the last token
 that holds letters. There is no second derivation.
 
 **Unreadable verse** - input Pyverse cannot read: a verse with no letters in
-it, or one mixing letters and digits in a single token. Raises `PyverseError`,
+it, or one holding a token that is neither a word nor a number while another
+token asks for a number to be spelled out. Raises `PyverseError`,
 which subclasses `ValueError` so that callers written against the errors the
 package used to leak keep working. It is the only error the package raises on
 purpose.

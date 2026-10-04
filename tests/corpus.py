@@ -114,6 +114,13 @@ REMAPPED_WORDS = [
     "sabíamos", "línea", "tribu", "seis", "aunque",
 ]
 
+#  Words whose reading a capital used to change, through the consonant
+#  cluster table, the 'h' rules or the accentuation fallback.
+SHOUTED_WORDS = [
+    "CARLOS", "LUNAS", "BLANCO", "CHORIZO", "HIERÁTICO", "AHÍNCO",
+    "ALCOHOL", "RÁPIDAMENTE", "CORTÉSMENTE", "ÁVILA", "SEIS",
+]
+
 
 def _punctuation_verses() -> List[str]:
     verses = []
@@ -149,10 +156,15 @@ def _rhyme_rule_verses() -> List[str]:
             verses.append("el arma " + opening + " " + word)
 
     for mark in TRAILING_ONLY + LATE_TRAILING_MARKS:
+        #  a Verse ending in a token that is punctuation and nothing else
         for word in PUNCTUATED_WORDS:
-            #  a Verse ending in a token that is punctuation and nothing else
             verses.append("el arma " + word + " " + mark)
-            verses.append("la luna" + mark)
+
+        #  and one where the mark is written against the word
+        verses.append("la luna" + mark)
+
+    verses += SHOUTED_WORDS
+    verses += ["la luna " + word for word in SHOUTED_WORDS]
 
     return verses
 

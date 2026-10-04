@@ -127,8 +127,8 @@ class Pyverse:
 
             else:
                 raise PyverseError(
-                    f"{word!r} mixes letters and digits, so Pyverse cannot "
-                    "tell how it is read."
+                    f"{word!r} is neither a word nor a number, so Pyverse "
+                    "cannot tell how it is read."
                 )
 
         return " ".join(new_words)

@@ -21320,16 +21320,6 @@
   "assonant_rhyme_strict": "ia"
  },
  {
-  "verse": "la luna,",
-  "syllables": "-la -lu-na,",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
- },
- {
   "verse": "el arma eterna ,",
   "syllables": "-el -ar-ma e-ter-na ,",
   "count": 5,
@@ -21396,6 +21386,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna,",
+  "syllables": "-la -lu-na,",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua ;",
   "syllables": "-el -ar-ma an-ti-gua ;",
   "count": 5,
@@ -21406,16 +21406,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna;",
-  "syllables": "-la -lu-na;",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna ;",
@@ -21484,6 +21474,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna;",
+  "syllables": "-la -lu-na;",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua :",
   "syllables": "-el -ar-ma an-ti-gua :",
   "count": 5,
@@ -21494,16 +21494,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna:",
-  "syllables": "-la -lu-na:",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna :",
@@ -21572,6 +21562,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna:",
+  "syllables": "-la -lu-na:",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua ...",
   "syllables": "-el -ar-ma an-ti-gua ...",
   "count": 5,
@@ -21582,16 +21582,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna...",
-  "syllables": "-la -lu-na...",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna ...",
@@ -21660,6 +21650,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna...",
+  "syllables": "-la -lu-na...",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua .",
   "syllables": "-el -ar-ma an-ti-gua .",
   "count": 5,
@@ -21670,16 +21670,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna.",
-  "syllables": "-la -lu-na.",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna .",
@@ -21748,6 +21738,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna.",
+  "syllables": "-la -lu-na.",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua ?",
   "syllables": "-el -ar-ma an-ti-gua ?",
   "count": 5,
@@ -21758,16 +21758,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna?",
-  "syllables": "-la -lu-na?",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna ?",
@@ -21836,6 +21826,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna?",
+  "syllables": "-la -lu-na?",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua !",
   "syllables": "-el -ar-ma an-ti-gua !",
   "count": 5,
@@ -21846,16 +21846,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna!",
-  "syllables": "-la -lu-na!",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna !",
@@ -21924,6 +21914,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna!",
+  "syllables": "-la -lu-na!",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua …",
   "syllables": "-el -ar-ma an-ti-gua …",
   "count": 5,
@@ -21934,16 +21934,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna…",
-  "syllables": "-la -lu-na…",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna …",
@@ -22012,6 +22002,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna…",
+  "syllables": "-la -lu-na…",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua –",
   "syllables": "-el -ar-ma an-ti-gua –",
   "count": 5,
@@ -22022,16 +22022,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna–",
-  "syllables": "-la -lu-na–",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna –",
@@ -22100,6 +22090,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna–",
+  "syllables": "-la -lu-na–",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua ”",
   "syllables": "-el -ar-ma an-ti-gua ”",
   "count": 5,
@@ -22110,16 +22110,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna”",
-  "syllables": "-la -lu-na”",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna ”",
@@ -22188,6 +22178,16 @@
   "assonant_rhyme_strict": "ea"
  },
  {
+  "verse": "la luna”",
+  "syllables": "-la -lu-na”",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
   "verse": "el arma antigua ’",
   "syllables": "-el -ar-ma an-ti-gua ’",
   "count": 5,
@@ -22198,16 +22198,6 @@
   "consonant_rhyme_yeismo": "igua",
   "assonant_rhyme": "ia",
   "assonant_rhyme_strict": "ia"
- },
- {
-  "verse": "la luna’",
-  "syllables": "-la -lu-na’",
-  "count": 3,
-  "synalephas": [],
-  "consonant_rhyme": "una",
-  "consonant_rhyme_yeismo": "una",
-  "assonant_rhyme": "ua",
-  "assonant_rhyme_strict": "ua"
  },
  {
   "verse": "el arma eterna ’",
@@ -22274,5 +22264,241 @@
   "consonant_rhyme_yeismo": "edra",
   "assonant_rhyme": "ea",
   "assonant_rhyme_strict": "ea"
+ },
+ {
+  "verse": "la luna’",
+  "syllables": "-la -lu-na’",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "una",
+  "consonant_rhyme_yeismo": "una",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
+  "verse": "CARLOS",
+  "syllables": "-CAR-LOS",
+  "count": 2,
+  "synalephas": [],
+  "consonant_rhyme": "arlos",
+  "consonant_rhyme_yeismo": "arlos",
+  "assonant_rhyme": "ao",
+  "assonant_rhyme_strict": "ao"
+ },
+ {
+  "verse": "LUNAS",
+  "syllables": "-LU-NAS",
+  "count": 2,
+  "synalephas": [],
+  "consonant_rhyme": "unas",
+  "consonant_rhyme_yeismo": "unas",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
+  "verse": "BLANCO",
+  "syllables": "-BLAN-CO",
+  "count": 2,
+  "synalephas": [],
+  "consonant_rhyme": "anco",
+  "consonant_rhyme_yeismo": "anco",
+  "assonant_rhyme": "ao",
+  "assonant_rhyme_strict": "ao"
+ },
+ {
+  "verse": "CHORIZO",
+  "syllables": "-CHO-RI-ZO",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "izo",
+  "consonant_rhyme_yeismo": "izo",
+  "assonant_rhyme": "io",
+  "assonant_rhyme_strict": "io"
+ },
+ {
+  "verse": "HIERÁTICO",
+  "syllables": "-HIE-RÁ-TI-CO",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "atico",
+  "consonant_rhyme_yeismo": "atico",
+  "assonant_rhyme": "ao",
+  "assonant_rhyme_strict": "ao"
+ },
+ {
+  "verse": "AHÍNCO",
+  "syllables": "-A-HÍN-CO",
+  "count": 3,
+  "synalephas": [],
+  "consonant_rhyme": "inco",
+  "consonant_rhyme_yeismo": "inco",
+  "assonant_rhyme": "io",
+  "assonant_rhyme_strict": "io"
+ },
+ {
+  "verse": "ALCOHOL",
+  "syllables": "-AL-CO-HOL",
+  "count": 4,
+  "synalephas": [],
+  "consonant_rhyme": "ol",
+  "consonant_rhyme_yeismo": "ol",
+  "assonant_rhyme": "o",
+  "assonant_rhyme_strict": "o"
+ },
+ {
+  "verse": "RÁPIDAMENTE",
+  "syllables": "-RÁ-PI-DA-MEN-TE",
+  "count": 5,
+  "synalephas": [],
+  "consonant_rhyme": "ente",
+  "consonant_rhyme_yeismo": "ente",
+  "assonant_rhyme": "ee",
+  "assonant_rhyme_strict": "ee"
+ },
+ {
+  "verse": "CORTÉSMENTE",
+  "syllables": "-COR-TÉS-MEN-TE",
+  "count": 4,
+  "synalephas": [],
+  "consonant_rhyme": "ente",
+  "consonant_rhyme_yeismo": "ente",
+  "assonant_rhyme": "ee",
+  "assonant_rhyme_strict": "ee"
+ },
+ {
+  "verse": "ÁVILA",
+  "syllables": "-Á-VI-LA",
+  "count": 2,
+  "synalephas": [],
+  "consonant_rhyme": "avila",
+  "consonant_rhyme_yeismo": "avila",
+  "assonant_rhyme": "aa",
+  "assonant_rhyme_strict": "aa"
+ },
+ {
+  "verse": "SEIS",
+  "syllables": "-SEIS",
+  "count": 1,
+  "synalephas": [],
+  "consonant_rhyme": "eis",
+  "consonant_rhyme_yeismo": "eis",
+  "assonant_rhyme": "e",
+  "assonant_rhyme_strict": "e"
+ },
+ {
+  "verse": "la luna CARLOS",
+  "syllables": "-la -lu-na -CAR-LOS",
+  "count": 5,
+  "synalephas": [],
+  "consonant_rhyme": "arlos",
+  "consonant_rhyme_yeismo": "arlos",
+  "assonant_rhyme": "ao",
+  "assonant_rhyme_strict": "ao"
+ },
+ {
+  "verse": "la luna LUNAS",
+  "syllables": "-la -lu-na -LU-NAS",
+  "count": 5,
+  "synalephas": [],
+  "consonant_rhyme": "unas",
+  "consonant_rhyme_yeismo": "unas",
+  "assonant_rhyme": "ua",
+  "assonant_rhyme_strict": "ua"
+ },
+ {
+  "verse": "la luna BLANCO",
+  "syllables": "-la -lu-na -BLAN-CO",
+  "count": 5,
+  "synalephas": [],
+  "consonant_rhyme": "anco",
+  "consonant_rhyme_yeismo": "anco",
+  "assonant_rhyme": "ao",
+  "assonant_rhyme_strict": "ao"
+ },
+ {
+  "verse": "la luna CHORIZO",
+  "syllables": "-la -lu-na -CHO-RI-ZO",
+  "count": 6,
+  "synalephas": [],
+  "consonant_rhyme": "izo",
+  "consonant_rhyme_yeismo": "izo",
+  "assonant_rhyme": "io",
+  "assonant_rhyme_strict": "io"
+ },
+ {
+  "verse": "la luna HIERÁTICO",
+  "syllables": "-la -lu-na HIE-RÁ-TI-CO",
+  "count": 5,
+  "synalephas": [
+   "luna HIERÁTICO"
+  ],
+  "consonant_rhyme": "atico",
+  "consonant_rhyme_yeismo": "atico",
+  "assonant_rhyme": "ao",
+  "assonant_rhyme_strict": "ao"
+ },
+ {
+  "verse": "la luna AHÍNCO",
+  "syllables": "-la -lu-na A-HÍN-CO",
+  "count": 5,
+  "synalephas": [
+   "luna AHÍNCO"
+  ],
+  "consonant_rhyme": "inco",
+  "consonant_rhyme_yeismo": "inco",
+  "assonant_rhyme": "io",
+  "assonant_rhyme_strict": "io"
+ },
+ {
+  "verse": "la luna ALCOHOL",
+  "syllables": "-la -lu-na AL-CO-HOL",
+  "count": 6,
+  "synalephas": [
+   "luna ALCOHOL"
+  ],
+  "consonant_rhyme": "ol",
+  "consonant_rhyme_yeismo": "ol",
+  "assonant_rhyme": "o",
+  "assonant_rhyme_strict": "o"
+ },
+ {
+  "verse": "la luna RÁPIDAMENTE",
+  "syllables": "-la -lu-na -RÁ-PI-DA-MEN-TE",
+  "count": 8,
+  "synalephas": [],
+  "consonant_rhyme": "ente",
+  "consonant_rhyme_yeismo": "ente",
+  "assonant_rhyme": "ee",
+  "assonant_rhyme_strict": "ee"
+ },
+ {
+  "verse": "la luna CORTÉSMENTE",
+  "syllables": "-la -lu-na -COR-TÉS-MEN-TE",
+  "count": 7,
+  "synalephas": [],
+  "consonant_rhyme": "ente",
+  "consonant_rhyme_yeismo": "ente",
+  "assonant_rhyme": "ee",
+  "assonant_rhyme_strict": "ee"
+ },
+ {
+  "verse": "la luna ÁVILA",
+  "syllables": "-la -lu-na -Á-VI-LA",
+  "count": 5,
+  "synalephas": [],
+  "consonant_rhyme": "avila",
+  "consonant_rhyme_yeismo": "avila",
+  "assonant_rhyme": "aa",
+  "assonant_rhyme_strict": "aa"
+ },
+ {
+  "verse": "la luna SEIS",
+  "syllables": "-la -lu-na -SEIS",
+  "count": 5,
+  "synalephas": [],
+  "consonant_rhyme": "eis",
+  "consonant_rhyme_yeismo": "eis",
+  "assonant_rhyme": "e",
+  "assonant_rhyme_strict": "e"
  }
 ]

@@ -757,6 +757,30 @@ class TestMenteAdverbs:
         assert Pyverse("comúnmente").consonant_rhyme == "ente"
 
 
+class TestCase:
+    """A capital changes how a verse is written, never how it is read."""
+
+    @pytest.mark.parametrize(
+        "word",
+        [
+            "corazón", "Ávila", "Carlos", "lunas", "blanco", "chorizo",
+            "hierático", "ahínco", "cortésmente", "rápidamente", "alcohol",
+        ],
+    )
+    def test_a_word_answers_the_same_in_upper_case(self, word):
+        written = Pyverse(word)
+        shouted = Pyverse(word.upper())
+
+        assert shouted.count == written.count
+        assert shouted.consonant_rhyme == written.consonant_rhyme
+        assert shouted.assonant_rhyme == written.assonant_rhyme
+
+    def test_the_division_keeps_the_capitals_of_the_verse(self):
+        """Only the reading is lower-cased, not the Verse."""
+        assert Pyverse("CORAZÓN").syllables == "-CO-RA-ZÓN"
+        assert Pyverse("Carlos").syllables == "-Car-los"
+
+
 class TestVerseRhymes:
     """Pyverse publishes all four rhymes of its last word."""
 

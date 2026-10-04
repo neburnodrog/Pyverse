@@ -18,7 +18,9 @@ class Word:
     def __init__(self, word: str) -> None:
         self.word_untrimmed = word
         self.word_text = self.stripped_word.lower()
-        self.syllabification = Syllabification.parse(self.syllabify_word(), word)
+        self.syllabification = Syllabification.parse(
+            self.as_written(self.syllabify_word()), word
+        )
         self.word_syllabified = self.syllabification.render(with_punctuation=False)
         self.syllabified_w_punct = self.syllabification.render()
         self.syllable_count = len(self.syllabification)
@@ -31,6 +33,24 @@ class Word:
     def stripped_word(self) -> str:
         _stripped_word = self.word_untrimmed.strip(punctuation + " ")
         return _stripped_word
+
+    def as_written(self, division: str) -> str:
+        """The division laid back over the letters as the verse writes them.
+
+        The syllabifier reads lower case throughout, down to the 'h' of 'ch'
+        and the 'r' of a 'br' cluster, so it is asked about the lower-cased
+        word and answers about it. The verse keeps its capitals.
+        """
+
+        letters = list(self.stripped_word)
+
+        if len(letters) != len(division.replace("-", "")):
+            #  '.lower()' is not length-preserving for every alphabet
+            return division
+
+        return "".join(
+            "-" if character == "-" else letters.pop(0) for character in division
+        )
 
     def syllabify_word(self) -> str:
         """Find all vowel groupings in the pre_syllabified_word
@@ -77,7 +97,7 @@ class Word:
     def pre_syllabify(self) -> str:
         """Basic logic of the syllabifier"""
 
-        word = self.stripped_word
+        word = self.word_text
 
         if len(word) == 1:
             return "-" + word
@@ -189,6 +209,8 @@ class Word:
         See: https://en.wikipedia.org/wiki/Oxytone
         See: https://en.wikipedia.org/wiki/Ultima_(linguistics)
         """
+
+        word = word.lower()
 
         if word.count("-") <= 1:
             return 1
