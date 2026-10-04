@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyverse"
-version = "2.0.0"
+version = "3.0.0"
 description = "find syllables and rhymes of words/verses in spanish"
 readme = "README.md"
 requires-python = ">=3.12"

@@ -1,7 +1,12 @@
 """The Verses the characterization snapshot is recorded over.
 
-Three sources: the literals the test suite already pins, a generated set with a
-fixed seed, and a set built to put punctuation in every position.
+Four sources: the literals the test suite already pins, a set built to put
+punctuation in every position, a generated set with a fixed seed, and a set
+covering the rhyme rules of 3.0.0.
+
+The four are concatenated in that order and the snapshot keeps it, so a source
+is only ever extended at its own end. Inserting a Verse in the middle would
+renumber the whole file and cost the diff its value as a review artifact.
 """
 
 import random
@@ -95,6 +100,20 @@ PUNCTUATION_FRAMES = [
 
 PUNCTUATED_WORDS = ["antigua", "eterna", "azul", "ánima", "y", "alma", "hiedra"]
 
+#  The marks 3.0.0 teaches the package to read, and the words whose rhymes or
+#  accentuation it changes. Kept apart from the sources above so that the
+#  Verses they produce keep the positions they already hold in the snapshot.
+LATE_PUNCTUATION_MARKS = [("“", "”"), ("‘", "’"), ("–", "–")]
+
+LATE_TRAILING_MARKS = ["…", "–", "”", "’"]
+
+REMAPPED_WORDS = [
+    "lánguida", "antigua", "lirio", "lluvia", "baile", "reina", "rey",
+    "averigüe", "Venus", "fácil", "lápiz", "tío", "playa", "falla",
+    "cortésmente", "comúnmente", "rápidamente", "CORAZÓN", "Ávila", "aquí",
+    "sabíamos", "línea", "tribu", "seis", "aunque",
+]
+
 
 def _punctuation_verses() -> List[str]:
     verses = []
@@ -115,6 +134,29 @@ def _punctuation_verses() -> List[str]:
     return verses
 
 
+def _rhyme_rule_verses() -> List[str]:
+    """The cases the 3.0.0 rhyme and punctuation changes are aimed at."""
+
+    verses = list(REMAPPED_WORDS)
+    verses += ["la luna " + word for word in REMAPPED_WORDS]
+
+    for opening, closing in LATE_PUNCTUATION_MARKS:
+        for word in PUNCTUATED_WORDS:
+            for frame in PUNCTUATION_FRAMES:
+                verses.append(frame.format(opening + word))
+                verses.append(frame.format(word + closing))
+                verses.append(frame.format(opening + word + closing))
+            verses.append("el arma " + opening + " " + word)
+
+    for mark in TRAILING_ONLY + LATE_TRAILING_MARKS:
+        for word in PUNCTUATED_WORDS:
+            #  a Verse ending in a token that is punctuation and nothing else
+            verses.append("el arma " + word + " " + mark)
+            verses.append("la luna" + mark)
+
+    return verses
+
+
 def _generated_verses(count: int = 300, seed: int = 20260925) -> List[str]:
     rng = random.Random(seed)
     return [
@@ -127,6 +169,13 @@ def verses() -> List[str]:
     """Every Verse in the snapshot, in a stable order."""
 
     seen = {}
-    for verse in FROM_THE_SUITE + _punctuation_verses() + _generated_verses():
+    sources = (
+        FROM_THE_SUITE
+        + _punctuation_verses()
+        + _generated_verses()
+        + _rhyme_rule_verses()
+    )
+
+    for verse in sources:
         seen.setdefault(verse, None)
     return list(seen)

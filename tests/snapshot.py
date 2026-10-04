@@ -25,7 +25,9 @@ def record() -> List[Dict[str, object]]:
                 "count": pyverse.count,
                 "synalephas": list(pyverse.synalephas),
                 "consonant_rhyme": pyverse.consonant_rhyme,
+                "consonant_rhyme_yeismo": pyverse.consonant_rhyme_yeismo,
                 "assonant_rhyme": pyverse.assonant_rhyme,
+                "assonant_rhyme_strict": pyverse.assonant_rhyme_strict,
             }
         )
 

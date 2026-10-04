@@ -193,15 +193,18 @@ class Word:
         if word.count("-") <= 1:
             return 1
 
+        if word.endswith("-men-te"):
+            #  An adverb in -mente keeps the stress of its adjective as a
+            #  secondary one, but is read as a paroxytone whatever that
+            #  adjective's written accent says: 'cortésmente', 'rápidamente'.
+            return 2
+
         accent = re.search(f"[{accented_vowels}]", word)
         if accent:
             remaining = word[accent.end():].count("-")
             if remaining > 2:
-                if word.endswith("-men-te"):
-                    return 2
-                else:
-                    #  This case is the very seldom superproparoxytone word_list
-                    return 4
+                #  This case is the very seldom superproparoxytone word_list
+                return 4
 
             if remaining == 2:
                 #  proparoxytone
